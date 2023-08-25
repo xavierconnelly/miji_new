@@ -1,8 +1,8 @@
 <script>
-	import Radio from '/Users/xavierconnelly/miji/src/lib/radio.svelte'
+	import Radio from '../lib/radio.svelte'
 	export let radioValue;
 	
-    import { store } from '/Users/xavierconnelly/miji/src/lib/store.js';
+    import { store } from '../lib/store.js';
 
 	// import Button from './button.svelte'
     // let active = true;

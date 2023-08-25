@@ -1,6 +1,6 @@
 <script>
 
-import { store } from '/Users/xavierconnelly/miji/src/lib/store.js';
+import { store } from '../lib/store.js';
 
   export let options;
   export let userSelected = options[0].value;

@@ -1,5 +1,5 @@
 <script>
-	import { publications } from '/Users/xavierconnelly/miji/src/publications/publications.js'
+	import { publications } from '../publications/publications.js'
 </script>
 
 <div id="publications">
