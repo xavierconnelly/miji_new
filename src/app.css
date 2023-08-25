@@ -48,6 +48,12 @@ a {
     color: initial;
     text-decoration: none;
 }
+
+button {
+    /* display: block; */
+    border: none;
+    text-align: left;
+}
 /* 
 a:hover {
     cursor: pointer;
