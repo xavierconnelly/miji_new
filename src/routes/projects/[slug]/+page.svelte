@@ -40,21 +40,6 @@
       {/if}
   </MediaQuery>
 
-<!-- Words -->
-<!-- <caption class="moon">
-    <h2>{data.project.title}</h2>
-    {@html data.project.content}
-</caption> -->
-<caption class="{data.project.colour} sun">
-        <h2>{data.project.title}</h2> &nbsp-&nbsp 
-        <p>
-         {@html data.project.content} 
-        </p> 
-        <span>
-            
-        </span>
-</caption>
-
 <!-- Buttons -->
 <div class="buttons ABHouse">
     <a href="/projects/TokyoTina" data-sveltekit-scroll>
@@ -126,6 +111,15 @@
 </a>
 </div>
 
+<caption class="{data.project.colour} sun">
+    <h2>{data.project.title}</h2> &nbsp-&nbsp 
+    <p>
+     {@html data.project.content} 
+    </p> 
+    <span>
+        
+    </span>
+</caption>
 
 <a 	data-sveltekit-noscroll 
     class="white" 
@@ -239,43 +233,31 @@ caption  * {
     cursor: url(../src/lib/close.svg), crosshair;
 } */
 
-.green img {
-    cursor: url(../src/lib/close/green.svg), crosshair;
+.green img,
+.green ~ .white  {
+    cursor: url(/close/green.svg), crosshair;
 }
-.yellow img {
-    cursor: url(../src/lib/close/yellow.svg), crosshair;
+.yellow img,
+.yellow ~ .white {
+    cursor: url(/close/yellow.svg), crosshair;
 }
-.pink img {
-    cursor: url(../src/lib/close/pink.svg), crosshair;
+.pink img,
+.pink ~ .white {
+    cursor: url(/close/pink.svg), crosshair;
 }
-.red img {
-    cursor: url(../src/lib/close/red.svg), crosshair;
+.red img,
+.red ~ .white  {
+    cursor: url(/close/red.svg), crosshair;
 }
-.grey img {
-    cursor: url(../src/lib/close/grey.svg), crosshair;
+.grey img,
+.grey ~ .white  {
+    cursor: url(/close/grey.svg), crosshair;
 }
-.pistachio img {
-    cursor: url(../src/lib/close/pistachio.svg), crosshair;
+.pistachio img,
+.pistachio ~ .white  {
+    cursor: url(/close/pistachio.svg), crosshair;
 }
 
-.green ~ .white {
-    cursor: url(../src/lib/close/green.svg), crosshair;
-}
-.yellow ~ .white  {
-    cursor: url(../src/lib/close/yellow.svg), crosshair;
-}
-.pink ~ .white  {
-    cursor: url(../src/lib/close/pink.svg), crosshair;
-}
-.red ~ .white  {
-    cursor: url(../src/lib/close/red.svg), crosshair;
-}
-.grey ~ .white  {
-    cursor: url(../src/lib/close/grey.svg), crosshair;
-}
-.pistachio ~ .white  {
-    cursor: url(../src/lib/close/pistachio.svg), crosshair;
-}
 
 .arrow {
     z-index: 60;
@@ -309,12 +291,9 @@ caption  * {
 }
 
 @media only screen and (max-height: 800px) {
-    .moon {
-        display: none;
-    }
-    .sun {
+    /* .sun {
         bottom: 65px;
-    }
+    } */
     .arrow {
         display: block;
     }
@@ -328,7 +307,6 @@ caption  * {
     .arrow {
         display: block;
     }
-
     img {
         width: 100%;
         height: unset;

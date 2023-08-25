@@ -52,22 +52,22 @@ article {
 }
 
 .green img:hover {
-    cursor: url(../src/lib/close/green.svg), crosshair;
+    cursor: url(/close/green.svg), crosshair;
 }
 .yellow img:hover {
-    cursor: url(../src/lib/close/yellow.svg), crosshair;
+    cursor: url(/close/yellow.svg), crosshair;
 }
 .pink img:hover {
-    cursor: url(../src/lib/close/pink.svg), crosshair;
+    cursor: url(/close/pink.svg), crosshair;
 }
 .red img:hover {
-    cursor: url(../src/lib/close/red.svg), crosshair;
+    cursor: url(/close/red.svg), crosshair;
 }
 .grey img:hover {
-    cursor: url(../src/lib/close/grey.svg), crosshair;
+    cursor: url(/close/grey.svg), crosshair;
 }
 .pistachio img:hover {
-    cursor: url(../src/lib/close/pistachio.svg), crosshair;
+    cursor: url(/close/pistachio.svg), crosshair;
 }
 
 @media only screen and (max-width: 800px) {
