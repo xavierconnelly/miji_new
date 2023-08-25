@@ -1,27 +1,32 @@
 <script>
-	import Header from '../lib/header.svelte'
-	import Swiper from '../lib/swiperCUBElooped.svelte'
-	import Footer from '../lib/footer.svelte'
+	import Header from '../lib/header.svelte';
+	import HeaderMobile from '../lib/headerMobile.svelte';
+	import Swiper from '../lib/swiperCUBElooped.svelte';
+	import Footer from '../lib/footer.svelte';
 	import MediaQuery from '../lib/MediaQuery.svelte';
 	import '../app.css'
 	
 
 	// trying to get page transitions working
 	import { fade } from 'svelte/transition';
-	import About from '$lib/about.svelte';
-    import Awards from '../lib/awards.svelte';
-	import Projects from '../lib/projects.svelte';
-    import Publications from '../lib/publications.svelte';
+
+	// import About from '$lib/about.svelte';
+    // import Awards from '../lib/awards.svelte';
+	// import Projects from '../lib/projects.svelte';
+    // import Publications from '../lib/publications.svelte';
 	export let data;
 
-	let view = 'closed';
+	// let view = 'closed';
+
 </script>
 
 <MediaQuery query="(min-width: 800px)" let:matches>
 	{#if matches}
 		<Header/>
 	{:else}
-		<button	on:click="{() => view = 'home'}"
+	<HeaderMobile/>
+
+		<!-- <button	on:click="{() => view = 'home'}"
 				on:keydown="{() => view = 'home'}"
 				class:show="{view === 'closed'}"
 				>
@@ -30,8 +35,13 @@
 		<button	on:click="{() => view = 'closed'}"
 				on:keydown="{() => view = 'closed'}"
 			>
-			<Header/>
-		</button>	
+			<HeaderMobile/>
+		</button>	 -->
+		<!-- {#if images.selected}
+			<button on:click={toggle}> Log out {$selected} </button>
+		{:else}
+			<button on:click={toggle}> Log in {$selected}</button>
+		{/if} -->
 	{/if}
   </MediaQuery>
 
@@ -42,7 +52,47 @@
 			<Swiper/>
 		</div>
 	{:else}
-		<div class="home"
+		<div id="noscroll">
+			<article transition:fade>
+				<span class="pistachio ABHouse" id="display">
+					<img src="../images/ABHouse/01_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/02_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/03_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/04_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/05_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/06_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/07_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/08_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/09_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/10_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/11_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/12_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/13_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/14_800.webp" alt="ABHouse project">
+					<img src="../images/ABHouse/15_800.webp" alt="ABHouse project">
+					<img class="plan" src="../images/ABHouse/Plan_01_800.svg" alt="ABHouse">
+					<img class="plan" src="../images/ABHouse/Plan_02_800.svg" alt="ABHouse">
+					<div class="buttons ABHouse">
+						<a href="/projects/TokyoTina" data-sveltekit-scroll>
+							<img id="prev" class="arrow" src="/prev/pistachio.svg" alt="prev button">
+						</a>
+						<a href="/projects/APavilion" data-sveltekit-scroll>
+							<img id="next" class="arrow" src="/next/pistachio.svg" alt="prev button">
+						</a>
+					</div>
+					<caption class="pistachio sun">
+						<h2>AB House</h2> &nbsp-&nbsp 
+						<p>
+							Wadawurrung Country | Barwon Heads, Australia 2021
+						</p> 
+						<span>
+							
+						</span>
+					</caption>
+				</span>
+			</article>
+		</div>
+		<!-- <div class="home"
 			class:selected="{view === 'home'}"
 				on:click="{() => view = 'home'}"
 				on:keydown="{() => view = 'home'}">
@@ -51,7 +101,7 @@
 			<Projects/>
 			<Awards />
 			<Publications/>
-		</div>
+		</div> -->
 	{/if}
 </MediaQuery>
 
@@ -61,8 +111,13 @@
 	</div>
 {/key}
 
-<Footer/>
-
+<MediaQuery query="(min-width: 800px)" let:matches>
+	{#if matches}
+	  <div class="root tablet">
+		<Footer/>
+	  </div>
+  {/if}
+</MediaQuery>
 <style>
 
 
@@ -100,10 +155,10 @@
 	.show + div {
 		display: none;
 	}
-	img {
+	/* img {
 		width: 60%;
 		padding: 2em 0;
-	}
+	} */
 	/* .default {
 		background-color: white;
 	}
@@ -113,4 +168,184 @@
 	.mobile {
 		background-color: gold;
 	} */
+
+
+article {
+	position: fixed;
+	right: 0;
+	top: 30px;
+	z-index: 50;
+	/* width: 600px; */
+	width: 40%;
+	height: 100%;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	transition: 1s;
+	overscroll-behavior: contain;
+}
+
+@media only screen and (max-width: 800px) {
+    article {
+        width: 50%;
+		height: 100%;
+		flex-direction: column;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    article {
+        width: 100%;
+		height: calc(100% - 140px);
+		top: 30px;
+		flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        width: 100%;
+		height: unset;
+		flex-direction: column;
+		height: 100%;
+		overflow: scroll;
+    }
+}
+
+
+#display {
+        margin-bottom: 100px;
+    }
+
+    /* .pink ~ .sun {
+        background: var(--pink);
+    }
+    .green ~ .sun {
+        background: var(--green);
+    }
+    .red ~ .sun {
+        background: var(--red);
+    }
+    .pistachio ~ .sun {
+        background: var(--pistachio);
+    }
+    .yellow ~ .sun {
+        background: var(--yellow);
+    }
+    .grey {
+        background: var(--grey);
+    } */
+
+img {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.plan {
+    background-color: rgb(255, 255, 255)
+}
+/* caption {
+    padding: 10px;
+    /* display: block; */
+    /* display: flex;
+    text-align: left;
+    min-height: 45px;
+    width: 100%;
+} */ 
+/* .moon {
+    background: white;
+    color: #fff;
+    user-select: none;
+    position: relative;
+} */
+/* .sun {
+    position: fixed;
+    bottom: 0px;
+} */
+
+caption {
+    padding: 10px;
+    /* display: block; */
+    /* display: flex; */
+    text-align: left;
+    min-height: 65px;
+    width: 40%;
+    position: fixed;
+    bottom: 0px;
+}
+
+caption span {
+    width: 100%;
+}
+
+/* caption * {
+    display: contents;
+} */
+
+caption  * {
+    /* float: left; */
+    display: contents;
+}
+
+
+
+.pistachio img {
+    cursor: url(/close/pistachio.svg), crosshair;
+}
+
+
+.arrow {
+    z-index: 60;
+    width: 70px;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+}
+
+#next {
+    right: 0;
+}
+
+#prev {
+    left: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+    img {
+        width: unset;
+        height: 100%;
+    }
+    caption {
+        width: 100%
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    /* .sun {
+        bottom: 65px;
+    } */
+    .arrow {
+        display: block;
+    }
+    img {
+        width: unset;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .arrow {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: unset;
+    }
+}
 </style>

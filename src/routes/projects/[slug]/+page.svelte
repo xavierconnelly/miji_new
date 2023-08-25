@@ -2,10 +2,10 @@
 	export let data;
     // import { projects } from './projects.js';
 
-    function goTop() {
-    document.getElementsByClassName('buttons').scrollIntoView()
-		;
-  }
+//     function goTop() {
+//     document.getElementsByClassName('buttons').scrollIntoView()
+// 		;
+//   }
   import MediaQuery from '/src/lib/MediaQuery.svelte';
 
 </script>
@@ -139,7 +139,7 @@
 <style>
 
     #display {
-        margin-bottom: 70px;
+        margin-bottom: 100px;
     }
 
     /* .pink ~ .sun {

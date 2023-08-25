@@ -50,9 +50,11 @@ a {
 }
 
 button {
-    /* display: block; */
+    display: contents;
     border: none;
     text-align: left;
+    color: unset;
+    line-height: inherit;
 }
 /* 
 a:hover {

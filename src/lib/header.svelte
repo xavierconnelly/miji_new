@@ -18,26 +18,26 @@ header img {
     height: 100%;
     padding: 5px;
 }
-h1 {
+/* h1 {
   display: none;
-}
+} */
 @media only screen and (max-width: 800px) {
  a {
   display: none;
  } 
- h1 {
+ /* h1 {
   display: contents;
-}
+} */
 }
 </style>
 
     <header>
       <!-- make this h1 -->
-          <a href="../" data-sveltekit-noscroll>
+          <a href="/" data-sveltekit-noscroll>
             {config.description}
           </a>
-          <h1>
+          <!-- <h1>
             {config.description}
-          </h1>
+          </h1> -->
           <img src="/miji.svg" alt="Mi-Ji logo">
     </header>
