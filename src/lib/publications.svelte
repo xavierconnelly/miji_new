@@ -1,29 +1,74 @@
-<script>
-	import { publications } from '../publications/publications.js'
-</script>
-
 <div id="publications">
 	<h6> Publications</h6>
 	<br>
 	<div class="row title">
-		<td class="year">Year</td>
-		<td class="publisher">Publisher</td>
-		<td class="issue">Issue</td>
-		<td class="project">Project</td>
+		<div class="year">Year</div>
+		<div class="publisher">Publisher</div>
+		<div class="issue">Issue</div>
+		<div class="project">Project</div>
 	</div>
-	{#each publications as { slug, year, publisher, issue, project }}
-		<a href="/projects/{slug}" data-sveltekit-noscroll class="year{year} row">
-			<td class="year">{year}</td>
-			<td class="publisher">{publisher}</td>
-			<td class="issue">{issue}</td>
-			<td class="project">{project}</td>
-		</a>
-		<span class={slug}>
-			<img src="../images/{slug}/01_800.webp" alt="">
-			<td>{project}</td>
-			<!-- <td>{description}</td> -->
-		</span>
-	{/each}
+	<div data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2023</div>
+		<div class="publisher">Architectural Record</div>
+		<div class="issue">Issue 06</div>
+		<div class="project">Profile - Design Vanguard</div>
+	</div>
+	<div data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2023</div>
+		<div class="publisher">Houses Magazine</div>
+		<div class="issue">Issue 149</div>
+		<div class="project">Profile - Emerging Designers & Architects</div>
+	</div>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2023</div>
+		<div class="publisher">Artichoke</div>
+		<div class="issue">Issue 82</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2023</div>
+		<div class="publisher">Domus Web</div>
+		<div class="issue"></div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2022</div>
+		<div class="publisher">I’m Home</div>
+		<div class="issue">Issue 120</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2021</div>
+		<div class="publisher">The Commercial Project</div>
+		<div class="issue">Issue 01</div>
+		<div class="project">A Pavilion</div>
+	</a>
+	<span class="APavilion">
+		<img src="../images/APavilion/01_800.webp" alt="AB House ">
+		<div>A Pavilion</div>
+	</span>
+	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row">
+		<div class="year">2021</div>
+		<div class="publisher">Designboom</div>
+		<div class="issue"></div>
+		<div class="project">A Pavilion</div>
+	</a>
+	<span class="APavilion">
+		<img src="../images/APavilion/01_800.webp" alt="AB House ">
+		<div>A Pavilion</div>
+	</span>
 </div>
 
 <style>
@@ -41,15 +86,6 @@ h6 {
 	padding-top: 60px;
 }
 
-/* h6 {
-	padding-bottom: 1em;
-	border-bottom: 1px solid;
-} */
-
-.year {
-	width: 160px;
-}
-
 .title {
 	padding-bottom: 1em;
 }
@@ -60,41 +96,30 @@ h6 {
 	line-height: 130%;
 }
 
-/* .year2023 .year,
-.year2022 .year,
-.year2021 .year   {
-	color: white;
-}
-
-.year2023:first-of-type .year,
-.year2022:first-of-type .year,
-.year2021:first-of-type .year   {
-	color: black
-} */
-
-td {
+.row div {
 	border: none;
 	padding-right: 30px;
 	vertical-align: top;
 	text-align: left;
+}
+
+.row:hover div {
+	color: var(--green);
+}
+
+.year {
+	width: 10%;
+	padding-right: 60px;
+}
+.issue {
+	width: 30%
+}
+.publisher {
 	width: 30%;
 }
-
-a:hover {
-	color: var(--green);
+.project {
+	width: 30%
 }
-/* 
-a:nth-of-type(3n):hover {
-	color: var(--pink);
-}
-
-a:nth-of-type(3n + 1):hover {
-	color: var(--green);
-}
-
-a:nth-of-type(3n - 1):hover {
-	color: var(--red);
-} */
 
 span {
 	width: 25%;
@@ -120,28 +145,6 @@ a:hover + span {
 	z-index: 99;
 }
 
-a:hover + .Lorem {
-	display: none;
-}
-
-/* .NOLINK ~ a {
-	color: black
-} */
-
-.year {
-	width: 10%;
-	padding-right: 60px;
-}
-.issue {
-	width: 30%
-}
-.publisher {
-	width: 30%;
-}
-.project {
-	width: 30%
-}
-
 a + span img {
 	width: 70%;
 	padding-top: 20px;
@@ -156,7 +159,8 @@ a:hover + span img {
 }
 
 #publications a::before,
-.title::before {
+.title::before,
+.year2023::before {
 	content: '';
 	display: inline-block;
 	width: 14px;
@@ -173,21 +177,20 @@ a:hover + span img {
 
 }
 
-#publications a:hover::before {
-	background: var(--pink);
+#publications a:hover::before,
+#publications .year2023:hover::before  {
+	background: var(--green);
 }
 
 @media only screen and (max-width: 800px) {
 
 	#publications a::before,
-	.title::before  {
+	.title::before,
+	.year2023::before  {
 		display: none;
 	}
 	a:hover + span {
 		opacity: 0;
-	}
-	a:hover + .lorem {
-		display: none;
 	}
 	span {
 		display: none;
@@ -215,6 +218,6 @@ a:hover + span img {
 	padding-bottom: unset;
 	border-bottom: unset;
 	margin-bottom: unset
-}	
+	}	
 }
 </style>

@@ -301,34 +301,6 @@
 	user-select: none;
 }
 
-.ABHouse {
-    transform: rotateY(12.8571428571deg) translateZ(1775px);
-}
-
-.APavilion {
-    transform: rotateY(25.7142857143deg) translateZ(1775px);
-}
-
-.ARenovationForThree {
-    transform: rotateY(38.5714285714deg) translateZ(1775px);
-}
-
-.ACertainKindofLife {
-    transform: rotateY(51.4285714286deg) translateZ(1775px);
-}
-
-.AHouseForOne {
-    transform: rotateY(64.2857142857deg) translateZ(1775px);
-}
-
-.TokyoTina {
-    transform: rotateY(77.1428571429deg) translateZ(1775px);
-}
-
-.FourVisitsTo52Posts {
-    transform: rotateY(90deg) translateZ(1775px);
-}
-
 .scene {
     width: 400%;
     height: 400px;
@@ -386,22 +358,22 @@
 }	
 
 .green img:hover {
-    cursor: url(../view/green.svg), crosshair;
+    cursor: url(/view/green.svg), crosshair;
 }
 .yellow img:hover {
-    cursor: url(../view/yellow.svg), crosshair;
+    cursor: url(/view/yellow.svg), crosshair;
 }
 .pink img:hover {
-    cursor: url(../view/pink.svg), crosshair;
+    cursor: url(/view/pink.svg), crosshair;
 }
 .red img:hover {
-    cursor: url(../view/red.svg), crosshair;
+    cursor: url(/view/red.svg), crosshair;
 }
 .grey img:hover {
-    cursor: url(../view/grey.svg), crosshair;
+    cursor: url(/view/grey.svg), crosshair;
 }
 .pistachio img:hover {
-    cursor: url(../view/pistachio.svg), crosshair;
+    cursor: url(/view/pistachio.svg), crosshair;
 }
 
 .images {

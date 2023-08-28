@@ -22,7 +22,7 @@
             
                 <!-- Plans -->
                 {#each data.project.plans as  i}
-                    <img class="plan" src="../images/{data.project.slug}/plan_{i}_800.svg" alt="{data.project.title}">
+                    <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" alt="{data.project.title}">
                 {/each}
             </a>
         {:else}
@@ -34,7 +34,7 @@
         
             <!-- Plans -->
             {#each data.project.plans as  i}
-                <img class="plan" src="../images/{data.project.slug}/plan_{i}_800.svg" alt="{data.project.title}">
+                <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" alt="{data.project.title}">
             {/each}
         </span>
       {/if}
@@ -115,10 +115,7 @@
     <h2>{data.project.title}</h2> &nbsp-&nbsp 
     <p>
      {@html data.project.content} 
-    </p> 
-    <span>
-        
-    </span>
+    </p>
 </caption>
 
 <a 	data-sveltekit-noscroll 
@@ -142,25 +139,6 @@
         margin-bottom: 100px;
     }
 
-    /* .pink ~ .sun {
-        background: var(--pink);
-    }
-    .green ~ .sun {
-        background: var(--green);
-    }
-    .red ~ .sun {
-        background: var(--red);
-    }
-    .pistachio ~ .sun {
-        background: var(--pistachio);
-    }
-    .yellow ~ .sun {
-        background: var(--yellow);
-    }
-    .grey {
-        background: var(--grey);
-    } */
-
 img {
     width: 100%;
     display: block;
@@ -170,24 +148,6 @@ img {
 .plan {
     background-color: rgb(255, 255, 255)
 }
-/* caption {
-    padding: 10px;
-    /* display: block; */
-    /* display: flex;
-    text-align: left;
-    min-height: 45px;
-    width: 100%;
-} */ 
-/* .moon {
-    background: white;
-    color: #fff;
-    user-select: none;
-    position: relative;
-} */
-/* .sun {
-    position: fixed;
-    bottom: 0px;
-} */
 
 caption {
     padding: 10px;
@@ -199,14 +159,6 @@ caption {
     position: fixed;
     bottom: 0px;
 }
-
-caption span {
-    width: 100%;
-}
-
-/* caption * {
-    display: contents;
-} */
 
 caption  * {
     /* float: left; */
@@ -226,12 +178,6 @@ caption  * {
 .FourVisitsTo52Posts ~ .FourVisitsTo52Posts {display: block;}
 .TokyoTina ~ .TokyoTina {display: block;}
 .ARenovationForThree ~ .ARenovationForThree {display: block;}
-
-
-
-/* img:hover {
-    cursor: url(../src/lib/close.svg), crosshair;
-} */
 
 .green img,
 .green ~ .white  {
@@ -258,7 +204,6 @@ caption  * {
     cursor: url(/close/pistachio.svg), crosshair;
 }
 
-
 .arrow {
     z-index: 60;
     width: 70px;
@@ -278,7 +223,6 @@ caption  * {
 #prev {
     left: 0;
 }
-
 
 @media only screen and (max-width: 800px) {
     img {

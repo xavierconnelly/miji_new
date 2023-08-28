@@ -1,7 +1,3 @@
-<script>
-	import { awards } from '../awards/awards.js'
-</script>
-
 <div id="awards">
 	<h6>Awards</h6>
 	<div class="acronyms">
@@ -13,42 +9,117 @@
 	</div>
 	<br>
 	<div class="row title">
-		<td class="year">Year</td>
-		<td class="abrev">Rec.</td>
-		<td class="award">Award</td>
-		<td class="awarder">Award panel</td>
-		<td class="project">Project</td>
+		<div class="year">Year</div>
+		<div class="abrev">Rec.</div>
+		<div class="award">Award</div>
+		<div class="awarder">Award panel</div>
+		<div class="project">Project</div>
 	</div>
-	{#each awards as { id, link, year, abrev, award, awarder, project }}
-		<!-- {#if {id} = 'NOLINK'}
-			Nolink
-		{:else} -->
-			<a href="/projects/{id}" data-sveltekit-noscroll class="{id} year{year} row">
-				<td class="year">{year}</td>
-				<td class="abrev">{abrev}</td>
-				<td class="award">{award}</td>
-				<td class="awarder">{awarder}</td>
-				<td class="project">{project}</td>
-			</a>
-			<span class={id}>
-				<img src="../images/{id}/01_800.webp" alt="">
-				<td>{project}</td>
-				<!-- <td>{description}</td> -->
-			</span>
-		<!-- {/if} -->
-	{/each}
+	<div data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">W</div>
+		<div class="award">Design Vanguard</div>
+		<div class="awarder">Architectural Record</div>
+		<div class="project">Office Award</div>
+	</div>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">S</div>
+		<div class="award">Colorbond Steel</div>
+		<div class="awarder">AIA National Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>				
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">W</div>
+		<div class="award">EmAGN</div>
+		<div class="awarder">AIA Vic Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">W</div>
+		<div class="award">Colorbond Steel</div>
+		<div class="awarder">AIA Vic Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">C</div>
+		<div class="award">New House</div>
+		<div class="awarder">AIA Vic Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
+	<div data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">C</div>
+		<div class="award">Emerging Architecture Practice</div>
+		<div class="awarder">Houses Awards</div>
+		<div class="project">Office Award</div>
+	</div>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">S</div>
+		<div class="award">New Houses over 200m2</div>
+		<div class="awarder">Houses Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">N</div>
+		<div class="award">Building of the Year Residential</div>
+		<div class="awarder">ArchDaily</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">S</div>
+		<div class="award">New Houses over 200m2</div>
+		<div class="awarder">Australian Interior Design Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+		<div class="year">2023</div>
+		<div class="abrev">F</div>
+		<div class="award">Residential Interior</div>
+		<div class="awarder">Dulux Colour Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<img src="../images/ABHouse/01_800.webp" alt="">
+		<div>AB House</div>
+	</span>
 </div>
 
 <style>
-
-/* 
-* {
-	outline: 1px solid;
-}
-*/
-
-
-
 #awards {
 	/* padding-bottom: 50px; */
 	width: calc(100% - 0px);
@@ -69,7 +140,6 @@ h6 {
 	padding-bottom: 1em;
 }
 
-
 .row {
 	display: flex;
 	width: calc(100%);
@@ -80,12 +150,12 @@ a:hover {
 	color: var(--green);
 }
 
-td {
+/* td {
 	border: none;
 	padding-right: 30px;
 	vertical-align: top;
 	text-align: left;
-}
+} */
 
 span {
 	width: 25%;
@@ -126,14 +196,6 @@ a:hover + span {
 	z-index: 99;
 }
 
-a:hover + .NOLINK {
-	display: none;
-}
-
-/* .NOLINK ~ a {
-	color: black
-} */
-
 a + span img {
 	width: 70%;
 	padding-top: 20px;
@@ -147,7 +209,7 @@ a:hover + span img {
 	transition: 2s;
 }
 
-#awards a::before,
+#awards .year2023::before,
 .title::before {
 	content: '';
 	display: inline-block;
@@ -165,46 +227,20 @@ a:hover + span img {
 
 }
 
-#awards a:hover::before {
+#awards .year2023:hover::before {
 	background: var(--green);
 }
-/* 
-.ab,
-.posts,
-.tokyo {
-	position: relative;
-}
-
-.ab .active::before {
-	background-color: green;
-}
-.posts .active::before {
-	background: red;
-}
-
-.tokyo .active::before {
-	background: rgb(157, 59, 59);
-}
-
-.active {
-	display: block;
-} */
-
-
 
 @media only screen and (max-width: 800px) {
 	#awards {
 		padding-top: 60px;
 	}
-	#awards a::before,
+	#awards .year2023::before,
 	.title::before  {
 		display: none;
 	}
 	a:hover + span {
 		opacity: 0;
-	}
-	a:hover + .NOLINK {
-		display: none;
 	}
 	.acronyms {
 		padding-left: unset;
@@ -243,9 +279,6 @@ a:hover + span img {
 	a:hover + span {
 		opacity: 0;
 	}
-	a:hover + .NOLINK {
-		display: none;
-	}
 	span {
 		display: none;
 	}
@@ -260,9 +293,6 @@ a:hover + span img {
 	}
 	a:hover + span {
 		opacity: 0;
-	}
-	a:hover + .NOLINK {
-		display: none;
 	}
 	span {
 		display: none;

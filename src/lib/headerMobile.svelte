@@ -23,7 +23,7 @@
 </header>
 
 {#if images.selected}
-  <div  class="home">
+  <div class="home">
     <img src="../images/ABHouse/01_800.webp" alt="">
     <About />
     <Projects/>
