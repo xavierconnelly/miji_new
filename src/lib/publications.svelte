@@ -1,6 +1,6 @@
 <div id="publications">
 	<h6> Publications</h6>
-	<br>
+	<!-- <br> -->
 	<div class="row title">
 		<div class="year">Year</div>
 		<div class="publisher">Publisher</div>
@@ -103,7 +103,7 @@ h6 {
 	text-align: left;
 }
 
-.row:hover div {
+a:hover div {
 	color: var(--green);
 }
 
@@ -215,9 +215,8 @@ a:hover + span img {
 		padding: 10px 0;
 	}
 	h6 {
-	padding-bottom: unset;
-	border-bottom: unset;
-	margin-bottom: unset
+		border-bottom: 0px solid;
+		margin-bottom: unset;
 	}	
 }
 </style>

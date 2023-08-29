@@ -56,6 +56,7 @@ header {
   padding: 1px 10px; 
   background: white;
   position: fixed;
+  top: 0;
   z-index: 100;
   line-height: 30px;
 }

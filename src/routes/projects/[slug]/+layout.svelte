@@ -13,18 +13,6 @@
 	{/key}
 </div>
 
-
-<!-- <div 	class="white" 
-		style="	background: white;
-				height: 100%;
-				width: 100%;
-				z-index: 40;
-				opacity: 0.8;
-				transition: 2s;
-				position: fixed;
-				top:0">
-</div> -->
-
 <style>
 #noscroll {
 	position: fixed;
@@ -90,7 +78,7 @@ article {
 @media only screen and (max-width: 600px) {
     article {
         width: 100%;
-		height: unset;
+		/* height: unset; */
 		flex-direction: column;
 		height: 100%;
 		overflow: scroll;

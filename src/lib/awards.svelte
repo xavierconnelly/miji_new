@@ -146,16 +146,9 @@ h6 {
 	line-height: 130%;
 }
 
-a:hover {
+a:hover * {
 	color: var(--green);
 }
-
-/* td {
-	border: none;
-	padding-right: 30px;
-	vertical-align: top;
-	text-align: left;
-} */
 
 span {
 	width: 25%;

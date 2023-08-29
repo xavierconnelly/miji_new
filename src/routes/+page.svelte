@@ -4,12 +4,15 @@
 
 	// trying to get page transitions working
 	import { fade } from 'svelte/transition';
+	import HeaderMobile from '../lib/headerMobile.svelte';
 
 </script>
 
 
 <MediaQuery query="(max-width: 800px)" let:matches>
         {#if matches}
+        <HeaderMobile/>
+
             <article transition:fade>
                 <span class="pistachio ABHouse" id="display">
                     <img src="../images/ABHouse/01_800.webp" alt="ABHouse project">
@@ -37,21 +40,12 @@
                             <img id="next" class="arrow" src="/next/pistachio.svg" alt="prev button">
                         </a>
                     </div>
-                    <caption class="pistachio sun">
-                        AB House - Wadawurrung Country | Barwon Heads, Australia 2021
-                    </caption>
                 </span>
+                <div class="pistachio sun">
+                    AB House - Wadawurrung Country | Barwon Heads, Australia 2021
+                </div>
             </article>
-          <!-- <div class="home"
-              class:selected="{view === 'home'}"
-                  on:click="{() => view = 'home'}"
-                  on:keydown="{() => view = 'home'}">
-              <img src="../src/lib/images/ABHouse/01_800.webp" alt="">
-              <About />
-              <Projects/>
-              <Awards />
-              <Publications/>
-          </div> -->
+
       {/if}
   </MediaQuery>
 
@@ -113,7 +107,7 @@ img {
     background-color: rgb(255, 255, 255)
 }
 
-caption {
+div {
     padding: 10px;
     /* display: block; */
     /* display: flex; */
@@ -153,7 +147,7 @@ caption {
         width: unset;
         height: 100%;
     }
-    caption {
+    div {
         width: 100%
     }
     article {

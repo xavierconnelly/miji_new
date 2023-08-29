@@ -7,13 +7,18 @@
 // 		;
 //   }
   import MediaQuery from '/src/lib/MediaQuery.svelte';
+  import HeaderMobile from '/src/lib/headerMobile.svelte';
+
 
 </script>
+
+
 
 
 <!-- <MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches> -->
     <MediaQuery query="(min-width: 800px)" let:matches>
         {#if matches}
+
             <a href="/" class="{data.project.colour} {data.project.slug}"  data-sveltekit-noscroll id="display">
                 <!-- Images -->
                 {#each data.project.images as  i}
@@ -25,8 +30,14 @@
                     <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" alt="{data.project.title}">
                 {/each}
             </a>
+
         {:else}
+
+        <HeaderMobile/>
         <span class="{data.project.colour} {data.project.slug}" id="display">
+
+            
+            
             <!-- Images -->
             {#each data.project.images as  i}
                 <img src="../images/{data.project.slug}/{i}_800.webp" alt="{data.project.title} project">
@@ -37,6 +48,7 @@
                 <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" alt="{data.project.title}">
             {/each}
         </span>
+
       {/if}
   </MediaQuery>
 
