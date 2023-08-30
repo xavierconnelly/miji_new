@@ -65,7 +65,7 @@
     href="/"
 	style="	background: white;
             height: calc(100% - 110px);
-            width: 100%;
+            width: 60%;
             z-index: -5;
             opacity: 0.8;
             transition: all 2s ease 0s;
