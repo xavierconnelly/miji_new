@@ -11,6 +11,8 @@
     <HeaderMobile/>
     {/if}
 </MediaQuery>
+<article>
+
 
     <MediaQuery query="(min-width: 800px)" let:matches>
         {#if matches}
@@ -40,7 +42,7 @@
         </span>
       {/if}
   </MediaQuery>
-
+</article>
 <!-- Buttons -->
 <div class="buttons ABHouse">
     <a href="/projects/TokyoTina" data-sveltekit-scroll>
@@ -256,6 +258,50 @@ caption  * {
     img {
         width: 100%;
         height: unset;
+    }
+}
+
+
+
+article {
+	position: fixed;
+	right: 0;
+	top: 30px;
+	z-index: 50;
+	/* width: 600px; */
+	width: 40%;
+	height: 100%;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	transition: 1s;
+	overscroll-behavior: contain;
+}
+
+@media only screen and (max-width: 800px) {
+    article {
+        width: 50%;
+		height: 100%;
+		flex-direction: column;
+    }
+}
+
+/* @media only screen and (max-height: 800px) {
+    article {
+        width: 100%;
+		height: calc(100% - 140px);
+		top: 30px;
+		flex-direction: row;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    article {
+        width: 100%;
+		/* height: unset; */
+		flex-direction: column;
+		height: 100%;
+		overflow: scroll;
     }
 }
 </style>

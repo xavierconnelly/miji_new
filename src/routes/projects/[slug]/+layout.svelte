@@ -5,13 +5,20 @@
 	export let data
 </script>
 
-<div id="noscroll" >
+<!-- <div id="noscroll" >
 	{#key data.url} 
 		<article transition:fade>
 			<slot />
 		</article>
 	{/key}
-</div>
+</div> -->
+
+{#key data.url} 
+	<div id="noscroll" transition:fade >
+		<slot />
+	</div>
+{/key}
+
 
 <style>
 #noscroll {
@@ -22,47 +29,5 @@
 	height: 90%;
 	width: 100%;
 	overflow: scroll;
-}
-
-article {
-	position: fixed;
-	right: 0;
-	top: 30px;
-	z-index: 50;
-	/* width: 600px; */
-	width: 40%;
-	height: 100%;
-	overflow: scroll;
-	display: flex;
-	flex-direction: column;
-	transition: 1s;
-	overscroll-behavior: contain;
-}
-
-@media only screen and (max-width: 800px) {
-    article {
-        width: 50%;
-		height: 100%;
-		flex-direction: column;
-    }
-}
-
-/* @media only screen and (max-height: 800px) {
-    article {
-        width: 100%;
-		height: calc(100% - 140px);
-		top: 30px;
-		flex-direction: row;
-    }
-} */
-
-@media only screen and (max-width: 600px) {
-    article {
-        width: 100%;
-		/* height: unset; */
-		flex-direction: column;
-		height: 100%;
-		overflow: scroll;
-    }
 }
 </style>
