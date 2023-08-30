@@ -42,7 +42,7 @@
         </span>
       {/if}
   </MediaQuery>
-</article>
+
 <!-- Buttons -->
 <div class="buttons ABHouse">
     <a href="/projects/TokyoTina" data-sveltekit-scroll>
@@ -121,6 +121,7 @@
     </p>
 </caption>
 
+</article>
 <a 	data-sveltekit-noscroll 
     class="white" 
     href="/"
