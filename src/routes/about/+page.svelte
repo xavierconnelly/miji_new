@@ -18,7 +18,7 @@
     Used to create the background effect
     Don't think this is the best way but it's what's working for now
 -->
-<a 	data-sveltekit-noscroll 
+<!-- <a 	data-sveltekit-noscroll 
     class="white" 
     href="/"
 	style="	background: white;
@@ -30,27 +30,23 @@
             position: fixed;
             top: 30px;
             left: 0;">
-</a>
+</a> -->
 
 <style>
 
-#about ~ .white {
+/* #about ~ .white {
     cursor: url(../close/green.svg), crosshair;
-}
+} */
 
 #about {
     background: rgba(255, 255, 255, 0.94);
     position: fixed;
-    bottom: 30px;
-    /* bottom: 100px; */
-    padding-top: 20px;
-    padding-bottom: 100px;
-    width: 100%;
-    /* height: 70dvh; */
+    top: 0;
+    padding: 40px 0px 100px 0px;
     z-index: 40;
     overflow: scroll;
-    max-height: 100dvh;
-    min-height: 60dvh;
+    width: 100%;
+    height: calc(100dvh - 80px);   
 }
 
 .flex {
@@ -82,5 +78,10 @@
     .flex > span {
         width: 100%
     }
+}
+/* @media only screen and (max-height: 800px) {
+    #about {
+        max-height: 60dvh;
     }
+} */
 </style>

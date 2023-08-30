@@ -10,7 +10,6 @@
 	import { fade } from 'svelte/transition';
 
 	export let data;
-
 </script>
 
 
@@ -19,8 +18,8 @@
 		<Header/>
 	<!-- {:else}
 		<HeaderMobile/> -->
-	{/if}
-  </MediaQuery>
+	{/if}s
+</MediaQuery>
 
   <MediaQuery query="(min-width: 800px)" let:matches>
 	{#if matches}
@@ -31,7 +30,7 @@
   </MediaQuery>
 
 {#key data.url} 
-	<div transition:fade id="lost">
+	<div transition:fade={{ duration: 1000 }} id="lost">
 		<slot />
 	</div>
 {/key}

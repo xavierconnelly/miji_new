@@ -5,7 +5,7 @@
 	export let data
 </script>
 
-<div id="noscroll">
+<div id="noscroll" >
 	{#key data.url} 
 		<article transition:fade>
 			<slot />
@@ -39,25 +39,6 @@ article {
 	overscroll-behavior: contain;
 }
 
-.green img:hover {
-    cursor: url(/close/green.svg), crosshair;
-}
-.yellow img:hover {
-    cursor: url(/close/yellow.svg), crosshair;
-}
-.pink img:hover {
-    cursor: url(/close/pink.svg), crosshair;
-}
-.red img:hover {
-    cursor: url(/close/red.svg), crosshair;
-}
-.grey img:hover {
-    cursor: url(/close/grey.svg), crosshair;
-}
-.pistachio img:hover {
-    cursor: url(/close/pistachio.svg), crosshair;
-}
-
 @media only screen and (max-width: 800px) {
     article {
         width: 50%;
@@ -66,14 +47,14 @@ article {
     }
 }
 
-@media only screen and (max-height: 800px) {
+/* @media only screen and (max-height: 800px) {
     article {
         width: 100%;
 		height: calc(100% - 140px);
 		top: 30px;
 		flex-direction: row;
     }
-}
+} */
 
 @media only screen and (max-width: 600px) {
     article {
