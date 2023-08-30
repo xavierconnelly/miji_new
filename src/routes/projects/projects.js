@@ -7,7 +7,9 @@ export const projects = [
 		colour: 'pistachio',
 		hex: 'F5F5C8',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15" ],
-		plans: ["01", "02"]
+		plans: ["01", "02"],
+		prev: 'TokyoTina',
+		next: 'ACertainKindofLife'
 	},
 
 	{
@@ -18,7 +20,9 @@ export const projects = [
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
-		plans: ["01", "02"]
+		plans: ["01", "02"],
+		prev: 'ABHouse',
+		next: 'AHouseForOne'
 	},
 
 	{
@@ -28,7 +32,9 @@ export const projects = [
 		colour: 'green',
 		hex: '00CC66',
 		images: ["01", "02", "03", "04", "05", "06"],
-		plans: ["01", "02"]
+		plans: ["01", "02"],
+		prev: 'ACertainKindofLife',
+		next: 'APavilion'
 	},
 
 	{
@@ -38,7 +44,9 @@ export const projects = [
 		colour: 'yellow',
 		hex: 'FAF000',
 		images: ["01", "02", "03", "04"],
-		plans: ["01"]
+		plans: ["01"],
+		prev: 'AHouseForOne',
+		next: 'ARenovationForThree'
 	},
 
 	{
@@ -48,7 +56,9 @@ export const projects = [
 		colour: 'green',
 		hex: '00CC66',
 		images: ["01", "02", "03", "04", "05", "06", "07"],
-		plans: ["01", "02"]
+		plans: ["01", "02"],
+		prev: 'APavilion',
+		next: 'FourVisitsTo52Posts'
 	},
 
 	{
@@ -58,7 +68,9 @@ export const projects = [
 		colour: 'grey',
 		hex: 'E1E1E1',
 		images: ["01", "02", "03", "04", "05", "06"],
-		plans: ["01"]
+		plans: ["01"],
+		prev: 'ARenovationForThree',
+		next: 'TokyoTina'
 	},
 
 	{
@@ -68,7 +80,9 @@ export const projects = [
 		colour: 'red',
 		hex: 'FF6600',
 		images: ["01", "02"],
-		plans: ["01"]
+		plans: ["01"],
+		prev: 'FourVisitsTo52Posts',
+		next: 'ABHouse'
 	}
 
 ];

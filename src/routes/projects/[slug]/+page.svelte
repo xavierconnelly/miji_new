@@ -11,9 +11,8 @@
     <HeaderMobile/>
     {/if}
 </MediaQuery>
-<article>
 
-
+<article class="{data.project.colour}">
     <MediaQuery query="(min-width: 800px)" let:matches>
         {#if matches}
             <a href="/" class="{data.project.colour} {data.project.slug}"  data-sveltekit-noscroll id="display">
@@ -43,90 +42,29 @@
       {/if}
   </MediaQuery>
 
-<!-- Buttons -->
-<div class="buttons ABHouse">
-    <a href="/projects/TokyoTina" data-sveltekit-scroll>
-        <img id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-    </a>
-    <a href="/projects/APavilion" data-sveltekit-scroll>
-        <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-    </a>
-</div>
+    <!-- Buttons -->
+    <div class="buttons">
+        <a href="/projects/{data.project.prev}" data-sveltekit-scroll>
+            <img id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
+        </a>
+        <a href="/projects/{data.project.next}" data-sveltekit-scroll>
+            <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="next button">
+        </a>
+    </div>
 
-
-<!-- Buttons -->
-<div  class="buttons APavilion">
-        <a href="/projects/ABHouse">
-        <img id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-    </a>
-    <a href="/projects/FourVisitsTo52Posts">
-        <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-    </a>
-</div>
-
-<!-- Buttons -->
-<div  class="buttons FourVisitsTo52Posts">
-<a href="/projects/APavilion">
-    <img id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-</a>
-<a href="/projects/ARenovationForThree">
-    <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-</a>
-</div>
-
-<!-- Buttons -->
-<div  class="buttons ARenovationForThree">
-<a href="/projects/FourVisitsTo52Posts">
-    <img href="" id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-</a>
-<a href="/projects/ACertainKindofLife">
-    <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-</a>
-</div>
-
-<!-- Buttons -->
-<div  class="buttons ACertainKindofLife">
-<a href="/projects/ABHouse">
-    <img href="" id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-</a>
-<a href="/projects/AHouseForOne">
-    <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-</a>
-</div>
-
-<!-- Buttons -->
-<div  class="buttons AHouseForOne">
-<a href="/projects/ACertainKindofLife">
-    <img href="" id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-</a>
-<a href="/projects/TokyoTina">
-    <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-</a>
-</div>
-
-<!-- Buttons -->
-<div  class="buttons TokyoTina">
-<a href="/projects/AHouseForOne">
-    <img href="" id="prev" class="arrow" src="/prev/{data.project.colour}.svg" alt="prev button">
-</a>
-<a href="/projects/ABHouse">
-    <img id="next" class="arrow" src="/next/{data.project.colour}.svg" alt="prev button">
-</a>
-</div>
-
-<caption class="{data.project.colour} sun">
-    <h2>{data.project.title}</h2> &nbsp-&nbsp 
-    <p>
-     {@html data.project.content} 
-    </p>
-</caption>
-
+    <caption class="{data.project.colour} sun">
+        <h2>{data.project.title}</h2> &nbsp-&nbsp 
+        <p>
+        {@html data.project.content} 
+        </p>
+    </caption>
 </article>
+
 <a 	data-sveltekit-noscroll 
     class="white" 
     href="/"
 	style="	background: white;
-            height: calc(100% - 80px);
+            height: calc(100% - 110px);
             width: 100%;
             z-index: -5;
             opacity: 0.8;
@@ -169,19 +107,14 @@ caption  * {
     display: contents;
 }
 
-*::selection {
-    background-color: white;
-    color: black;
-}
-
-.buttons {display: none;}
-.ABHouse ~ .ABHouse {display: block;}
-.AHouseForOne ~ .AHouseForOne {display: block;}
+.buttons {display: block;}
+/* .ABHouse ~ .ABHouse {display: block;} */
+/* .AHouseForOne ~ .AHouseForOne {display: block;}
 .APavilion ~ .APavilion {display: block;}
 .ACertainKindofLife ~ .ACertainKindofLife {display: block;}
 .FourVisitsTo52Posts ~ .FourVisitsTo52Posts {display: block;}
 .TokyoTina ~ .TokyoTina {display: block;}
-.ARenovationForThree ~ .ARenovationForThree {display: block;}
+.ARenovationForThree ~ .ARenovationForThree {display: block;} */
 
 .green img,
 .green ~ .white  {

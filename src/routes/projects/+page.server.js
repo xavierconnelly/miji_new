@@ -11,6 +11,8 @@ export function load() {
 			title: project.title,
 			colour: project.colour,
 			hex: project.hex,
+			prev: project.prev,
+			next: project.next,
 			images: project.images
 		}))
 	};
