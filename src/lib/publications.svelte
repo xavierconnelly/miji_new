@@ -80,7 +80,7 @@ h6 {
 }	
 
 #publications {
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 	width: calc(100% - 0px);
 	float: right;
 	padding-top: 60px;

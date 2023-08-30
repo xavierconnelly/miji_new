@@ -69,7 +69,7 @@ button {
 #exit {
   position: fixed;
     bottom: 0;
-    height: 100px;
+    height: 65px;
     background-color: white;
     border-top: 1px solid;
     z-index: 100;
