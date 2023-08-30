@@ -49,9 +49,13 @@ a {
     text-decoration: none;
 }
 
+
+/* 
+not sure if this is used more than once
+*/
 button {
-    display: contents;
     border: none;
+    background: initial;
     text-align: left;
     color: unset;
     line-height: inherit;
