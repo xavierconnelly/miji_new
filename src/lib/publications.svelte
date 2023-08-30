@@ -19,55 +19,55 @@
 		<div class="issue">Issue 149</div>
 		<div class="project">Profile - Emerging Designers & Architects</div>
 	</div>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="publisher">Artichoke</div>
 		<div class="issue">Issue 82</div>
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="publisher">Domus Web</div>
 		<div class="issue"></div>
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
 		<div class="year">2022</div>
 		<div class="publisher">I’m Home</div>
 		<div class="issue">Issue 120</div>
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row">
+	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row APavilion">
 		<div class="year">2021</div>
 		<div class="publisher">The Commercial Project</div>
 		<div class="issue">Issue 01</div>
 		<div class="project">A Pavilion</div>
 	</a>
 	<span class="APavilion">
+		<h6>A Pavilion</h6>
 		<img src="../images/APavilion/01_800.webp" alt="AB House ">
-		<div>A Pavilion</div>
 	</span>
-	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row">
+	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row APavilion">
 		<div class="year">2021</div>
 		<div class="publisher">Designboom</div>
 		<div class="issue"></div>
 		<div class="project">A Pavilion</div>
 	</a>
 	<span class="APavilion">
+		<h6>A Pavilion</h6>
 		<img src="../images/APavilion/01_800.webp" alt="AB House ">
-		<div>A Pavilion</div>
 	</span>
 </div>
 
@@ -107,6 +107,14 @@ a:hover div {
 	color: var(--green);
 }
 
+.ABHouse:hover * {
+	color: var(--pistachio);
+}
+
+.APavilion:hover * {
+	color: var(--yellow);
+}
+
 .year {
 	width: 10%;
 	padding-right: 60px;
@@ -122,16 +130,16 @@ a:hover div {
 }
 
 span {
-	width: 25%;
-	position: absolute;
+	width: calc(25% - 40px);
+	position: fixed;
 	left: 0px;
-	padding: 10px;
-	padding-right: 100px;
+	top: 30px;
+	padding: 0px 0px 10px 10px;
+	margin-top: 22px;
 	margin-right: 50px;
-	top: 0px;
 	/* display: none; */
 	opacity: 0;
-	transition: 3s;
+	transition: 2s;
 	background: white;
 	z-index: -99;
 	height: 100%;
@@ -146,8 +154,8 @@ a:hover + span {
 }
 
 a + span img {
-	width: 70%;
-	padding-top: 20px;
+	width: 80%;
+	/* padding-top: 1em; */
 	margin: 0 auto;
 	opacity: 0;
 	transition: 2s;
@@ -173,13 +181,21 @@ a:hover + span img {
 	-webkit-border-radius: 12px;
 	border-radius: 12px;
 	border: 0px white solid;
-	margin-right: 20px;
-
+	margin-right: 10px;
+    margin-left: -24px;
 }
 
 #publications a:hover::before,
 #publications .year2023:hover::before  {
-	background: var(--green);
+	background: var(--green) ;
+}
+
+#publications .ABHouse:hover::before {
+	background: var(--pistachio);
+}
+
+#publications .APavilion:hover::before {
+	background: var(--yellow);
 }
 
 @media only screen and (max-width: 800px) {

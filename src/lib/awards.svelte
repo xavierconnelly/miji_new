@@ -22,7 +22,7 @@
 		<div class="awarder">Architectural Record</div>
 		<div class="project">Office Award</div>
 	</div>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">S</div>
 		<div class="award">Colorbond Steel</div>
@@ -30,10 +30,10 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>				
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">EmAGN</div>
@@ -41,10 +41,10 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">Colorbond Steel</div>
@@ -52,10 +52,10 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">C</div>
 		<div class="award">New House</div>
@@ -63,8 +63,8 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
 	<div data-sveltekit-noscroll="" class="year2023 row">
 		<div class="year">2023</div>
@@ -73,7 +73,7 @@
 		<div class="awarder">Houses Awards</div>
 		<div class="project">Office Award</div>
 	</div>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">S</div>
 		<div class="award">New Houses over 200m2</div>
@@ -81,10 +81,10 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">N</div>
 		<div class="award">Building of the Year Residential</div>
@@ -92,10 +92,10 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">S</div>
 		<div class="award">New Houses over 200m2</div>
@@ -103,10 +103,10 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
 		<div class="abrev">F</div>
 		<div class="award">Residential Interior</div>
@@ -114,8 +114,8 @@
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
+		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
-		<div>AB House</div>
 	</span>
 </div>
 
@@ -126,9 +126,9 @@
 	float: right;
 }
 
-.acronyms {
+/* .acronyms {
 	padding-left: 34px;
-}
+} */
 
 h6 {
 	padding-bottom: 1em;
@@ -150,22 +150,10 @@ a:hover * {
 	color: var(--green);
 }
 
-span {
-	width: 25%;
-	position: absolute;
-	left: 0px;
-	padding: 10px;
-	padding-right: 100px;
-	margin-right: 50px;
-	top: 0px;
-	/* display: none; */
-	opacity: 0;
-	transition: 3s;
-	background: white;
-	z-index: -99;
-	height: 100%;
-	/* user-select: none; */
+.ABHouse:hover * {
+	color: var(--pistachio);
 }
+
 .year {
 	width: 5%;
 }
@@ -182,6 +170,24 @@ span {
 	width: 30%
 }
 
+span {
+	width: calc(25% - 40px);
+	position: fixed;
+	left: 0px;
+	top: 30px;
+	padding: 0px 0px 10px 10px;
+	margin-top: 22px;
+	margin-right: 50px;
+	/* display: none; */
+	opacity: 0;
+	transition: 3s;
+	background: blue;
+	background: white;
+	z-index: -99;
+	height: 100%;
+	/* user-select: none; */
+}
+
 a:hover + span {
 	/* display: block; */
 	transition: 0.5s;
@@ -190,8 +196,8 @@ a:hover + span {
 }
 
 a + span img {
-	width: 70%;
-	padding-top: 20px;
+	width: 80%;
+	/* padding-top: 20px; */
 	margin: 0 auto;
 	opacity: 0;
 	transition: 2s;
@@ -216,12 +222,17 @@ a:hover + span img {
 	-webkit-border-radius: 12px;
 	border-radius: 12px;
 	border: 0px white solid;
-	margin-right: 20px;
-
+	margin-right: 10px;
+    margin-left: -24px;
 }
 
-#awards .year2023:hover::before {
+
+.year2023:hover::before {
 	background: var(--green);
+}
+
+.ABHouse:hover::before {
+	background: var(--pistachio);
 }
 
 @media only screen and (max-width: 800px) {
@@ -266,18 +277,18 @@ a:hover + span img {
 }
 
 @media only screen and (max-height: 800px) {
-	#awards a::before {
+	/* #awards a::before {
 		display: none;
 	}
 	a:hover + span {
 		opacity: 0;
-	}
-	span {
+	} */
+	/* span {
 		display: none;
-	}
-	span img {
+	} */
+	/* span img {
 		display: none;
-	}
+	} */
 }
 
 @media only screen and (max-width: 600px) {

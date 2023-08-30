@@ -23,32 +23,28 @@
 </header>
 
 {#if images.selected}
-  <div class="home">
-    <img src="../images/ABHouse/01_800.webp" alt="">
+
+  <div class="dropdown">
     <About />
+    <br>
+    <address>
+      Office MI—JI<br>
+      Suite 01/156 George St <br>
+      Fitzroy 3065
+  </address>
+<br>
+      <a href="mailto:office@mi-ji.com.au">office@mi-ji.com.au</a><br>
+
+    <a data-sveltekit-noscroll href="https://instagram.com/office_mi.ji" target="none">Instagram</a><br>
     <Projects/>
     <Awards />
     <Publications/>
   </div>
+
+  <button on:click={toggle} id="exit"> Back</button>
 {/if}
 
-
-<!--
-<header>
-  <a href="/" data-sveltekit-noscroll>
-    {config.description}
-  </a>
-  <h1>
-    {config.description}
-  </h1>
-  <img src="/miji.svg" alt="Mi-Ji logo">
-</header> 
--->
 <style>
-
-h1 {
-  display: contents;
-}
 
 header {
   height: 30px;
@@ -61,13 +57,40 @@ header {
   line-height: 30px;
 }
 
-header img {
-  float: right;
-  height: 100%;
-  padding: 5px;
+button {
+    /* display: contents; */
+    border: none;
+    text-align: left;
+    color: unset;
+    line-height: inherit;
+    width: 100%;
 }
 
-.home {
+#exit {
+  position: fixed;
+    bottom: 0;
+    height: 100px;
+    background-color: white;
+    border-top: 1px solid;
+    z-index: 100;
+    text-align: center;
+
+}
+
+h1 {
+  display: inline;
+  float: left;
+}
+
+header img {
+  /* float: right; */
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+}
+
+.dropdown {
 		padding: 10px;
 		position: fixed;
 		top: 30px;
@@ -78,15 +101,10 @@ header img {
 		transition: 1s;
 }
 
-div img {
-		width: 60%;
-		padding: 2em 0;
-	}
-
-.selected {
+/* .selected {
   z-index: 90;
   height: 0%;
   padding: 0 10px;
   transition: 1s;
-}
+} */
 </style>

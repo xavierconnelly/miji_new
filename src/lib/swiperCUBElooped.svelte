@@ -4,6 +4,10 @@
     import { store } from './store.js';
 
     let y;
+
+    function onLoad() {
+        window.scrollTo(0, 50000);
+	}
 </script>
   
 <div class="scene">
@@ -11,7 +15,7 @@
 
         <div class="pistachio ABHouse face one">
             <a class="images" data-sveltekit-noscroll href="../projects/ABHouse">        
-                <img class="blur {$store}" src="../images/ABHouse/01_800_blur.webp" width="auto" height="auto" alt="ABHouse project">
+                <img class="blur {$store}" src="../images/ABHouse/01_800_blur.webp" width="auto" height="auto" alt="ABHouse project" on:load|once={onLoad} >
                 <img class="clear {$store}" src="../images/ABHouse/01_800.webp" width="auto" height="auto" alt="ABHouse project">
                 <img class="plan" src="../images/ABHouse/Plan_01_800.svg" width="auto" height="auto" alt="ABHouse project">
             </a>
@@ -292,29 +296,25 @@
     </div>
 </div>
 
-<div id="filler"></div>
+<!-- <div id="filler-container">
+    <div id="filler"></div>
+</div> -->
 
+<div id="filler"></div>
 <style>    
 
+/* #filler-container {
+    position: fixed;
+    top: 0;
+    height: 100dvh;
+    width: 100dvw;
+    
+} */
 #filler {
 	height: 10000vh;
+    /* transform: translate(-50%); */
 	user-select: none;
 }
-
-.scene {
-    width: 400%;
-    height: 400px;
-    width: 100%;
-    height: 100dvh;
-    perspective: 8000px;
-    /* perspective: none; */
-    position: fixed;
-    top: 24px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    user-select: none;
-}
-
 
 .scene {
     width: 400px;
@@ -537,5 +537,115 @@ caption {
 }
 .twentyEight {
   transform: rotateY(347.1428571429deg) translateZ(1775px);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .scene, .face {
+        width: 300px;
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .scene, .face {
+        width: 300px;
+        min-width: 300px;
+    }
+
+
+    .one {
+  transform: rotateY(0deg) translateZ(1331.3px);
+}
+.two {
+  transform: rotateY(12.8571428571deg) translateZ(1331.3px);
+}
+.three {
+  transform: rotateY(25.7142857143deg) translateZ(1331.3px);
+}
+.four {
+  transform: rotateY(38.5714285714deg) translateZ(1331.3px);
+}
+.five {
+  transform: rotateY(51.4285714286deg) translateZ(1331.3px);
+}
+.six {
+  transform: rotateY(64.2857142857deg) translateZ(1331.3px);
+}
+.seven {
+    transform: rotateY(77.1428571429deg) translateZ(1331.3px);
+}
+.eight {
+    transform: rotateY(90deg) translateZ(1331.3px);
+}
+.nine {
+  transform: rotateY(102.8571428571deg) translateZ(1331.3px);
+}
+.ten {
+  transform: rotateY(115.7142857143deg) translateZ(1331.3px);
+}
+.eleven {
+  transform: rotateY(128.5714285714deg) translateZ(1331.3px);
+}
+.twelve {
+  transform: rotateY(141.4285714286deg) translateZ(1331.3px);
+}
+.thirteen {
+  transform: rotateY(154.2857142857deg) translateZ(1331.3px);
+}
+.fourteen {
+  transform: rotateY(167.1428571429deg) translateZ(1331.3px);
+}
+.fifteen {
+  transform: rotateY(180deg) translateZ(1331.3px);
+}
+.sixteen {
+  transform: rotateY(192.8571428571deg) translateZ(1331.3px);
+}
+.seventeen {
+  transform: rotateY(205.7142857143deg) translateZ(1331.3px);
+}
+.eighteen {
+  transform: rotateY(218.5714285714deg) translateZ(1331.3px);
+}
+.nineteen {
+  transform: rotateY(231.4285714286deg) translateZ(1331.3px);
+}
+.twenty {
+  transform: rotateY(244.2857142857deg) translateZ(1331.3px);
+}
+.twentyOne {
+  transform: rotateY(257.1428571429deg) translateZ(1331.3px);
+}
+.twentyTwo {
+  transform: rotateY(270deg) translateZ(1331.3px);
+}
+.twentyThree {
+  transform: rotateY(282.8571428571deg) translateZ(1331.3px);
+}
+.twentyFour {
+  transform: rotateY(295.7142857143deg) translateZ(1331.3px);
+}
+.twentyFive {
+  transform: rotateY(308.5714285714deg) translateZ(1331.3px);
+}
+.twentySix {
+  transform: rotateY(321.4285714286deg) translateZ(1331.3px);
+}
+.twentySeven {
+  transform: rotateY(334.2857142857deg) translateZ(1331.3px);
+}
+.twentyEight {
+  transform: rotateY(347.1428571429deg) translateZ(1331.3px);
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .scene, .face {
+        width: 300px;
+        min-width: 300px;
+    }
 }
 </style>
