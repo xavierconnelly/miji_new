@@ -66,6 +66,17 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+		<div class="year">2023</div>
+		<div class="abrev">W</div>
+		<div class="award">Architectural Design</div>
+		<div class="awarder">Good Design Awards</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<h6>AB House</h6>
+		<img src="../images/ABHouse/01_800.webp" alt="">
+	</span>
 	<div data-sveltekit-noscroll="" class="year2023 row">
 		<div class="year">2023</div>
 		<div class="abrev">C</div>

@@ -5,7 +5,7 @@
 </script>
 
 <div class="about">
-    <h6>Office Mi—Ji</h6>
+    <h6>{config.title}</h6>
     <p>
         {config.title} was established in Melbourne, but took shape in London and Chicago. With a clear motto of “do good work”, the office works with a straightforward motive that “good work” speaks for itself. 
     </p>

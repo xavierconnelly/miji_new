@@ -15,14 +15,14 @@
 	</div>
 	<div data-sveltekit-noscroll class="year2023 row">
 		<div class="year">2023</div>
-		<div class="publisher">Houses Magazine</div>
-		<div class="issue">Issue 149</div>
+		<div class="publisher">Artichoke</div>
+		<div class="issue">Issue 82</div>
 		<div class="project">Profile - Emerging Designers & Architects</div>
 	</div>
 	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
 		<div class="year">2023</div>
-		<div class="publisher">Artichoke</div>
-		<div class="issue">Issue 82</div>
+		<div class="publisher">Houses Magazine</div>
+		<div class="issue">Issue 149</div>
 		<div class="project">AB House</div>
 	</a>
 	<span class="ABHouse">
