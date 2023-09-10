@@ -153,6 +153,7 @@ h6 {
 
 #back {
 	text-align: right;
+	border-bottom: 1px solid black;
 }
 
 #back:hover {
