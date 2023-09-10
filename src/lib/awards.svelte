@@ -155,6 +155,10 @@ h6 {
 	text-align: right;
 }
 
+#back:hover {
+	color: var(--green);
+}
+
 .title {
 	padding-bottom: 1em;
 }
