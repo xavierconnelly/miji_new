@@ -1,5 +1,6 @@
 <div id="awards">
-	<h6>Awards</h6>
+	<h5>Awards</h5>
+	<a data-sveltekit-noscroll href="/" id="back" >Home</a>
 	<div class="acronyms">
 		<p>(W) Winner</p>
 		<p>(S) Shortlist</p>		
@@ -132,19 +133,26 @@
 
 <style>
 #awards {
-	/* padding-bottom: 50px; */
 	width: calc(100% - 0px);
 	float: right;
 }
 
-/* .acronyms {
-	padding-left: 34px;
-} */
-
-h6 {
+h5,
+h6,
+#back {
 	padding-bottom: 1em;
 	border-bottom: 1px solid;
-	margin-bottom: 1em
+	margin-bottom: 1em;
+	width: 50%;
+	float: left;
+}
+
+h6 {
+	width: 100%;
+}
+
+#back {
+	text-align: right;
 }
 
 .title {
@@ -165,18 +173,12 @@ a:hover * {
 	color: var(--pistachio);
 }
 
-.year {
-	width: 5%;
-}
+.year,
 .abrev {
 	width: 5%;
 }
-.award {
-	width: 30%
-}
-.awarder {
-	width: 30%;
-}
+.award,
+.awarder,
 .project {
 	width: 30%
 }
@@ -208,7 +210,6 @@ a:hover + span {
 
 a + span img {
 	width: 80%;
-	/* padding-top: 20px; */
 	margin: 0 auto;
 	opacity: 0;
 	transition: 2s;
@@ -237,7 +238,6 @@ a:hover + span img {
     margin-left: -24px;
 }
 
-
 .year2023:hover::before {
 	background: var(--green);
 }
@@ -250,70 +250,32 @@ a:hover + span img {
 	#awards {
 		padding-top: 60px;
 	}
-	#awards .year2023::before,
-	.title::before  {
-		display: none;
-	}
 	a:hover + span {
 		opacity: 0;
 	}
 	.acronyms {
 		padding-left: unset;
 	}
-	span {
-		display: none;
-	}
-	span img {
-		display: none;
-	}
-	.year {
-		width: 10%;
-	}
-	.abrev {
-		width: 10%;
-	}
-	.award {
-		width: 40%
-	}
+	#awards .year2023::before,
+	.title::before,
+	#awards a::before,
+	span,
+	span img,
+	#back,
 	.awarder {
 		display: none;
 	}
+	.year,
+	.abrev {
+		width: 10%;
+	}
+	.award,
 	.project {
 		width: 40%
 	}
 	.row {
 		border-top: 1px solid;
 		padding: 10px 0;
-	}
-}
-
-@media only screen and (max-height: 800px) {
-	/* #awards a::before {
-		display: none;
-	}
-	a:hover + span {
-		opacity: 0;
-	} */
-	/* span {
-		display: none;
-	} */
-	/* span img {
-		display: none;
-	} */
-}
-
-@media only screen and (max-width: 600px) {
-	#awards a::before {
-		display: none;
-	}
-	a:hover + span {
-		opacity: 0;
-	}
-	span {
-		display: none;
-	}
-	span img {
-		display: none;
 	}
 }
 </style>

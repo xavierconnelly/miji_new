@@ -26,7 +26,6 @@
         <a href="mailto:office@mi-ji.com.au">office@mi-ji.com.au</a><br>
     </nav>
     <span id="images">
-        <a data-sveltekit-noscroll href="/" >Home</a><br>
         <a data-sveltekit-noscroll href="/about" >About</a><br>
         <!-- <a data-sveltekit-noscroll href="/projects">Projects</a><br> -->
         <a data-sveltekit-noscroll href="https://instagram.com/office_mi.ji" target="none">Instagram</a><br>

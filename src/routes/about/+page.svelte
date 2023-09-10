@@ -60,7 +60,7 @@
 
 .flex > span {
     flex-grow: 1;
-    padding: 10px 40px 10px 10px;
+    padding: 10px 10px 10px 10px;
     text-align: left;
     height: 100%;
     /* overflow: scroll; */
@@ -68,6 +68,8 @@
 
 #info {
     width: 25%;
+    padding: 10px 40px 10px 10px;
+
 }
 
 #accolades {
