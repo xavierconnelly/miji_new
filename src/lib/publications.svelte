@@ -7,17 +7,47 @@
 		<div class="issue">Issue</div>
 		<div class="project">Project</div>
 	</div>
+	<a href="/projects/ARenovationForThree" data-sveltekit-noscroll class="year2024 row ARenovationForThree">
+		<div class="year">2024</div>
+		<div class="publisher">Houses Magazine</div>
+		<div class="issue">Issue 157</div>
+		<div class="project">A Renovation For Three</div>
+	</a>
+	<span class="ARenovationForThree">
+		<h6>A Renovation For Three</h6>
+		<img src="../images/ARenovationForThree/01_800.webp" alt="A Renovation For Three ">
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
+		<div class="year">2024</div>
+		<div class="publisher">Revista PLOT</div>
+		<div class="issue">Issue 71</div>
+		<div class="project">Office Profile/AB House</div>
+	</a>
+	<span class="ABHouse">
+		<h6>AB House</h6>
+		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
+		<div class="year">2023</div>
+		<div class="publisher">Grand Designs Australia</div>
+		<div class="issue">Issue 123</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<h6>AB House</h6>
+		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
+	</span>
 	<div data-sveltekit-noscroll class="year2023 row">
 		<div class="year">2023</div>
 		<div class="publisher">Architectural Record</div>
 		<div class="issue">Issue 06</div>
-		<div class="project">Profile - Design Vanguard</div>
+		<div class="project">Office Profile</div>
 	</div>
 	<div data-sveltekit-noscroll class="year2023 row">
 		<div class="year">2023</div>
 		<div class="publisher">Artichoke</div>
 		<div class="issue">Issue 82</div>
-		<div class="project">Profile - Emerging Designers & Architects</div>
+		<div class="project">Office Profile</div>
 	</div>
 	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
 		<div class="year">2023</div>
@@ -49,6 +79,26 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="AB House ">
 	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll class="year2023 row ABHouse">
+		<div class="year">2022</div>
+		<div class="publisher">Divisare</div>
+		<div class="issue"></div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<h6>AB House</h6>
+		<img src="../images/ABHouse/01_800.webp" alt="AB House">
+	</span>
+	<a href="/projects/AHouseForOne" data-sveltekit-noscroll class="year2023 row AHouseForOne">
+		<div class="year">2022</div>
+		<div class="publisher">Divisare</div>
+		<div class="issue"></div>
+		<div class="project">A House For One</div>
+	</a>
+	<span class="AHouseForOne">
+		<h6>A House For One</h6>
+		<img src="../images/AHouseForOne/01_800.webp" alt="A House For One">
+	</span>
 	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row APavilion">
 		<div class="year">2021</div>
 		<div class="publisher">The Commercial Project</div>
@@ -57,7 +107,7 @@
 	</a>
 	<span class="APavilion">
 		<h6>A Pavilion</h6>
-		<img src="../images/APavilion/01_800.webp" alt="AB House ">
+		<img src="../images/APavilion/01_800.webp" alt="AB House">
 	</span>
 	<a href="/projects/APavilion" data-sveltekit-noscroll class="year2023 row APavilion">
 		<div class="year">2021</div>
@@ -114,6 +164,7 @@ a:hover div {
 .APavilion:hover * {
 	color: var(--yellow);
 }
+
 
 .year {
 	width: 10%;
