@@ -11,11 +11,33 @@
 	<br>
 	<div class="row title">
 		<div class="year">Year</div>
-		<div class="abrev">Rec.</div>
+		<div class="abrev"></div>
 		<div class="award">Award</div>
-		<div class="awarder">Award panel</div>
+		<div class="awarder"></div>
 		<div class="project">Project</div>
 	</div>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+		<div class="year">2024</div>
+		<div class="abrev">C</div>
+		<div class="award">House of the Year (Large)</div>
+		<div class="awarder">Grand Designs Australia</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<h6>AB House</h6>
+		<img src="../images/ABHouse/01_800.webp" alt="">
+	</span>
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+		<div class="year">2023</div>
+		<div class="abrev">W</div>
+		<div class="award">Emerging Designer</div>
+		<div class="awarder">The Local Project</div>
+		<div class="project">AB House</div>
+	</a>
+	<span class="ABHouse">
+		<h6>AB House</h6>
+		<img src="../images/ABHouse/01_800.webp" alt="">
+	</span>
 	<div data-sveltekit-noscroll="" class="year2023 row">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
@@ -25,7 +47,7 @@
 	</div>
 	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2023</div>
-		<div class="abrev">S</div>
+		<div class="abrev">W</div>
 		<div class="award">Colorbond Steel</div>
 		<div class="awarder">AIA National Awards</div>
 		<div class="project">AB House</div>
@@ -254,6 +276,10 @@ a:hover + span img {
 @media only screen and (max-width: 800px) {
 	#awards {
 		padding-top: 60px;
+	}
+
+	h5 {
+		width: 100%;
 	}
 	a:hover + span {
 		opacity: 0;
