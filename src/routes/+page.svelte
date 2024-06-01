@@ -18,7 +18,6 @@
                 <img src="../images/ACourtyardHouse/04_800.webp" alt="ACourtyardHouse project">
                 <img src="../images/ACourtyardHouse/05_800.webp" alt="ACourtyardHouse project">
                 <img src="../images/ACourtyardHouse/06_800.webp" alt="ACourtyardHouse project">
-                <img src="../images/ACourtyardHouse/07_800.webp" alt="ACourtyardHouse project">
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" alt="ACourtyardHouse">
                 <img class="plan" src="../images/ACourtyardHouse/Plan_02_800.svg" alt="ACourtyardHouse">
                 <div class="buttons ACourtyardHouse">
