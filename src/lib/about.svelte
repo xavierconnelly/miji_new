@@ -7,16 +7,18 @@
 <div class="about">
     <h6>{config.title}</h6>
     <p>
-        {config.title} was established in Melbourne, but took shape in London and Chicago. With a clear motto of “do good work”, the office works with a straightforward motive that “good work” speaks for itself. 
+        {config.title} was established in Melbourne, but took shape in London and Chicago. With a clear motto of “do good work”, the office works with a straightforward motive that “good work” speaks for itself.
     </p>
     <br>
     <p>
-        MI—JI works equally across all breadths of architecture, approaching design collectively with an open mind, and formulating buildings that define a clear relationship with their contexts and their clients. 
+        MI—JI works equally across all breadths of architecture and interiors, approaching design collectively with an open mind, and formulating buildings that define a clear relationship with their contexts and their clients.
     </p>
     <br>
     <p>
         With a strong commitment to simple, quiet architecture, MI—JI finds intrigue in the overlooked, hoping that an openness to architectural formulation and fabrication can have an honest and deliberate effect.
     </p>
+
+
 </div>
 <div class="contact">
     Millie Anderson<br>
