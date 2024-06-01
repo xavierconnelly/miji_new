@@ -1,4 +1,17 @@
 export const projects = [
+
+	{
+		slug: 'ACourtyardHouse',
+		title: 'A Courtyard House',
+		content: 'Brighton | Bunurong Country, Australia 2024',
+		colour: 'pink',
+		hex: 'FFAFC3',
+		images: ["01", "02", "03", "04", "05", "06"],
+		plans: ["01", "02"],
+		prev: 'TokyoTina',
+		next: 'ABHouse'
+	},
+
 	{
 		slug: 'ABHouse',
 		title: 'A B House',
@@ -8,7 +21,7 @@ export const projects = [
 		hex: 'F5F5C8',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15" ],
 		plans: ["01", "02"],
-		prev: 'TokyoTina',
+		prev: 'ACourtyardHouse',
 		next: 'ACertainKindofLife'
 	},
 
@@ -55,7 +68,7 @@ export const projects = [
 		content: "Dja Dja Wurrung Country | Castlemaine, Australia 2022",
 		colour: 'green',
 		hex: '00CC66',
-		images: ["01", "02", "03", "04", "05", "06", "07"],
+		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
 		plans: ["01", "02"],
 		prev: 'APavilion',
 		next: 'FourVisitsTo52Posts'
@@ -82,8 +95,9 @@ export const projects = [
 		images: ["01", "02"],
 		plans: ["01"],
 		prev: 'FourVisitsTo52Posts',
-		next: 'ABHouse'
+		next: 'ACourtyardHouse'
 	}
+
 
 ];
 
