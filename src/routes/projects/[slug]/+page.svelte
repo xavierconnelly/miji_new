@@ -43,7 +43,7 @@ and mobile carousel (bottom half)
                 <!-- Plans -->
                 {#each data.project.plans as  i}
                     <img  class="plan" 
-                          src="../images/{data.project.slug}/Plan_{i}_400.svg" 
+                          src="../images/{data.project.slug}/Plan_{i}_800.svg" 
                           loading="lazy"
                           alt="{data.project.title}">
                 {/each}
