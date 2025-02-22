@@ -12,17 +12,40 @@
     {/if}
 </MediaQuery>
 
+
+<!-- 
+************************************
+this file is the side pop out code (top half)
+
+and mobile carousel (bottom half)
+************************************
+-->
+
+
 <article class="{data.project.colour}">
     <MediaQuery query="(min-width: 800px)" let:matches>
         {#if matches}
             <a href="/" class="{data.project.colour} {data.project.slug}"  data-sveltekit-noscroll id="display">
                 <!-- Images -->
                 {#each data.project.images as  i}
-                    <img src="../images/{data.project.slug}/{i}_800.webp" loading="lazy" alt="{data.project.title} project">
+                <picture alt="{data.project.title} project" loading="lazy">
+                  <source   srcset="../images/{data.project.slug}/{i}_800.webp" 
+                            media="(min-width: 600px)" 
+                            width="800" 
+                            height="1150" />
+                  <img src="../images/{data.project.slug}/{i}_400.webp" width="800" height="1150" />
+                </picture>
+
+<!--                     <img  src="../images/{data.project.slug}/{i}_400.webp" 
+                          loading="lazy" 
+                          alt="{data.project.title} project"> -->
                 {/each}
                 <!-- Plans -->
                 {#each data.project.plans as  i}
-                    <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" loading="lazy" alt="{data.project.title}">
+                    <img  class="plan" 
+                          src="../images/{data.project.slug}/Plan_{i}_400.svg" 
+                          loading="lazy"
+                          alt="{data.project.title}">
                 {/each}
             </a>
 
@@ -32,11 +55,27 @@
         <span class="{data.project.colour} {data.project.slug}" id="display">
             <!-- Images -->
             {#each data.project.images as  i}
-                <img src="../images/{data.project.slug}/{i}_800.webp" loading="lazy" alt="{data.project.title} project">
+
+<!--                 <picture alt="{data.project.title} project" loading="lazy">
+                  <source srcset="../images/{data.project.slug}/{i}_800.webp"
+                        media="(min-width: 600px)" 
+                        width="800" height="1150" />
+                  <img src="../images/{data.project.slug}/{i}_400.webp" width="800" height="1150" />
+                </picture> -->
+                <img src="../images/{data.project.slug}/{i}_800.webp" 
+                     loading="lazy" 
+                     alt="{data.project.title} project"
+                     width="800"
+                     height="1200"
+                     >
+                     <!-- height="{data.project.ratio}" -->
             {/each}
             <!-- Plans -->
             {#each data.project.plans as  i}
-                <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" loading="lazy" alt="{data.project.title}">
+                <img class="plan" 
+                     src="../images/{data.project.slug}/Plan_{i}_800.svg" 
+                     loading="lazy" 
+                     alt="{data.project.title}">
             {/each}
         </span>
       {/if}
