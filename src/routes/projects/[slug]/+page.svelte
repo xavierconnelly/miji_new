@@ -18,11 +18,11 @@
             <a href="/" class="{data.project.colour} {data.project.slug}"  data-sveltekit-noscroll id="display">
                 <!-- Images -->
                 {#each data.project.images as  i}
-                    <img src="../images/{data.project.slug}/{i}_800.webp" alt="{data.project.title} project">
+                    <img src="../images/{data.project.slug}/{i}_800.webp" loading="lazy" alt="{data.project.title} project">
                 {/each}
                 <!-- Plans -->
                 {#each data.project.plans as  i}
-                    <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" alt="{data.project.title}">
+                    <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" loading="lazy" alt="{data.project.title}">
                 {/each}
             </a>
 
@@ -32,11 +32,11 @@
         <span class="{data.project.colour} {data.project.slug}" id="display">
             <!-- Images -->
             {#each data.project.images as  i}
-                <img src="../images/{data.project.slug}/{i}_800.webp" alt="{data.project.title} project">
+                <img src="../images/{data.project.slug}/{i}_800.webp" loading="lazy" alt="{data.project.title} project">
             {/each}
             <!-- Plans -->
             {#each data.project.plans as  i}
-                <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" alt="{data.project.title}">
+                <img class="plan" src="../images/{data.project.slug}/Plan_{i}_800.svg" loading="lazy" alt="{data.project.title}">
             {/each}
         </span>
       {/if}
