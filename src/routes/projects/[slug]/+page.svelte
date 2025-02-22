@@ -69,6 +69,7 @@ and mobile carousel (bottom half)
                      height="1200"
                      >
                      <!-- height="{data.project.ratio}" -->
+                     <p> {data.project.ratio} </p>
             {/each}
             <!-- Plans -->
             {#each data.project.plans as  i}
