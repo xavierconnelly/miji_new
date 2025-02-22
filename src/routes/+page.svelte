@@ -7,30 +7,59 @@
 	import HeaderMobile from '../lib/headerMobile.svelte';
 </script>
 
+
+<!-- 
+************************************
+this file is first project on mobile
+************************************
+-->
+
+
 <MediaQuery query="(max-width: 800px)" let:matches>
     {#if matches}
         <HeaderMobile/>
         <article transition:fade={{ duration: 2 }}>
             <span class="red ALightAddition" id="display">
-                <img src="../images/ALightAddition/01_800.webp" alt="A Light Addition project">
-                <img src="../images/ALightAddition/02_800.webp" loading="lazy" alt="A Light Addition project">
-                <img src="../images/ALightAddition/03_800.webp" loading="lazy" alt="A Light Addition project">
-                <img src="../images/ALightAddition/04_800.webp" loading="lazy" alt="A Light Addition project">
-                <img src="../images/ALightAddition/05_800.webp" loading="lazy" alt="A Light Addition project">
-                <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" loading="lazy" alt="ALightAddition">
-                <img class="plan" src="../images/ALightAddition/Plan_02_800.svg" loading="lazy" alt="ALightAddition">
-                <img class="plan" src="../images/ALightAddition/Plan_03_800.svg" loading="lazy" alt="ALightAddition">
+
+                <img src="../images/ALightAddition/01_400.webp" 
+                     loading="lazy" 
+                     alt="An image of an old house with a renovation, front view"
+                     width="800"
+                     height="1150">
+                <img src="../images/ALightAddition/02_400.webp" 
+                     loading="lazy" 
+                     alt="An image of an old house with a renovation, front view"
+                     width="800"
+                     height="1200">
+                <img src="../images/ALightAddition/03_400.webp" 
+                     loading="lazy" 
+                     alt="An image of an old house with a renovation, front view"
+                     width="800"
+                     height="533">
+                <img src="../images/ALightAddition/04_400.webp" 
+                     loading="lazy" 
+                     alt="An image of an old house with a renovation, front view"
+                     width="800"
+                     height="1200">
+                <img src="../images/ALightAddition/05_400.webp" 
+                     loading="lazy" 
+                     alt="An image of an old house with a renovation, front view"
+                     width="800"
+                     height="1200">
+                <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" alt="ALightAddition" loading="lazy" >
+                <img class="plan" src="../images/ALightAddition/Plan_02_800.svg" alt="ALightAddition" loading="lazy" >
+                <img class="plan" src="../images/ALightAddition/Plan_03_800.svg" alt="ALightAddition" loading="lazy" >
                 <div class="buttons ALightAddition">
                     <a href="/projects/TokyoTina" data-sveltekit-scroll>
                         <img id="prev" class="arrow" src="/prev/red.svg" alt="prev button">
                     </a>
-                    <a href="/projects/ABHouse" data-sveltekit-scroll>
+                    <a href="/projects/ACourtyardHouse" data-sveltekit-scroll>
                         <img id="next" class="arrow" src="/next/red.svg" alt="prev button">
                     </a>
                 </div>
             </span>
             <div class="red sun">
-                Bunurong Country | Brighton, Australia 2024
+                A Light Addition  -  Bunurong Country | St Kilda East, Australia 2024
             </div>
         </article> 
     {/if}
