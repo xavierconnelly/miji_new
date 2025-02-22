@@ -26,7 +26,7 @@
                 {/each}
             </a>
 
-        {:else}
+        {:else} 
 
         <!-- <HeaderMobile/> -->
         <span class="{data.project.colour} {data.project.slug}" id="display">

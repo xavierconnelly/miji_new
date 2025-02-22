@@ -1,22 +1,32 @@
 export const projects = [
+	{
+		slug: 'ALightAddition',
+		title: 'A Light Addition',
+		content: 'Bunurong Country | St Kilda East, Australia 2024',
+		colour: 'red',
+		hex: 'FF6600',
+		images: ["01", "02", "03", "04", "05"],
+		plans: ["01", "02", "03"],
+		prev: 'TokyoTina',
+		next: 'ACourtyardHouse'
+	},
 
 	{
 		slug: 'ACourtyardHouse',
 		title: 'A Courtyard House',
-		content: 'Brighton | Bunurong Country, Australia 2024',
+		content: 'Bunurong Country | Brighton, Australia 2024',
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
 		plans: ["01", "02"],
-		prev: 'TokyoTina',
+		prev: 'ALightAddition',
 		next: 'ABHouse'
 	},
 
 	{
 		slug: 'ABHouse',
 		title: 'A B House',
-		content:
-			'Wadawurrung Country | Barwon Heads, Australia 2021',
+		content: 'Wadawurrung Country | Barwon Heads, Australia 2021',
 		colour: 'pistachio',
 		hex: 'F5F5C8',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15" ],
@@ -28,8 +38,7 @@ export const projects = [
 	{
 		slug: 'ACertainKindofLife',
 		title: 'A Certain Kind of Life',
-		content:
-			'Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)',
+		content: 'Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)',
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
@@ -95,10 +104,8 @@ export const projects = [
 		images: ["01", "02"],
 		plans: ["01"],
 		prev: 'FourVisitsTo52Posts',
-		next: 'ACourtyardHouse'
+		next: 'ALightAddition'
 	}
-
-
 ];
 
 

@@ -11,28 +11,28 @@
     {#if matches}
         <HeaderMobile/>
         <article transition:fade={{ duration: 2 }}>
-            <span class="pink ACourtyardHouse" id="display">
-                <img src="../images/ACourtyardHouse/01_800.webp" alt="ACourtyardHouse project">
-                <img src="../images/ACourtyardHouse/02_800.webp" alt="ACourtyardHouse project">
-                <img src="../images/ACourtyardHouse/03_800.webp" alt="ACourtyardHouse project">
-                <img src="../images/ACourtyardHouse/04_800.webp" alt="ACourtyardHouse project">
-                <img src="../images/ACourtyardHouse/05_800.webp" alt="ACourtyardHouse project">
-                <img src="../images/ACourtyardHouse/06_800.webp" alt="ACourtyardHouse project">
-                <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" alt="ACourtyardHouse">
-                <img class="plan" src="../images/ACourtyardHouse/Plan_02_800.svg" alt="ACourtyardHouse">
-                <div class="buttons ACourtyardHouse">
+            <span class="red ALightAddition" id="display">
+                <img src="../images/ALightAddition/01_800.webp" alt="A Light Addition project">
+                <img src="../images/ALightAddition/02_800.webp" alt="A Light Addition project">
+                <img src="../images/ALightAddition/03_800.webp" alt="A Light Addition project">
+                <img src="../images/ALightAddition/04_800.webp" alt="A Light Addition project">
+                <img src="../images/ALightAddition/05_800.webp" alt="A Light Addition project">
+                <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" alt="ALightAddition">
+                <img class="plan" src="../images/ALightAddition/Plan_02_800.svg" alt="ALightAddition">
+                <img class="plan" src="../images/ALightAddition/Plan_03_800.svg" alt="ALightAddition">
+                <div class="buttons ALightAddition">
                     <a href="/projects/TokyoTina" data-sveltekit-scroll>
-                        <img id="prev" class="arrow" src="/prev/pink.svg" alt="prev button">
+                        <img id="prev" class="arrow" src="/prev/red.svg" alt="prev button">
                     </a>
                     <a href="/projects/ABHouse" data-sveltekit-scroll>
-                        <img id="next" class="arrow" src="/next/pink.svg" alt="prev button">
+                        <img id="next" class="arrow" src="/next/red.svg" alt="prev button">
                     </a>
                 </div>
             </span>
-            <div class="pink sun">
-                A Courtyard House - Brighton | Bunurong Country, Australia 2024
+            <div class="red sun">
+                Bunurong Country | Brighton, Australia 2024
             </div>
-        </article>
+        </article> 
     {/if}
 </MediaQuery>
 

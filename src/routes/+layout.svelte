@@ -24,7 +24,7 @@
   <MediaQuery query="(min-width: 800px)" let:matches>
 	{#if matches}
 	  <div class="root tablet">
-		  <Swiper/>
+		  <Swiper/> 
 	  </div>
 	{/if}
   </MediaQuery>
