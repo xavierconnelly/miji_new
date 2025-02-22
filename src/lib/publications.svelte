@@ -7,6 +7,14 @@
 		<div class="issue">Issue</div>
 		<div class="project">Project</div>
 	</div>
+ 	
+	<a href="https://open.spotify.com/episode/2poJoGmYOG647ZKbUcqckZ?si=W9nrHM49S4GYCNWQR_PPrg" target="blank" data-sveltekit-noscroll class="year2025 row">
+		<div class="year">2025</div>
+		<div class="publisher">Office Dave Sharp Podcast</div>
+		<div class="issue">21 January</div>
+		<div class="project">Office Profile</div>
+	</a>
+	
 	<a href="/projects/ARenovationForThree" data-sveltekit-noscroll class="year2024 row ARenovationForThree">
 		<div class="year">2024</div>
 		<div class="publisher">Houses Magazine</div>
