@@ -6,6 +6,7 @@ export const projects = [
 		colour: 'red',
 		hex: 'FF6600',
 		images: ["01", "02", "03", "04", "05"],
+		ratio: ["1150", "1200", "533", "1200", "1200"],
 		plans: ["01", "02", "03"],
 		prev: 'TokyoTina',
 		next: 'ACourtyardHouse'
@@ -18,7 +19,8 @@ export const projects = [
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
-		plans: ["01", "02"],
+		ratio: ["1200", "533", "533", "1200", "1200", "533"],
+		plans: ["01", "02"], 
 		prev: 'ALightAddition',
 		next: 'ABHouse'
 	},
@@ -30,6 +32,7 @@ export const projects = [
 		colour: 'pistachio',
 		hex: 'F5F5C8',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15" ],
+		ratio: ["1100", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "533", "533", "533", "1200", "1200", "1200"],
 		plans: ["01", "02"],
 		prev: 'ACourtyardHouse',
 		next: 'ACertainKindofLife'
@@ -42,6 +45,7 @@ export const projects = [
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
+		ratio: ["990", "970", "1072", "1080", "1200", "1200"],
 		plans: ["01", "02"],
 		prev: 'ABHouse',
 		next: 'AHouseForOne'
@@ -54,6 +58,7 @@ export const projects = [
 		colour: 'green',
 		hex: '00CC66',
 		images: ["01", "02", "03", "04", "05", "06"],
+		ratio: ["689", "1020", "616", "623", "1036", "656"],
 		plans: ["01", "02"],
 		prev: 'ACertainKindofLife',
 		next: 'APavilion'
@@ -66,6 +71,7 @@ export const projects = [
 		colour: 'yellow',
 		hex: 'FAF000',
 		images: ["01", "02", "03", "04"],
+		ratio: ["1066", "600", "1066", "600"],
 		plans: ["01"],
 		prev: 'AHouseForOne',
 		next: 'ARenovationForThree'
@@ -78,6 +84,7 @@ export const projects = [
 		colour: 'green',
 		hex: '00CC66',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
+		ratio: ["600", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "1200"],
 		plans: ["01", "02"],
 		prev: 'APavilion',
 		next: 'FourVisitsTo52Posts'
@@ -90,6 +97,7 @@ export const projects = [
 		colour: 'grey',
 		hex: 'E1E1E1',
 		images: ["01", "02", "03", "04", "05", "06"],
+		ratio: ["533", "533", "1200", "1200", "533", "533"],
 		plans: ["01"],
 		prev: 'ARenovationForThree',
 		next: 'TokyoTina'
@@ -102,6 +110,7 @@ export const projects = [
 		colour: 'red',
 		hex: 'FF6600',
 		images: ["01", "02"],
+		ratio: ["642", "1004"],
 		plans: ["01"],
 		prev: 'FourVisitsTo52Posts',
 		next: 'ALightAddition'
