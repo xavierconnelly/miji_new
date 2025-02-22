@@ -14,7 +14,6 @@ export function load() {
 			prev: project.prev,
 			next: project.next,
 			images: project.images,
-			ratio: project.ratio
 		}))
 	};
 }
