@@ -32,13 +32,9 @@ and mobile carousel (bottom half)
                   <source   srcset="../images/{data.project.slug}/{i}_800.webp" 
                             media="(min-width: 600px)" 
                             width="800" 
-                            height="1150" />
+                            height="{data.project.ratio}" />
                   <img src="../images/{data.project.slug}/{i}_400.webp" width="800" height="1150" />
                 </picture>
-
-<!--                     <img  src="../images/{data.project.slug}/{i}_400.webp" 
-                          loading="lazy" 
-                          alt="{data.project.title} project"> -->
                 {/each}
                 <!-- Plans -->
                 {#each data.project.plans as  i}
@@ -55,12 +51,6 @@ and mobile carousel (bottom half)
         <span class="{data.project.colour} {data.project.slug}" id="display">
             <!-- Images -->
             {#each data.project.images as  i}
-
-<!--                 <picture alt="{data.project.title} project" loading="lazy">
-                  <source srcset="../images/{data.project.slug}/{i}_800.webp"
-                        media="(min-width: 600px)" 
-                        width="800" height="1150" />
-                  <img src="../images/{data.project.slug}/{i}_400.webp" width="800" height="1150" />
                 </picture> -->
                 <img src="../images/{data.project.slug}/{i}_800.webp" 
                      loading="lazy" 
@@ -68,7 +58,6 @@ and mobile carousel (bottom half)
                      width="800"
                      height="1200"
                      >
-                     <!-- height="{data.project.ratio}" -->
                      <p> {data.project.ratio} </p>
             {/each}
             <!-- Plans -->
