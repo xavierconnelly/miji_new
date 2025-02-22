@@ -32,7 +32,7 @@ and mobile carousel (bottom half)
                   <source   srcset="../images/{data.project.slug}/{i}_800.webp" 
                             media="(min-width: 600px)" 
                             width="800" 
-                            height="{data.project.ratio}" />
+                            height="{data.project.ratio.i}" />
                   <img src="../images/{data.project.slug}/{i}_400.webp" width="800" height="1150" />
                 </picture>
                 {/each}
@@ -58,7 +58,7 @@ and mobile carousel (bottom half)
                      width="800"
                      height="1200"
                      >
-                     <p> {data.project.ratio} </p>
+                     <p> {data.project.ratio.i} </p>
             {/each}
             <!-- Plans -->
             {#each data.project.plans as  i}
