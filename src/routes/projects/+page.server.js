@@ -13,7 +13,8 @@ export function load() {
 			hex: project.hex,
 			prev: project.prev,
 			next: project.next,
-			images: project.images
+			images: project.images,
+			ratio: project.ratio
 		}))
 	};
 }
