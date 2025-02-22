@@ -13,13 +13,13 @@
         <article transition:fade={{ duration: 2 }}>
             <span class="red ALightAddition" id="display">
                 <img src="../images/ALightAddition/01_800.webp" alt="A Light Addition project">
-                <img src="../images/ALightAddition/02_800.webp" alt="A Light Addition project">
-                <img src="../images/ALightAddition/03_800.webp" alt="A Light Addition project">
-                <img src="../images/ALightAddition/04_800.webp" alt="A Light Addition project">
-                <img src="../images/ALightAddition/05_800.webp" alt="A Light Addition project">
-                <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" alt="ALightAddition">
-                <img class="plan" src="../images/ALightAddition/Plan_02_800.svg" alt="ALightAddition">
-                <img class="plan" src="../images/ALightAddition/Plan_03_800.svg" alt="ALightAddition">
+                <img src="../images/ALightAddition/02_800.webp" loading="lazy" alt="A Light Addition project">
+                <img src="../images/ALightAddition/03_800.webp" loading="lazy" alt="A Light Addition project">
+                <img src="../images/ALightAddition/04_800.webp" loading="lazy" alt="A Light Addition project">
+                <img src="../images/ALightAddition/05_800.webp" loading="lazy" alt="A Light Addition project">
+                <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" loading="lazy" alt="ALightAddition">
+                <img class="plan" src="../images/ALightAddition/Plan_02_800.svg" loading="lazy" alt="ALightAddition">
+                <img class="plan" src="../images/ALightAddition/Plan_03_800.svg" loading="lazy" alt="ALightAddition">
                 <div class="buttons ALightAddition">
                     <a href="/projects/TokyoTina" data-sveltekit-scroll>
                         <img id="prev" class="arrow" src="/prev/red.svg" alt="prev button">
