@@ -6,7 +6,7 @@ export const projects = [
 		colour: 'red',
 		hex: 'FF6600',
 		images: ["01", "02", "03", "04", "05"],
-		ratio: ["1150", "1200", "533", "1200", "1200"],
+		// ratio: ["1150", "1200", "533", "1200", "1200"],
 		plans: ["01", "02", "03"],
 		prev: 'TokyoTina',
 		next: 'ACourtyardHouse'
@@ -19,7 +19,7 @@ export const projects = [
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
-		ratio: ["1200", "533", "533", "1200", "1200", "533"],
+		// ratio: ["1200", "533", "533", "1200", "1200", "533"],
 		plans: ["01", "02"], 
 		prev: 'ALightAddition',
 		next: 'ABHouse'
@@ -32,7 +32,7 @@ export const projects = [
 		colour: 'pistachio',
 		hex: 'F5F5C8',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15" ],
-		ratio: ["1100", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "533", "533", "533", "1200", "1200", "1200"],
+		// ratio: ["1100", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "533", "533", "533", "1200", "1200", "1200"],
 		plans: ["01", "02"],
 		prev: 'ACourtyardHouse',
 		next: 'ACertainKindofLife'
@@ -45,7 +45,7 @@ export const projects = [
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
-		ratio: ["990", "970", "1072", "1080", "1200", "1200"],
+		// ratio: ["990", "970", "1072", "1080", "1200", "1200"],
 		plans: ["01", "02"],
 		prev: 'ABHouse',
 		next: 'AHouseForOne'
@@ -58,7 +58,7 @@ export const projects = [
 		colour: 'green',
 		hex: '00CC66',
 		images: ["01", "02", "03", "04", "05", "06"],
-		ratio: ["689", "1020", "616", "623", "1036", "656"],
+		// ratio: ["689", "1020", "616", "623", "1036", "656"],
 		plans: ["01", "02"],
 		prev: 'ACertainKindofLife',
 		next: 'APavilion'
@@ -71,7 +71,7 @@ export const projects = [
 		colour: 'yellow',
 		hex: 'FAF000',
 		images: ["01", "02", "03", "04"],
-		ratio: ["1066", "600", "1066", "600"],
+		// ratio: ["1066", "600", "1066", "600"],
 		plans: ["01"],
 		prev: 'AHouseForOne',
 		next: 'ARenovationForThree'
@@ -84,7 +84,7 @@ export const projects = [
 		colour: 'green',
 		hex: '00CC66',
 		images: ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
-		ratio: ["600", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "1200"],
+		// ratio: ["600", "1200", "1200", "1200", "1200", "1200", "1200", "1200", "1200"],
 		plans: ["01", "02"],
 		prev: 'APavilion',
 		next: 'FourVisitsTo52Posts'
@@ -97,7 +97,7 @@ export const projects = [
 		colour: 'grey',
 		hex: 'E1E1E1',
 		images: ["01", "02", "03", "04", "05", "06"],
-		ratio: ["533", "533", "1200", "1200", "533", "533"],
+		// ratio: ["533", "533", "1200", "1200", "533", "533"],
 		plans: ["01"],
 		prev: 'ARenovationForThree',
 		next: 'TokyoTina'
@@ -106,63 +106,13 @@ export const projects = [
 	{
 		slug: 'TokyoTina',
 		title: 'Tokyo Tina',
-		content: "Prahran, Australia 2015",
+		content: "Wurundjeri Country | Prahran, Australia 2015",
 		colour: 'red',
 		hex: 'FF6600',
 		images: ["01", "02"],
-		ratio: ["642", "1004"],
+		// ratio: ["642", "1004"],
 		plans: ["01"],
 		prev: 'FourVisitsTo52Posts',
 		next: 'ALightAddition'
 	}
 ];
-
-
-// {
-// 	"Project": "A B House",
-// 	"Description": "Wadawurrung Country | Barwon Heads, Australia 2021",
-// 	"Colour": "pistachio",
-// 	"Hex": "F5F5C8",
-// 	"Camel": "ABHouse",
-// 	"Images": ["01", "02", "03", "04", "05"]
-//   },
-//   {
-// 	"Project": "A Certain Kind of Life",
-// 	"Description": "Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)",
-// 	"Colour": "pink",
-// 	"Hex": "FFAFC3",
-// 	"Camel": "ACertainKindofLife",
-// 	"Images": ["01", "02", "03", "04", "05"]
-//   },
-//   {
-// 	"Project": "A House For One",
-// 	"Description": "Dja Dja Wurrung Country | Castlemaine, Australia 2016",
-// 	"Colour": "green",
-// 	"Hex": "00CC66",
-// 	"Camel": "AHouseForOne",
-// 	"Images": ["01", "02", "03", "04", "05"]
-//   },
-//   {
-// 	"Project": "Tokyo Tina",
-// 	"Description": "Prahran, Australia 2015",
-// 	"Colour": "red",
-// 	"Hex": "FF6600",
-// 	"Camel": "TokyoTina",
-// 	"Images": ["01"]
-//   },
-//   {
-// 	"Project": "A Pavilion",
-// 	"Description": "Wurundjeri Country | Collingwood, Australia 2021 (in collaboration with client)",
-// 	"Colour": "yellow",
-// 	"Hex": "FAF000",
-// 	"Camel": "APavilion",
-// 	"Images": ["01", "02", "03", "04"]
-//   },
-//   {
-// 	"Project": "Four Visits to Fifty Two-Posts",
-// 	"Description": "Booklet (Upcoming)",
-// 	"Colour": "grey",
-// 	"Hex": "F1F1F1",
-// 	"Camel": "FourVisitsTo52Posts",
-// 	"Images": ["01", "02", "03", "04", "05"]
-//   }
