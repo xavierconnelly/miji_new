@@ -107,7 +107,7 @@
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
             <caption>
-                Tokyo Tina - Prahran, Australia 2015
+                Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
             </caption>
         </div>
 
@@ -203,7 +203,7 @@
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
             <caption>
-                Tokyo Tina - Prahran, Australia 2015
+                Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
             </caption>
         </div>
 
@@ -298,7 +298,7 @@
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
             <caption>
-                Tokyo Tina - Prahran, Australia 2015
+                Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
             </caption>
         </div>
 
@@ -393,7 +393,7 @@
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
             <caption>
-                Tokyo Tina - Prahran, Australia 2015
+                Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
             </caption>
         </div>
 
