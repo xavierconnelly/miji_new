@@ -5,7 +5,7 @@ export const projects = [
 		content: 'Bunurong Country | St Kilda East, Australia 2024',
 		colour: 'red',
 		hex: 'FF6600',
-		images: ["01", "02", "03", "04", "05"],
+		images: ["01", "02", "03", "04", "05", "06", "07", "08"],
 		// ratio: ["1150", "1200", "533", "1200", "1200"],
 		plans: ["01", "02", "03"],
 		prev: 'TokyoTina',
