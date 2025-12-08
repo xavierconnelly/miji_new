@@ -109,5 +109,15 @@ export const awards = [
 		award: 'Residential Interior',
 		awarder: 'Dulux Colour Awards',
 		project: 'AB House'
+	},
+	{
+		id: 'ALightAddition',
+		link: 'href="/projects/ALightAddition" data-sveltekit-noscroll',
+		year: '2025',
+		abrev: 'C',
+		prize: 'Commendation',
+		award: 'Houses (Alts & Ads)',
+		awarder: 'AIA Vic Awards',
+		project: 'A Light Addition'
 	}
 ];
