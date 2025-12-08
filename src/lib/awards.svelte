@@ -16,6 +16,17 @@
 		<div class="awarder"></div>
 		<div class="project">Project</div>
 	</div>
+	<a href="/projects/ALightAddition" data-sveltekit-noscroll="" class="year2025 row ALightAddition">
+		<div class="year">2025</div>
+		<div class="abrev">C</div>
+		<div class="award">Houses (Alts & Ads)</div>
+		<div class="awarder">AIA Vic Awards</div>
+		<div class="project">A Light Addition</div>
+	</a>
+	<span class="ALightAddition">
+		<h6>A Light Addition</h6>
+		<img src="../images/ALightAddition/01_800.webp" alt="">
+	</span>
 	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
 		<div class="year">2024</div>
 		<div class="abrev">C</div>
