@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Andale;
+    font-family: Andale, Courier, monospace;
     src: url(/ANDALEMO.woff) format("woff");
     font-display: swap
 }
