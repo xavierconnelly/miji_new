@@ -280,6 +280,10 @@ a:hover + span img {
 	background: var(--green);
 }
 
+.ALightAddition:hover::before {
+	background: var(--red);
+}
+
 .ABHouse:hover::before {
 	background: var(--pistachio);
 }
