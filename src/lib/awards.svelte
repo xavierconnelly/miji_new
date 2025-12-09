@@ -16,7 +16,7 @@
 		<div class="awarder"></div>
 		<div class="project">Project</div>
 	</div>
-	<a href="/projects/ALightAddition" data-sveltekit-noscroll="" class="year2025 row ALightAddition">
+	<a href="/projects/ALightAddition" data-sveltekit-noscroll="" class="row ALightAddition dot">
 		<div class="year">2025</div>
 		<div class="abrev">C</div>
 		<div class="award">Houses (Alts & Ads)</div>
@@ -27,7 +27,7 @@
 		<h6>A Light Addition</h6>
 		<img src="../images/ALightAddition/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2024</div>
 		<div class="abrev">C</div>
 		<div class="award">House of the Year (Large)</div>
@@ -38,7 +38,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">Emerging Designer</div>
@@ -49,14 +49,14 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<div data-sveltekit-noscroll="" class="year2023 row">
+	<div data-sveltekit-noscroll="" class="row dot">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">Design Vanguard</div>
 		<div class="awarder">Architectural Record</div>
 		<div class="project">Office Award</div>
 	</div>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">Colorbond Steel</div>
@@ -67,7 +67,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>				
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">EmAGN</div>
@@ -78,7 +78,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">Colorbond Steel</div>
@@ -89,7 +89,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">C</div>
 		<div class="award">New House</div>
@@ -100,7 +100,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">W</div>
 		<div class="award">Architectural Design</div>
@@ -111,14 +111,14 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<div data-sveltekit-noscroll="" class="year2023 row">
+	<div data-sveltekit-noscroll="" class="row dot">
 		<div class="year">2023</div>
 		<div class="abrev">C</div>
 		<div class="award">Emerging Architecture Practice</div>
 		<div class="awarder">Houses Awards</div>
 		<div class="project">Office Award</div>
 	</div>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">S</div>
 		<div class="award">New Houses over 200m2</div>
@@ -129,7 +129,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">N</div>
 		<div class="award">Building of the Year Residential</div>
@@ -140,7 +140,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">S</div>
 		<div class="award">New Houses over 200m2</div>
@@ -151,7 +151,7 @@
 		<h6>AB House</h6>
 		<img src="../images/ABHouse/01_800.webp" alt="">
 	</span>
-	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="year2023 row ABHouse">
+	<a href="/projects/ABHouse" data-sveltekit-noscroll="" class="row ABHouse dot">
 		<div class="year">2023</div>
 		<div class="abrev">F</div>
 		<div class="award">Residential Interior</div>
@@ -262,7 +262,7 @@ a:hover + span img {
 	transition: 2s;
 }
 
-#awards .row::before {
+#awards .dot::before {
 	content: '';
 	display: inline-block;
 	width: 14px;
@@ -279,7 +279,7 @@ a:hover + span img {
     margin-left: -24px;
 }
 
-#awards .row:hover::before {
+#awards .dot:hover::before {
 	background: var(--green);
 }
 
@@ -305,7 +305,7 @@ a:hover + span img {
 	.acronyms {
 		padding-left: unset;
 	}
-	#awards .year2023::before,
+	#awards .dot::before,
 	.title::before,
 	#awards a::before,
 	span,
