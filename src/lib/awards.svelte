@@ -211,6 +211,10 @@ a:hover * {
 	color: var(--pistachio);
 }
 
+.ALightAddition:hover * {
+	color: var(--red);
+}
+
 .year,
 .abrev {
 	width: 5%;
