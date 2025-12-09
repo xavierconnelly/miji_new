@@ -262,8 +262,7 @@ a:hover + span img {
 	transition: 2s;
 }
 
-#awards div::before,
-#awards a::before,
+#awards .row::before,
 .title::before {
 	content: '';
 	display: inline-block;
@@ -281,7 +280,7 @@ a:hover + span img {
     margin-left: -24px;
 }
 
-#awards div:hover::before {
+#awards .row:hover::before {
 	background: var(--green);
 }
 
