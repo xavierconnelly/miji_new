@@ -262,7 +262,8 @@ a:hover + span img {
 	transition: 2s;
 }
 
-#awards .year2023::before,
+#awards div::before
+#awards a::before,
 .title::before {
 	content: '';
 	display: inline-block;
@@ -280,15 +281,15 @@ a:hover + span img {
     margin-left: -24px;
 }
 
-.year2023:hover::before {
+#awards div:hover::before {
 	background: var(--green);
 }
 
-.ALightAddition:hover::before {
+#awards .ALightAddition:hover::before {
 	background: var(--red);
 }
 
-.ABHouse:hover::before {
+#awards .ABHouse:hover::before {
 	background: var(--pistachio);
 }
 
