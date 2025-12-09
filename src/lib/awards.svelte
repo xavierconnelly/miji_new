@@ -262,7 +262,7 @@ a:hover + span img {
 	transition: 2s;
 }
 
-#awards div::before
+#awards div::before,
 #awards a::before,
 .title::before {
 	content: '';
