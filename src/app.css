@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Andale, Courier, monospace;
+    font-family: Andale;
     src: url(/ANDALEMO.woff) format("woff");
     font-display: swap
 }
@@ -21,7 +21,7 @@
   .grey { background-color: var(--grey)}
 
 * {
-    font-family: Andale, times;
+    font-family: Andale, Courier, monospace;
     font-size: .9rem;
     margin: 0;
     padding: 0;
