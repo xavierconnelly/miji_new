@@ -47,7 +47,7 @@
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
             <caption>
-                A Courtyard House - Bunurong Country | Brighton, Australia 2024
+                A Courtyard House - Bunurong Country | Bayside, Australia 2024
             </caption>
         </div>
         <div class="pistachio ABHouse face four">
@@ -143,7 +143,7 @@
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
             <caption>
-                A Courtyard House - Bunurong Country | Brighton, Australia 2024
+                A Courtyard House - Bunurong Country | Bayside, Australia 2024
             </caption>
         </div>
         <div class="pistachio ABHouse face thirteen">
@@ -238,7 +238,7 @@
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
             <caption>
-                A Courtyard House - Bunurong Country | Brighton, Australia 2024
+                A Courtyard House - Bunurong Country | Bayside, Australia 2024
             </caption>
         </div>
         <div class="pistachio ABHouse face twentyTwo">
@@ -333,7 +333,7 @@
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
             <caption>
-                A Courtyard House - Bunurong Country | Brighton, Australia 2024
+                A Courtyard House - Bunurong Country | Bayside, Australia 2024
             </caption>
         </div>
         <div class="pistachio ABHouse face thirtyOne">
