@@ -15,7 +15,7 @@ export const projects = [
 	{
 		slug: 'ACourtyardHouse',
 		title: 'A Courtyard House',
-		content: 'Bunurong Country | Brighton, Australia 2024',
+		content: 'Bunurong Country | Bayside, Australia 2024',
 		colour: 'pink',
 		hex: 'FFAFC3',
 		images: ["01", "02", "03", "04", "05", "06"],
