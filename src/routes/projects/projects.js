@@ -18,7 +18,7 @@ export const projects = [
 		content: 'Bunurong Country | Bayside, Australia 2024',
 		colour: 'pink',
 		hex: 'FFAFC3',
-		images: ["01", "02", "03", "04", "05", "06"],
+		images: ["01", "02", "03", "04", "05", "06", "07"],
 		// ratio: ["1200", "533", "533", "1200", "1200", "533"],
 		plans: ["01", "02"], 
 		prev: 'ALightAddition',

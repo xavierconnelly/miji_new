@@ -1,6 +1,13 @@
 export const publications = [
 	{
 		slug: 'Lorem',
+		year: '2026',
+		publisher: 'Hello world',
+		issue: 'Online',
+		project: 'A Light Addition'
+	},
+	{
+		slug: 'Lorem',
 		year: '2023',
 		publisher: 'Architectural Record',
 		issue: 'Issue 06',

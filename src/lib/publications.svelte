@@ -8,6 +8,13 @@
 		<div class="project">Project</div>
 	</div>
  	
+	<a href="https://architectureau.com/articles/a-light-addition-by-office-miji/" target="blank" data-sveltekit-noscroll class="year2026 row">
+		<div class="year">2026</div>
+		<div class="publisher">Architecture, AU</div>
+		<div class="issue">Online</div>
+		<div class="project">A Light Addition</div>
+	</a>
+
 	<a href="https://unionmagazine.com/the-patchwork/" target="blank" data-sveltekit-noscroll class="year2025 row">
 		<div class="year">2025</div>
 		<div class="publisher">Union Magazine</div>

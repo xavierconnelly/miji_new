@@ -119,5 +119,15 @@ export const awards = [
 		award: 'Houses (Alts & Ads)',
 		awarder: 'AIA Vic Awards',
 		project: 'A Light Addition'
+	},
+	{
+		id: 'ACourtyardHouse',
+		link: 'href="/projects/ACourtyardHouse" data-sveltekit-noscroll',
+		year: '2026',
+		abrev: 'S',
+		prize: 'Shortlist',
+		award: 'New House',
+		awarder: 'AIA Vic Awards',
+		project: 'A Courtyard House'
 	}
 ];
