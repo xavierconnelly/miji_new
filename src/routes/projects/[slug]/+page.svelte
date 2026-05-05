@@ -85,12 +85,12 @@ and mobile carousel (bottom half)
         </a>
     </div>
 
-    <caption class="{data.project.colour} sun">
+    <span class="{data.project.colour} sun">
         <h2>{data.project.title}</h2> &nbsp-&nbsp 
         <p>
         {@html data.project.content} 
         </p>
-    </caption>
+    </span>
 </article>
 
 <a 	data-sveltekit-noscroll 
@@ -124,7 +124,7 @@ img {
     background-color: rgb(255, 255, 255)
 }
 
-caption {
+.sun {
     padding: 10px;
     /* display: block; */
     /* display: flex; */
@@ -135,7 +135,7 @@ caption {
     bottom: 0px;
 }
 
-caption  * {
+.sun  * {
     /* float: left; */
     display: contents;
 }
@@ -199,7 +199,7 @@ caption  * {
         width: unset;
         height: 100%;
     }
-    caption {
+    .sun {
         width: 100%
     }
 }

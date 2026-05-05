@@ -16,6 +16,17 @@
 		<div class="awarder"></div>
 		<div class="project">Project</div>
 	</div>
+	<a href="/projects/ACourtyardHouse" data-sveltekit-noscroll="" class="row ACourtyardHouse dot">
+		<div class="year">2026</div>
+		<div class="abrev">S</div>
+		<div class="award">New House</div>
+		<div class="awarder">AIA Vic Awards</div>
+		<div class="project">A Courtyard House</div>
+	</a>
+	<span class="ACourtyardHouse">
+		<h6>A Courtyard House</h6>
+		<img src="../images/ACourtyardHouse/01_800.webp" alt="">
+	</span>
 	<a href="/projects/ALightAddition" data-sveltekit-noscroll="" class="row ALightAddition dot">
 		<div class="year">2025</div>
 		<div class="abrev">C</div>
@@ -215,6 +226,10 @@ a:hover * {
 	color: var(--red);
 }
 
+.ACourtyardHouse:hover * {
+	color: var(--pink);
+}
+
 .year,
 .abrev {
 	width: 5%;
@@ -290,6 +305,11 @@ a:hover + span img {
 #awards .ABHouse:hover::before {
 	background: var(--pistachio);
 }
+
+#awards .ACourtyardHouse:hover::before {
+	background: var(--pink);
+}
+
 
 @media only screen and (max-width: 800px) {
 	#awards {

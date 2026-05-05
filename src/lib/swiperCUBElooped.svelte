@@ -24,9 +24,9 @@
                 <img class="clear {$store}" src="../images/FourVisitsTo52Posts/01_800.webp" width="auto" height="auto" alt="FourVisitsTo52Posts project">
                 <img class="plan" src="../images/FourVisitsTo52Posts/Plan_01_800.svg" width="auto" height="auto" alt="FourVisitsTo52Posts project">
             </a>
-            <caption>
+            <span>
                 Four Visits to Fifty-Two Posts - Booklet (in collaboration with Ben Hosking) 2023
-            </caption>
+            </span>
         </div>
 
         <div class="red ALightAddition face two">
@@ -35,9 +35,9 @@
                 <img class="clear {$store}" src="../images/ALightAddition/01_800.webp" width="auto" height="auto" alt="ALightAddition project">
                 <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" width="auto" height="auto" alt="ALightAddition project">
             </a>
-            <caption>
+            <span>
                 A Light Addition - Bunurong Country | St Kilda East, Australia 2024
-            </caption>
+            </span>
         </div>
 
         <div class="pink ACourtyardHouse face three">
@@ -46,9 +46,9 @@
                 <img class="clear {$store}" src="../images/ACourtyardHouse/01_800.webp" width="auto" height="auto" alt="ACourtyardHouse project">
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
-            <caption>
+            <span>
                 A Courtyard House - Bunurong Country | Bayside, Australia 2024
-            </caption>
+            </span>
         </div>
         <div class="pistachio ABHouse face four">
             <a class="images" data-sveltekit-noscroll href="../projects/ABHouse">        
@@ -56,9 +56,9 @@
                 <img class="clear {$store}" src="../images/ABHouse/01_800.webp" width="auto" height="auto" alt="ABHouse project">
                 <img class="plan" src="../images/ABHouse/Plan_01_800.svg" width="auto" height="auto" alt="ABHouse project">
             </a>
-            <caption>
+            <span>
                 AB House - Wadawurrung Country | Barwon Heads, Australia 2021
-            </caption>
+            </span>
         </div>
         <div class="yellow APavilion face five">
             <a class="images" data-sveltekit-noscroll href="../projects/APavilion">        
@@ -66,9 +66,9 @@
                 <img class="clear {$store}" src="../images/APavilion/01_800.webp" width="auto" height="auto" alt="APavilion project">
                 <img class="plan" src="../images/APavilion/Plan_01_800.svg" width="auto" height="auto" alt="APavilion project">
             </a>
-            <caption>
+            <span>
                 A Pavilion - Wurundjeri Country | Collingwood, Australia 2021 (in collaboration with client)
-            </caption>
+            </span>
         </div>
         <div class="green ARenovationForThree face six">
             <a class="images" data-sveltekit-noscroll  href="../projects/ARenovationForThree">        
@@ -76,9 +76,9 @@
                 <img class="clear {$store}" src="../images/ARenovationForThree/01_800.webp" width="auto" height="auto" alt="ARenovationForThree project">
                 <img class="plan" src="../images/ARenovationForThree/Plan_01_800.svg" width="auto" height="auto" alt="ARenovationForThree project">
             </a>
-            <caption>
+            <span>
                 A Renovation For Three - Dja Dja Wurrung Country | Castlemaine, Australia 2022
-            </caption>
+            </span>
         </div>
         <div class="pink ACertainKindofLife face seven">
             <a class="images" data-sveltekit-noscroll  href="../projects/ACertainKindofLife">        
@@ -86,9 +86,9 @@
                 <img class="clear {$store}" src="../images/ACertainKindofLife/01_800.webp" width="auto" height="auto" alt="ACertainKindofLife project">
                 <img class="plan" src="../images/ACertainKindofLife/Plan_01_800.svg" width="auto" height="auto" alt="ACertainKindofLife project">
             </a>
-            <caption>
+            <span>
                 A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </caption>
+            </span>
         </div>
         <div class="green AHouseForOne face eight">
             <a class="images" data-sveltekit-noscroll  href="../projects/AHouseForOne">        
@@ -96,9 +96,9 @@
                 <img class="clear {$store}" src="../images/AHouseForOne/01_800.webp" width="auto" height="auto" alt="AHouseForOne project">
                 <img class="plan" src="../images/AHouseForOne/Plan_01_800.svg" width="auto" height="auto" alt="AHouseForOne project">
             </a>
-            <caption>
+            <span>
                 A House For One - Dja Dja Wurrung Country | Castlemaine, Australia 2016
-            </caption>
+            </span>
         </div>
         <div class="red TokyoTina face nine">
             <a class="images" data-sveltekit-noscroll  href="../projects/TokyoTina">        
@@ -106,9 +106,9 @@
                 <img class="clear {$store}" src="../images/TokyoTina/01_800.webp" width="auto" height="auto" alt="TokyoTina project">
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
-            <caption>
+            <span>
                 Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
-            </caption>
+            </span>
         </div>
 
 
@@ -120,9 +120,9 @@
                 <img class="clear {$store}" src="../images/FourVisitsTo52Posts/01_800.webp" width="auto" height="auto" alt="FourVisitsTo52Posts project">
                 <img class="plan" src="../images/FourVisitsTo52Posts/Plan_01_800.svg" width="auto" height="auto" alt="FourVisitsTo52Posts project">
             </a>
-            <caption>
+            <span>
                 Four Visits to Fifty-Two Posts - Booklet (in collaboration with Ben Hosking) 2023
-            </caption>
+            </span>
         </div>
 
         <div class="red ALightAddition face eleven">
@@ -131,9 +131,9 @@
                 <img class="clear {$store}" src="../images/ALightAddition/01_800.webp" width="auto" height="auto" alt="ALightAddition project">
                 <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" width="auto" height="auto" alt="ALightAddition project">
             </a>
-            <caption>
+            <span>
                 A Light Addition - Bunurong Country | St Kilda East, Australia 2024
-            </caption>
+            </span>
         </div>
 
         <div class="pink ACourtyardHouse face twelve">
@@ -142,9 +142,9 @@
                 <img class="clear {$store}" src="../images/ACourtyardHouse/01_800.webp" width="auto" height="auto" alt="ACourtyardHouse project">
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
-            <caption>
+            <span>
                 A Courtyard House - Bunurong Country | Bayside, Australia 2024
-            </caption>
+            </span>
         </div>
         <div class="pistachio ABHouse face thirteen">
             <a class="images" data-sveltekit-noscroll href="../projects/ABHouse">        
@@ -152,9 +152,9 @@
                 <img class="clear {$store}" src="../images/ABHouse/01_800.webp" width="auto" height="auto" alt="ABHouse project">
                 <img class="plan" src="../images/ABHouse/Plan_01_800.svg" width="auto" height="auto" alt="ABHouse project">
             </a>
-            <caption>
+            <span>
                 AB House - Wadawurrung Country | Barwon Heads, Australia 2021
-            </caption>
+            </span>
         </div>
         <div class="yellow APavilion face fourteen">
             <a class="images" data-sveltekit-noscroll href="../projects/APavilion">        
@@ -162,9 +162,9 @@
                 <img class="clear {$store}" src="../images/APavilion/01_800.webp" width="auto" height="auto" alt="APavilion project">
                 <img class="plan" src="../images/APavilion/Plan_01_800.svg" width="auto" height="auto" alt="APavilion project">
             </a>
-            <caption>
+            <span>
                 A Pavilion - Wurundjeri Country | Collingwood, Australia 2021 (in collaboration with client)
-            </caption>
+            </span>
         </div>
         <div class="green ARenovationForThree face fifteen">
             <a class="images" data-sveltekit-noscroll  href="../projects/ARenovationForThree">        
@@ -172,9 +172,9 @@
                 <img class="clear {$store}" src="../images/ARenovationForThree/01_800.webp" width="auto" height="auto" alt="ARenovationForThree project">
                 <img class="plan" src="../images/ARenovationForThree/Plan_01_800.svg" width="auto" height="auto" alt="ARenovationForThree project">
             </a>
-            <caption>
+            <span>
                 A Renovation For Three - Dja Dja Wurrung Country | Castlemaine, Australia 2022
-            </caption>
+            </span>
         </div>
         <div class="pink ACertainKindofLife face sixteen">
             <a class="images" data-sveltekit-noscroll  href="../projects/ACertainKindofLife">        
@@ -182,9 +182,9 @@
                 <img class="clear {$store}" src="../images/ACertainKindofLife/01_800.webp" width="auto" height="auto" alt="ACertainKindofLife project">
                 <img class="plan" src="../images/ACertainKindofLife/Plan_01_800.svg" width="auto" height="auto" alt="ACertainKindofLife project">
             </a>
-            <caption>
+            <span>
                 A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </caption>
+            </span>
         </div>
         <div class="green AHouseForOne face seventeen">
             <a class="images" data-sveltekit-noscroll  href="../projects/AHouseForOne">        
@@ -192,9 +192,9 @@
                 <img class="clear {$store}" src="../images/AHouseForOne/01_800.webp" width="auto" height="auto" alt="AHouseForOne project">
                 <img class="plan" src="../images/AHouseForOne/Plan_01_800.svg" width="auto" height="auto" alt="AHouseForOne project">
             </a>
-            <caption>
+            <span>
                 A House For One - Dja Dja Wurrung Country | Castlemaine, Australia 2016
-            </caption>
+            </span>
         </div>
         <div class="red TokyoTina face eighteen">
             <a class="images" data-sveltekit-noscroll  href="../projects/TokyoTina">        
@@ -202,9 +202,9 @@
                 <img class="clear {$store}" src="../images/TokyoTina/01_800.webp" width="auto" height="auto" alt="TokyoTina project">
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
-            <caption>
+            <span>
                 Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
-            </caption>
+            </span>
         </div>
 
 <!-- third quarter -->
@@ -215,9 +215,9 @@
                 <img class="clear {$store}" src="../images/FourVisitsTo52Posts/01_800.webp" width="auto" height="auto" alt="FourVisitsTo52Posts project">
                 <img class="plan" src="../images/FourVisitsTo52Posts/Plan_01_800.svg" width="auto" height="auto" alt="FourVisitsTo52Posts project">
             </a>
-            <caption>
+            <span>
                 Four Visits to Fifty-Two Posts - Booklet (in collaboration with Ben Hosking) 2023
-            </caption>
+            </span>
         </div>
 
         <div class="red ALightAddition face twenty">
@@ -226,9 +226,9 @@
                 <img class="clear {$store}" src="../images/ALightAddition/01_800.webp" width="auto" height="auto" alt="ALightAddition project">
                 <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" width="auto" height="auto" alt="ALightAddition project">
             </a>
-            <caption>
+            <span>
                 A Light Addition - Bunurong Country | St Kilda East, Australia 2024
-            </caption>
+            </span>
         </div>
 
         <div class="pink ACourtyardHouse face twentyOne">
@@ -237,9 +237,9 @@
                 <img class="clear {$store}" src="../images/ACourtyardHouse/01_800.webp" width="auto" height="auto" alt="ACourtyardHouse project">
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
-            <caption>
+            <span>
                 A Courtyard House - Bunurong Country | Bayside, Australia 2024
-            </caption>
+            </span>
         </div>
         <div class="pistachio ABHouse face twentyTwo">
             <a class="images" data-sveltekit-noscroll href="../projects/ABHouse">        
@@ -247,9 +247,9 @@
                 <img class="clear {$store}" src="../images/ABHouse/01_800.webp" width="auto" height="auto" alt="ABHouse project">
                 <img class="plan" src="../images/ABHouse/Plan_01_800.svg" width="auto" height="auto" alt="ABHouse project">
             </a>
-            <caption>
+            <span>
                 AB House - Wadawurrung Country | Barwon Heads, Australia 2021
-            </caption>
+            </span>
         </div>
         <div class="yellow APavilion face twentyThree">
             <a class="images" data-sveltekit-noscroll href="../projects/APavilion">        
@@ -257,9 +257,9 @@
                 <img class="clear {$store}" src="../images/APavilion/01_800.webp" width="auto" height="auto" alt="APavilion project">
                 <img class="plan" src="../images/APavilion/Plan_01_800.svg" width="auto" height="auto" alt="APavilion project">
             </a>
-            <caption>
+            <span>
                 A Pavilion - Wurundjeri Country | Collingwood, Australia 2021 (in collaboration with client)
-            </caption>
+            </span>
         </div>
         <div class="green ARenovationForThree face twentyFour">
             <a class="images" data-sveltekit-noscroll  href="../projects/ARenovationForThree">        
@@ -267,9 +267,9 @@
                 <img class="clear {$store}" src="../images/ARenovationForThree/01_800.webp" width="auto" height="auto" alt="ARenovationForThree project">
                 <img class="plan" src="../images/ARenovationForThree/Plan_01_800.svg" width="auto" height="auto" alt="ARenovationForThree project">
             </a>
-            <caption>
+            <span>
                 A Renovation For Three - Dja Dja Wurrung Country | Castlemaine, Australia 2022
-            </caption>
+            </span>
         </div>
         <div class="pink ACertainKindofLife face twentyFive">
             <a class="images" data-sveltekit-noscroll  href="../projects/ACertainKindofLife">        
@@ -277,9 +277,9 @@
                 <img class="clear {$store}" src="../images/ACertainKindofLife/01_800.webp" width="auto" height="auto" alt="ACertainKindofLife project">
                 <img class="plan" src="../images/ACertainKindofLife/Plan_01_800.svg" width="auto" height="auto" alt="ACertainKindofLife project">
             </a>
-            <caption>
+            <span>
                 A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </caption>
+            </span>
         </div>
         <div class="green AHouseForOne face twentySix">
             <a class="images" data-sveltekit-noscroll  href="../projects/AHouseForOne">        
@@ -287,9 +287,9 @@
                 <img class="clear {$store}" src="../images/AHouseForOne/01_800.webp" width="auto" height="auto" alt="AHouseForOne project">
                 <img class="plan" src="../images/AHouseForOne/Plan_01_800.svg" width="auto" height="auto" alt="AHouseForOne project">
             </a>
-            <caption>
+            <span>
                 A House For One - Dja Dja Wurrung Country | Castlemaine, Australia 2016
-            </caption>
+            </span>
         </div>
         <div class="red TokyoTina face twentySeven">
             <a class="images" data-sveltekit-noscroll  href="../projects/TokyoTina">        
@@ -297,9 +297,9 @@
                 <img class="clear {$store}" src="../images/TokyoTina/01_800.webp" width="auto" height="auto" alt="TokyoTina project">
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
-            <caption>
+            <span>
                 Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
-            </caption>
+            </span>
         </div>
 
 <!-- fourth quarter -->
@@ -310,9 +310,9 @@
                 <img class="clear {$store}" src="../images/FourVisitsTo52Posts/01_800.webp" width="auto" height="auto" alt="FourVisitsTo52Posts project">
                 <img class="plan" src="../images/FourVisitsTo52Posts/Plan_01_800.svg" width="auto" height="auto" alt="FourVisitsTo52Posts project">
             </a>
-            <caption>
+            <span>
                 Four Visits to Fifty-Two Posts - Booklet (in collaboration with Ben Hosking) 2023
-            </caption>
+            </span>
         </div>
 
         <div class="red ALightAddition face twentyNine">
@@ -321,9 +321,9 @@
                 <img class="clear {$store}" src="../images/ALightAddition/01_800.webp" width="auto" height="auto" alt="ALightAddition project">
                 <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" width="auto" height="auto" alt="ALightAddition project">
             </a>
-            <caption>
+            <span>
                 A Light Addition - Bunurong Country | St Kilda East, Australia 2024
-            </caption>
+            </span>
         </div>
 
         <div class="pink ACourtyardHouse face thirty">
@@ -332,9 +332,9 @@
                 <img class="clear {$store}" src="../images/ACourtyardHouse/01_800.webp" width="auto" height="auto" alt="ACourtyardHouse project">
                 <img class="plan" src="../images/ACourtyardHouse/Plan_01_800.svg" width="auto" height="auto" alt="ACourtyardHouse project">
             </a>
-            <caption>
+            <span>
                 A Courtyard House - Bunurong Country | Bayside, Australia 2024
-            </caption>
+            </span>
         </div>
         <div class="pistachio ABHouse face thirtyOne">
             <a class="images" data-sveltekit-noscroll href="../projects/ABHouse">        
@@ -342,9 +342,9 @@
                 <img class="clear {$store}" src="../images/ABHouse/01_800.webp" width="auto" height="auto" alt="ABHouse project">
                 <img class="plan" src="../images/ABHouse/Plan_01_800.svg" width="auto" height="auto" alt="ABHouse project">
             </a>
-            <caption>
+            <span>
                 AB House - Wadawurrung Country | Barwon Heads, Australia 2021
-            </caption>
+            </span>
         </div>
         <div class="yellow APavilion face thirtyTwo">
             <a class="images" data-sveltekit-noscroll href="../projects/APavilion">        
@@ -352,9 +352,9 @@
                 <img class="clear {$store}" src="../images/APavilion/01_800.webp" width="auto" height="auto" alt="APavilion project">
                 <img class="plan" src="../images/APavilion/Plan_01_800.svg" width="auto" height="auto" alt="APavilion project">
             </a>
-            <caption>
+            <span>
                 A Pavilion - Wurundjeri Country | Collingwood, Australia 2021 (in collaboration with client)
-            </caption>
+            </span>
         </div>
         <div class="green ARenovationForThree face thirtyThree">
             <a class="images" data-sveltekit-noscroll  href="../projects/ARenovationForThree">        
@@ -362,9 +362,9 @@
                 <img class="clear {$store}" src="../images/ARenovationForThree/01_800.webp" width="auto" height="auto" alt="ARenovationForThree project">
                 <img class="plan" src="../images/ARenovationForThree/Plan_01_800.svg" width="auto" height="auto" alt="ARenovationForThree project">
             </a>
-            <caption>
+            <span>
                 A Renovation For Three - Dja Dja Wurrung Country | Castlemaine, Australia 2022
-            </caption>
+            </span>
         </div>
         <div class="pink ACertainKindofLife face thirtyFour">
             <a class="images" data-sveltekit-noscroll  href="../projects/ACertainKindofLife">        
@@ -372,9 +372,9 @@
                 <img class="clear {$store}" src="../images/ACertainKindofLife/01_800.webp" width="auto" height="auto" alt="ACertainKindofLife project">
                 <img class="plan" src="../images/ACertainKindofLife/Plan_01_800.svg" width="auto" height="auto" alt="ACertainKindofLife project">
             </a>
-            <caption>
+            <span>
                 A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </caption>
+            </span>
         </div>
         <div class="green AHouseForOne face thirtyFive">
             <a class="images" data-sveltekit-noscroll  href="../projects/AHouseForOne">        
@@ -382,9 +382,9 @@
                 <img class="clear {$store}" src="../images/AHouseForOne/01_800.webp" width="auto" height="auto" alt="AHouseForOne project">
                 <img class="plan" src="../images/AHouseForOne/Plan_01_800.svg" width="auto" height="auto" alt="AHouseForOne project">
             </a>
-            <caption>
+            <span>
                 A House For One - Dja Dja Wurrung Country | Castlemaine, Australia 2016
-            </caption>
+            </span>
         </div>
         <div class="red TokyoTina face thirtySix">
             <a class="images" data-sveltekit-noscroll  href="../projects/TokyoTina">        
@@ -392,9 +392,9 @@
                 <img class="clear {$store}" src="../images/TokyoTina/01_800.webp" width="auto" height="auto" alt="TokyoTina project">
                 <img class="plan" src="../images/TokyoTina/Plan_01_800.svg" width="auto" height="auto" alt="TokyoTina project">
             </a>
-            <caption>
+            <span>
                 Tokyo Tina - Wurundjeri Country Prahran, Australia 2015
-            </caption>
+            </span>
         </div>
 
     </div>
@@ -537,14 +537,14 @@ img {
 } */
 
 /* `````````````````````````````` WORDS */
-caption {
+span {
     display: none;
     position: relative;
     top: 3px;
     text-align: left;
 }
 
-.face:hover caption {
+.face:hover span {
     display: block;
 }
 

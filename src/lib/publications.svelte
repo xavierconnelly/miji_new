@@ -14,7 +14,10 @@
 		<div class="issue">Online</div>
 		<div class="project">A Light Addition</div>
 	</a>
-
+	<span class="ALightAddition">
+		<h6>A Light Addition</h6>
+		<img src="../images/ALightAddition/01_800.webp" alt="AB House ">
+	</span>
 	<a href="https://unionmagazine.com/the-patchwork/" target="blank" data-sveltekit-noscroll class="year2025 row">
 		<div class="year">2025</div>
 		<div class="publisher">Union Magazine</div>
@@ -187,6 +190,9 @@ a:hover div {
 	color: var(--yellow);
 }
 
+.ALightAddition:hover * {
+	color: var(--red);
+}
 
 .year {
 	width: 10%;
@@ -270,6 +276,11 @@ a:hover + span img {
 #publications .APavilion:hover::before {
 	background: var(--yellow);
 }
+
+#publications .ALightAddition:hover::before {
+	background: var(--red);
+}
+
 
 @media only screen and (max-width: 800px) {
 
