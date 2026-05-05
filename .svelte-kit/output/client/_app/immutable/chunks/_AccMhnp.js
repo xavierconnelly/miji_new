@@ -1,0 +1,1 @@
+var e=`Office MI—JI`,t=`Office MI—JI is an architectural office`;export{e as n,t};
