@@ -8,7 +8,7 @@
 		<div class="project">Project</div>
 	</div>
  	
-	<a href="https://architectureau.com/articles/a-light-addition-by-office-miji/" target="blank" data-sveltekit-noscroll class="year2026 row">
+	<a href="https://architectureau.com/articles/a-light-addition-by-office-miji/" target="blank" data-sveltekit-noscroll class="year2026 row ALightAddition">
 		<div class="year">2026</div>
 		<div class="publisher">Architecture, AU</div>
 		<div class="issue">Online</div>
@@ -175,17 +175,11 @@ h6 {
 	text-align: left;
 }
 
-a:hover div {
-	color: var(--green);
-}
-
-.ABHouse:hover * {
-	color: var(--pistachio);
-}
-
-.APavilion:hover * {
-	color: var(--yellow);
-}
+a:hover div {color: var(--green)}
+.ALightAddition:hover * {color: var(--red)}
+/* .ACourtyardHouse:hover * {color: var(--pink)} */
+.ABHouse:hover * {color: var(--pistachio)}
+.APavilion:hover * {color: var(--yellow)}
 
 
 .year {
@@ -258,18 +252,17 @@ a:hover + span img {
     margin-left: -24px;
 }
 
-#publications a:hover::before,
-#publications .year2023:hover::before  {
-	background: var(--green) ;
-}
+#publications a:hover::before, #publications .year2023:hover::before  {background: var(--green)}
+/* #publications .ALightAddition:hover::before {background: var(--red)} */
+/* #publications .ACourtyardHouse:hover::before {background: var(--pink)} */
+#publications .ABHouse:hover::before {background: var(--pistachio)}
+/* #publications .ACertainKindofLife:hover::before {background: var(--pink)} */
+/* #publications .AHouseForOne:hover::before {background: var(--green)} */
+#publications .APavilion:hover::before {background: var(--yellow)}
+/* #publications .ARenovationForThree:hover::before {background: var(--green)} */
+/* #publications .FourVisitsTo52Posts:hover::before {background: var(--grey)} */
+/* #publications .TokyoTina:hover::before {background: var(--red)} */
 
-#publications .ABHouse:hover::before {
-	background: var(--pistachio);
-}
-
-#publications .APavilion:hover::before {
-	background: var(--yellow);
-}
 
 @media only screen and (max-width: 800px) {
 

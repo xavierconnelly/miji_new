@@ -214,17 +214,10 @@ h6 {
 	line-height: 130%;
 }
 
-a:hover * {
-	color: var(--green);
-}
-
-.ABHouse:hover * {
-	color: var(--pistachio);
-}
-
-.ALightAddition:hover * {
-	color: var(--red);
-}
+a:hover * {color: var(--green)}
+.ABHouse:hover * {color: var(--pistachio)}
+.ALightAddition:hover * {color: var(--red)}
+.ACourtyardHouse:hover * {color: var(--pink)}
 
 .year,
 .abrev {
@@ -290,17 +283,10 @@ a:hover + span img {
     margin-left: -24px;
 }
 
-#awards .dot:hover::before {
-	background: var(--green);
-}
-
-#awards .ALightAddition:hover::before {
-	background: var(--red);
-}
-
-#awards .ABHouse:hover::before {
-	background: var(--pistachio);
-}
+#awards .dot:hover::before {background: var(--green)}
+#awards .ALightAddition:hover::before {background: var(--red)}
+#awards .ABHouse:hover::before {background: var(--pistachio)}
+#awards .ACourtyardHouse:hover::before {background: var(--pink)}
 
 @media only screen and (max-width: 800px) {
 	#awards {
