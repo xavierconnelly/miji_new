@@ -253,7 +253,7 @@ a:hover + span img {
 }
 
 #publications a:hover::before, #publications .year2023:hover::before  {background: var(--green)}
-/* #publications .ALightAddition:hover::before {background: var(--red)} */
+#publications .ALightAddition:hover::before {background: var(--red)}
 /* #publications .ACourtyardHouse:hover::before {background: var(--pink)} */
 #publications .ABHouse:hover::before {background: var(--pistachio)}
 /* #publications .ACertainKindofLife:hover::before {background: var(--pink)} */
