@@ -19,7 +19,7 @@
 		<Header/>
 	<!-- {:else}
 		<HeaderMobile/> -->
-	{/if}s
+	{/if}
 </MediaQuery>
 
   <MediaQuery query="(min-width: 800px)" let:matches>

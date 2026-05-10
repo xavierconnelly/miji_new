@@ -8,7 +8,15 @@
     import { store } from './store.js';
     import { projects } from '../routes/projects/projects.js';
 
-    const faces = [...projects, ...projects, ...projects, ...projects];
+    // const faces = [...projects, ...projects, ...projects, ...projects];
+
+    // Aim for ~36 total faces to preserve the dense cylinder look.
+    // Adapts as projects are added/removed.
+    const targetFaces = 36;
+    const repeats = Math.max(1, Math.round(targetFaces / projects.length));
+    const faces = Array.from({ length: repeats }, () => projects).flat();
+    const angleStep = 360 / faces.length;
+    const radiusFactor = 0.5 / Math.tan(Math.PI / faces.length);
 
     let rotation = cachedRotation;
     let observer;
@@ -44,14 +52,16 @@
 <div class="scene">
     <div class="cube" style:transform="translateZ(-400px) rotateY({rotation}deg)">
         {#each faces as project, i}
-            <div
+            <!-- <div
                 class="{project.colour} {project.slug} face"
                 style:transform="rotateY({i * 10}deg) translateZ(var(--cylinder-radius))"
-            >
+            > -->
+            <div class="face {project.colour} {project.slug}" style:transform="rotateY({i * angleStep}deg) translateZ(calc(var(--face-width) * {radiusFactor}))">
+
                 <a class="images" data-sveltekit-noscroll href="../projects/{project.slug}">
-                    <img class="blur {$store}"  src="../images/{project.slug}/{project.images[0]}_800_blur.webp" width="auto" height="auto" alt="{project.title}">
-                    <img class="clear {$store}" src="../images/{project.slug}/{project.images[0]}_800.webp"      width="auto" height="auto" alt="{project.title}">
-                    <img class="plan"           src="../images/{project.slug}/Plan_{project.plans[0]}_800.svg"   width="auto" height="auto" alt="{project.title}">
+                    <img class="blur {$store}"  src="../images/{project.slug}/{project.images[0]}_800_blur.webp" width="auto" height="auto" alt="hero shot of {project.title}">
+                    <img class="clear {$store}" src="../images/{project.slug}/{project.images[0]}_800.webp"      width="auto" height="auto" alt="blurred hero shot of {project.title}">
+                    <img class="plan"           src="../images/{project.slug}/Plan_{project.plans[0]}_800.svg"   width="auto" height="auto" alt="a plan drawing of {project.title}">
                 </a>
                 <caption>{project.title} - {project.content}</caption>
             </div>
@@ -61,7 +71,7 @@
 
 <style>
     .scene {
-        --cylinder-radius: 2284.5127278471px;
+        --face-width: 400px;
         width: 400px;
         height: 400px;
         perspective: none;
@@ -129,9 +139,7 @@
 
     @media only screen and (max-width: 800px),
            only screen and (max-height: 800px) {
-        .scene {
-            --cylinder-radius: 1711.38px;
-            width: 300px;
+        .scene { --face-width: 300px; 
         }
         .face {
             width: 300px;

@@ -1,7 +1,7 @@
 <svelte:window bind:scrollY={y}/>
 
 <script>
-    import { store } from './store.js';
+    import { store } from '../store.js';
 
     let y;
 
