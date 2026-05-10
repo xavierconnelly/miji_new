@@ -1,5 +1,5 @@
 <script>
-	import { awards } from '../awards/awards.js'
+	import { awards } from '../../awards/awards.js'
 </script>
 
 <div id="awards">

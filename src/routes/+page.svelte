@@ -23,27 +23,27 @@ this file is first project on mobile
 
                 <img src="../images/ALightAddition/01_400.webp" 
                      loading="lazy" 
-                     alt="An image of an old house with a renovation, front view"
+                     alt="An old house with a renovation, front view"
                      width="800"
                      height="1150">
                 <img src="../images/ALightAddition/02_400.webp" 
                      loading="lazy" 
-                     alt="An image of an old house with a renovation, front view"
+                     alt="An old house with a renovation, front view"
                      width="800"
                      height="1200">
                 <img src="../images/ALightAddition/03_400.webp" 
                      loading="lazy" 
-                     alt="An image of an old house with a renovation, front view"
+                     alt="An old house with a renovation, front view"
                      width="800"
                      height="533">
                 <img src="../images/ALightAddition/04_400.webp" 
                      loading="lazy" 
-                     alt="An image of an old house with a renovation, front view"
+                     alt="An old house with a renovation, front view"
                      width="800"
                      height="1200">
                 <img src="../images/ALightAddition/05_400.webp" 
                      loading="lazy" 
-                     alt="An image of an old house with a renovation, front view"
+                     alt="An old house with a renovation, front view"
                      width="800"
                      height="1200">
                 <img class="plan" src="../images/ALightAddition/Plan_01_800.svg" alt="ALightAddition" loading="lazy" >
