@@ -11,7 +11,7 @@
 </style>
 
 {#if toggle == 'true'}
-<button class:active="{active}" on:click="{() => active = !active}">{text}</button>
+	<button class:active="{active}" on:click="{() => active = !active}">{text}</button>
 {:else}
-<button on:click="{() => active = !active}">{text}</button>
+	<button on:click="{() => active = !active}">{text}</button>
 {/if}

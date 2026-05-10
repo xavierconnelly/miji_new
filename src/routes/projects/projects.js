@@ -116,3 +116,15 @@ export const projects = [
 		next: 'ALightAddition'
 	}
 ];
+
+export const desktopOrder = [
+    'FourVisitsTo52Posts',
+    'ALightAddition',
+    'ACourtyardHouse',
+    'ABHouse',
+    'APavilion',
+    'ARenovationForThree',
+    'ACertainKindofLife',
+    'AHouseForOne',
+    'TokyoTina',
+];

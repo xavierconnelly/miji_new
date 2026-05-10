@@ -6,7 +6,11 @@
     import { onMount, onDestroy } from 'svelte';
     import { page } from '$app/stores';
     import { store } from './store.js';
-    import { projects } from '../routes/projects/projects.js';
+    import { projects, desktopOrder } from '../routes/projects/projects.js';
+
+    const ordered = desktopOrder
+        .map(slug => projects.find(p => p.slug === slug))
+        .filter(Boolean); // safety: drop any slug that doesn't match
 
     // const faces = [...projects, ...projects, ...projects, ...projects];
 
