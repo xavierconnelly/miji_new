@@ -12,10 +12,6 @@
         .map(slug => projects.find(p => p.slug === slug))
         .filter(Boolean); // safety: drop any slug that doesn't match
 
-    const ordered = desktopOrder
-        .map(slug => projects.find(p => p.slug === slug))
-        .filter(Boolean);
-
     // const faces = [...projects, ...projects, ...projects, ...projects];
 
     // Aim for ~36 total faces to preserve the dense cylinder look.
