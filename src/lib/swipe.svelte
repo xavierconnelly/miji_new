@@ -12,14 +12,18 @@
         .map(slug => projects.find(p => p.slug === slug))
         .filter(Boolean); // safety: drop any slug that doesn't match
 
+    const ordered = desktopOrder
+        .map(slug => projects.find(p => p.slug === slug))
+        .filter(Boolean);
+
     // const faces = [...projects, ...projects, ...projects, ...projects];
 
     // Aim for ~36 total faces to preserve the dense cylinder look.
     // Adapts as projects are added/removed
     // Update to 39 or 40 if looking too sparse
     const targetFaces = 36;
-    const repeats = Math.max(1, Math.round(targetFaces / projects.length));
-    const faces = Array.from({ length: repeats }, () => projects).flat();
+    const repeats = Math.max(1, Math.round(targetFaces / ordered.length));   // ← ordered, not projects
+    const faces = Array.from({ length: repeats }, () => ordered).flat();     // ← ordered, not projects
     const angleStep = 360 / faces.length;
     const radiusFactor = 0.5 / Math.tan(Math.PI / faces.length);
 
