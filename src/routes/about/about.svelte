@@ -17,8 +17,6 @@
     <p>
         With a strong commitment to simple, quiet architecture, MI—JI finds intrigue in the overlooked, hoping that an openness to architectural formulation and fabrication can have an honest and deliberate effect.
     </p>
-
-
 </div>
 <div class="contact">
     Millie Anderson<br>
@@ -33,14 +31,7 @@
 </div>
 
 <style>
-*  {
+p  {
     line-height: 130%;
-}
-
-.about,
-.contact {
-	padding-bottom: 1em;
-	border-bottom: 1px solid;
-	margin-bottom: 1em
 }
 </style>
