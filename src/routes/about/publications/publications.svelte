@@ -1,7 +1,7 @@
 <script>
-    import { projects } from '../../routes/projects/projects.js';
+    import { projects } from '../../projects/projects.js';
     import { publications } from './publications.js';
-    import ProjectLinkRow from '$lib/ProjectLinkRow.svelte';
+    import ProjectLinkRow from './ProjectLinkRow.svelte';
 </script>
 
 <div id="publications">
