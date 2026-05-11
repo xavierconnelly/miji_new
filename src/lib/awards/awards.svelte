@@ -52,9 +52,11 @@
     } */
 
     #back {
-        text-align: right;
-        border-bottom: 1px solid black;
-    }
+		position: fixed;
+		right: 20px;
+		top: 50px;
+	}
+	
     #back:hover { color: var(--green) }
 
     .title {
