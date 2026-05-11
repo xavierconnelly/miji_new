@@ -1,7 +1,7 @@
 <script>
     import * as config from '$lib/config';
 
-    import About from '$lib/routes/about/about.svelte';
+    import About from '../routes/about/about.svelte';
     import Awards from '../lib/awards/awards.svelte';
     import Projects from '../routes/projects/projects.svelte';
     import Publications from '../lib/publications/publications.svelte';
