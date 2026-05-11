@@ -1,5 +1,5 @@
 <script>
-	import { projects } from '../routes/projects/projects.js'
+	import { projects } from './projects.js'
 </script>
 
 <div id="projects">
