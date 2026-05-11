@@ -1,9 +1,7 @@
 <script>
     //importing the sections
-    import About from '$lib/routes/about.svelte';
-	// import Award from '$lib/awards.svelte';
+    import About from '$lib/routes/about/about.svelte';
     import Award from '$lib/awards/awards.svelte';
-    // import Publications from '$lib/publications.svelte';
     import Publications from '$lib/publications/publications.svelte';
 </script>
 
