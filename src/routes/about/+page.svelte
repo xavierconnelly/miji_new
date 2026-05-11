@@ -1,8 +1,10 @@
 <script>
     //importing the sections
     import About from '$lib/about.svelte';
-	import Award from '$lib/awards.svelte';
-    import Publications from '$lib/publications.svelte';
+	// import Award from '$lib/awards.svelte';
+    import Award from '$lib/awards/awards.svelte';
+    // import Publications from '$lib/publications.svelte';
+    import Publications from '$lib/publications/publications.svelte';
 </script>
 
 <div id="about" class="flex">
