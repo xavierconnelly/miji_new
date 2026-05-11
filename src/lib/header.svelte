@@ -34,10 +34,10 @@ header img {
     <header>
       <!-- make this h1 -->
           <a href="/" data-sveltekit-noscroll>
-            {config.description}
+            <h1>Office MI—JI</h1> is an architectural office
+            <!-- {config.description} -->
           </a>
-          <!-- <h1>
-            {config.description}
-          </h1> -->
-          <img src="/miji.svg" alt="Mi-Ji logo">
+          <a href="/" data-sveltekit-noscroll>
+            <img src="/miji.svg" alt="Mi-Ji logo">
+          </a>
     </header>
