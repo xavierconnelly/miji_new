@@ -94,8 +94,8 @@
     }
 
     .face {
-        width: 400px;
-        min-width: 400px;
+        width: 400.5px;
+        min-width: 400.5px;
         position: absolute;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -147,8 +147,8 @@
         .scene { --face-width: 300px; 
         }
         .face {
-            width: 300px;
-            min-width: 300px;
+            width: 300.5px;
+            min-width: 300.5px;
         }
     }
 </style>

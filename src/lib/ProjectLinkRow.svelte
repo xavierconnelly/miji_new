@@ -91,7 +91,7 @@
         position: fixed;
         left: 0;
         top: 30px;
-        padding: 22px 0 10px 10px;
+        padding: 20px 0 10px 10px;
         margin-right: 50px;
         opacity: 0;
         transition: 3s;             /* slow fade out when un-hovering */
@@ -99,13 +99,6 @@
         z-index: -99;
         height: 100%;
     }
-
-    /* .preview h5 {
-        padding-bottom: 1em;
-        border-bottom: 1px solid;
-        margin-bottom: 1em;
-        width: 100%;
-    } */
 
     .preview img {
         width: 80%;
