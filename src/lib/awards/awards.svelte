@@ -42,17 +42,14 @@
         float: right;
     }
 
-    h5,
-    h6,
+    /* h5,
     #back {
         padding-bottom: 1em;
         border-bottom: 1px solid;
         margin-bottom: 1em;
         width: 50%;
         float: left;
-    }
-
-    h6 { width: 100%; }
+    } */
 
     #back {
         text-align: right;
@@ -83,7 +80,9 @@
         #awards {
             padding-top: 60px;
         }
-        h5 { width: 100%; }
+        h5 { 
+			width: 100%;
+		}
         .acronyms { padding-left: unset; }
         #back,
         .awarder {

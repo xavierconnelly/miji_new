@@ -31,7 +31,7 @@
 
 {#if project}
     <span class="preview {project.slug}">
-        <h6>{label ?? project.title}</h6>
+        <h5>{label ?? project.title}</h5>
         <img src="../images/{project.slug}/{project.images[0]}_800.webp" alt={project.title}>
     </span>
 {/if}
@@ -91,8 +91,7 @@
         position: fixed;
         left: 0;
         top: 30px;
-        padding: 0 0 10px 10px;
-        margin-top: 22px;
+        padding: 22px 0 10px 10px;
         margin-right: 50px;
         opacity: 0;
         transition: 3s;             /* slow fade out when un-hovering */
@@ -101,12 +100,12 @@
         height: 100%;
     }
 
-    .preview h6 {
+    /* .preview h5 {
         padding-bottom: 1em;
         border-bottom: 1px solid;
         margin-bottom: 1em;
         width: 100%;
-    }
+    } */
 
     .preview img {
         width: 80%;

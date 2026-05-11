@@ -5,7 +5,7 @@
 </script>
 
 <div id="publications">
-    <h6>Publications</h6>
+    <h5>Publications</h5>
     <div class="row title">
         <div class="year">Year</div>
         <div class="publisher">Publisher</div>
@@ -30,12 +30,6 @@
 </div>
 
 <style>
-    h6 {
-        padding-bottom: 1em;
-        border-bottom: 1px solid;
-        margin-bottom: 1em;
-    }
-
     #publications {
         padding-bottom: 100px;
         width: 100%;
@@ -74,7 +68,7 @@
         .project {
             width: 40%;
         }
-        h6 {
+        h5 {
             border-bottom: 0;
             margin-bottom: unset;
         }

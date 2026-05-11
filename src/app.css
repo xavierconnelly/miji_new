@@ -49,6 +49,11 @@ a {
     text-decoration: none;
 }
 
+h5 {
+    padding-bottom: 1em;
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+}
 
 /* 
 not sure if this is used more than once
@@ -60,51 +65,6 @@ button {
     color: unset;
     line-height: inherit;
 }
-/* 
-a:hover {
-    cursor: pointer;
-    color: var(--green);
-} */
-
-/* .next,
-.prev {
-    z-index: 60;
-    width: 70px;
-    padding: 20px;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none
-} */
-
-/* .next img,
-.prev img {
-    width: 100%
-} */
-/* 
-.mobile {
-    display: none
-}
-
-.desktop {
-    display: block
-}
-
-@media only screen and (max-width: 800px) {
-    .group-container {
-        display: none
-    }
-
-    .next,
-    .prev,
-    .mobile {
-        display: block
-    }
-
-    .desktop {
-        display: none
-    }
-} */
 
 @media only screen and (max-width: 800px) {
     * {
