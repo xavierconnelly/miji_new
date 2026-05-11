@@ -2,13 +2,6 @@
     import { projects } from '../../routes/projects/projects.js';
     import { awards } from './awards.js';
     import ProjectLinkRow from '$lib/ProjectLinkRow.svelte';
-    import ProjectPreview from '$lib/ProjectPreview.svelte';
-
-    let hoveredSlug = null;
-    let hoveredLabel = null;
-
-    const setHover = (slug, label) => { hoveredSlug = slug; hoveredLabel = label; };
-    const clearHover = () => { hoveredSlug = null; hoveredLabel = null; };
 </script>
 
 <div id="awards">
@@ -33,12 +26,7 @@
     {#each awards as a}
         {@const project = projects.find(p => p.slug === a.project)}
 
-        <ProjectLinkRow
-            {project}
-            label={a.label}
-            onHover={setHover}
-            onLeave={clearHover}
-        >
+        <ProjectLinkRow {project} label={a.label}>
             <div class="year">{a.year}</div>
             <div class="abrev">{a.type}</div>
             <div class="award">{a.award}</div>
@@ -46,8 +34,6 @@
             <div class="project">{a.label ?? project?.title ?? a.project}</div>
         </ProjectLinkRow>
     {/each}
-
-    <ProjectPreview hovered={hoveredSlug} label={hoveredLabel} />
 </div>
 
 <style>
@@ -57,6 +43,7 @@
     }
 
     h5,
+    h6,
     #back {
         padding-bottom: 1em;
         border-bottom: 1px solid;
@@ -64,6 +51,8 @@
         width: 50%;
         float: left;
     }
+
+    h6 { width: 100%; }
 
     #back {
         text-align: right;
@@ -78,8 +67,8 @@
         padding-bottom: 1em;
     }
 
-    /* Column widths apply to both the title row and the slot content
-       inside <ProjectLinkRow>, since slot content uses parent scope */
+    /* Column widths apply to title row and slot content
+       (slot content uses parent's scope) */
     .year,
     .abrev {
         width: 5%;

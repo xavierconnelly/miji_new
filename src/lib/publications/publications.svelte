@@ -2,17 +2,10 @@
     import { projects } from '../../routes/projects/projects.js';
     import { publications } from './publications.js';
     import ProjectLinkRow from '$lib/ProjectLinkRow.svelte';
-    import ProjectPreview from '$lib/ProjectPreview.svelte';
-
-    let hoveredSlug = null;
-    let hoveredLabel = null;
-
-    const setHover = (slug, label) => { hoveredSlug = slug; hoveredLabel = label; };
-    const clearHover = () => { hoveredSlug = null; hoveredLabel = null; };
 </script>
 
 <div id="publications">
-    <h5>Publications</h5>
+    <h6>Publications</h6>
     <div class="row title">
         <div class="year">Year</div>
         <div class="publisher">Publisher</div>
@@ -27,8 +20,6 @@
             {project}
             label={p.label}
             href={p.url ?? null}
-            onHover={setHover}
-            onLeave={clearHover}
         >
             <div class="year">{p.year}</div>
             <div class="publisher">{p.publisher}</div>
@@ -36,12 +27,10 @@
             <div class="project">{p.label ?? project?.title ?? p.project}</div>
         </ProjectLinkRow>
     {/each}
-
-    <ProjectPreview hovered={hoveredSlug} label={hoveredLabel} />
 </div>
 
 <style>
-    h5 {
+    h6 {
         padding-bottom: 1em;
         border-bottom: 1px solid;
         margin-bottom: 1em;
@@ -85,7 +74,7 @@
         .project {
             width: 40%;
         }
-        h5 {
+        h6 {
             border-bottom: 0;
             margin-bottom: unset;
         }
