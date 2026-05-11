@@ -5,7 +5,7 @@
 </script>
 
 <div class="about">
-    <h6>{config.title}</h6>
+    <h5>{config.title}</h5>
     <p>
         {config.title} was established in Melbourne, but took shape in London and Chicago. With a clear motto of “do good work”, the office works with a straightforward motive that “good work” speaks for itself.
     </p>
@@ -37,7 +37,6 @@
     line-height: 130%;
 }
 
-h6,
 .about,
 .contact {
 	padding-bottom: 1em;
