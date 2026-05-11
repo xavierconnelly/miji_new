@@ -13,87 +13,6 @@
 	let view = 'closed';
 </script>
 
-<style>
-
-	
-	input[type=radio] { display: none }
-	
-	container {
-		position: fixed;
-		top: 30px;
-	}
-
-	
-	img {
-		width: 100%;
-	}
-	
-	article {
-		position: fixed;
-		top: 30px;
-		right: 0;
-		width: 0px;
-		height: calc(100% - 100px);
-		transition: 1s;
-	}
-	
-.selected {
-		width: 100%;
-	border-left: 1px solid;
-	}
-	
-	span {
-		position: inline-block;
-		height: 100%;
-		float: left;
-	}
-	
-	#close {
-		width: 25%;
-				padding: 10px 10px 10px 10px;
-
-	}
-
-	.clear {
-		display: none;
-	}
-	
-	label {
-	width: 200px;
-		float: left;
-		position: inline;
-	}
-	
-	label img {
-		width: 100%;
-	height: auto;
-	}
-	
-	
-	.name {
-				position: inline-block;
-				width: 25%;
-		background: white;
-				padding: 10px 10px 10px 10px;
-
-	}
-	
-	#close p,
-	.name p {
-		position: absolute;
-		bottom: 0;
-		width: inherit;
-		padding: 10px 10px 10px 10px;
-
-	}
-	
-.pictures {
-			width: 50%;
-		overflow: scroll;
-	}
-
-</style>
-
 <container> 
 		
 			{#each projectData as project, i}
@@ -154,4 +73,77 @@
 						 alt="">
 			</span>
 		</article>
-	</container>
+</container>
+
+<style>
+input[type=radio] { display: none }
+
+container {
+	position: fixed;
+	top: 30px;
+}
+
+img {
+	width: 100%;
+}
+
+article {
+	position: fixed;
+	top: 30px;
+	right: 0;
+	width: 0px;
+	height: calc(100% - 100px);
+	transition: 1s;
+}
+
+.selected {
+	width: 100%;
+	border-left: 1px solid;
+}
+	
+span {
+	position: inline-block;
+	height: 100%;
+	float: left;
+}
+	
+#close {
+	width: 25%;
+	padding: 10px 10px 10px 10px;
+}
+
+.clear {
+	display: none;
+}
+
+label {
+width: 200px;
+	float: left;
+	position: inline;
+}
+
+label img {
+	width: 100%;
+	height: auto;
+}
+
+.name {
+	position: inline-block;
+	width: 25%;
+	background: white;
+	padding: 10px 10px 10px 10px;
+}
+
+#close p,
+.name p {
+	position: absolute;
+	bottom: 0;
+	width: inherit;
+	padding: 10px 10px 10px 10px;
+}
+	
+.pictures {
+	width: 50%;
+	overflow: scroll;
+}
+</style>

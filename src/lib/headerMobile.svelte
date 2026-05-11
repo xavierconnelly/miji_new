@@ -3,10 +3,8 @@
 
     import About from '$lib/about.svelte';
     import Awards from '../lib/awards/awards.svelte';
-    // import Awards from '../lib/awards.svelte';
     import Projects from './projects.svelte';
     import Publications from '../lib/publications/publications.svelte';
-    // import Publications from '../lib/publications.svelte';
 
     let images = { selected: false };
     // let images;
