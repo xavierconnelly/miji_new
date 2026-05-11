@@ -1,7 +1,7 @@
 <script>
     import { projects } from '../../projects/projects.js';
     import { awards } from './awards.js';
-    import ProjectLinkRow from './ProjectLinkRow.svelte';
+    import ProjectLinkRow from '../../ProjectLinkRow.svelte';
 </script>
 
 <div id="awards">
