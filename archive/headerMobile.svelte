@@ -1,10 +1,10 @@
 <script>
     import * as config from '$lib/config';
 
-    import About from '../routes/about/about.svelte';
-    import Awards from '../routes/about/awards/awards.svelte';
-    import Projects from '../routes/projects/projects.svelte';
-    import Publications from '../routes/about/publications/publications.svelte';
+    import About from '../src/routes/about/about.svelte';
+    import Awards from '../src/routes/about/awards/awards.svelte';
+    import Projects from '../src/routes/projects/projects.svelte';
+    import Publications from '../src/routes/about/publications/publications.svelte';
 
     let images = { selected: false };
     // let images;

@@ -3,7 +3,7 @@
 </script>
 
 <div id="projects">
-	<h6>Projects</h6>
+	<h5>Projects</h5>
 	{#each projects as { title, slug}}
         <a href="/projects/{slug}" data-sveltekit-noscroll class="{slug} row">
             {title}
@@ -16,12 +16,6 @@
     padding-top: 60px;
 	width: calc(100% - 0px);
 	float: right;
-}
-
-h6 {
-	padding-bottom: 1em;
-	border-bottom: 1px solid;
-	margin-bottom: 1em
 }
 
 .title {
