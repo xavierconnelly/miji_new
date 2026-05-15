@@ -1,9 +1,10 @@
 <script>
+    import '../app.css';
+
     import Header from '../lib/header.svelte';
     import Swiper from '../lib/swipe.svelte';
     import Footer from '../lib/footer.svelte';
     import MediaQuery from '../lib/MediaQuery.svelte';
-    import '../app.css';
 
     import { fade } from 'svelte/transition';
 
