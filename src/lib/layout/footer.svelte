@@ -48,15 +48,15 @@
 
     footer {
         position: fixed;
-        background: white;
-        bottom: 0;
-        width: 100%;
-        z-index: 40;
-        transition: 2s;
         display: flex;
         flex-flow: row wrap;
         align-items: end;
+        bottom: 0;
+        width: 100%;
         min-height: 80px;
+        z-index: 40;
+        /* background: white; */
+        transition: 2s;
     }
 
     footer > * {
