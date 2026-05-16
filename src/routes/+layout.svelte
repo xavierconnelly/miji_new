@@ -1,10 +1,10 @@
 <script>
     import '../app.css';
 
-    import Header from '../lib/header.svelte';
-    import Swiper from '../lib/swipe.svelte';
-    import Footer from '../lib/footer.svelte';
-    import MediaQuery from '../lib/MediaQuery.svelte';
+    import Header from '$lib/layout/header.svelte';
+    import Swiper from '$lib/layout/swipe.svelte';
+    import Footer from '$lib/layout/footer.svelte';
+    import MediaQuery from '$lib/layout/MediaQuery.svelte';
 
     import { fade } from 'svelte/transition';
 
@@ -13,33 +13,28 @@
 
 <Header />
 
+<!-- The Swiper shows above 800px -->
 <MediaQuery query="(min-width: 800px)" let:matches>
     {#if matches}
-        <div class="root tablet">
+        <main class="root tablet">
             <Swiper />
-        </div>
-    {/if}
-</MediaQuery>
-
-{#key data.url}
-    <div transition:fade={{ duration: 1000 }} id="lost">
-        <slot />
-    </div>
-{/key}
-
-<MediaQuery query="(min-width: 800px)" let:matches>
-    {#if matches}
+        </main>
         <Footer />
     {/if}
 </MediaQuery>
 
-
+<!-- The rest of everything -->
+{#key data.url}
+    <section transition:fade={{ duration: 1000 }} id="lost">
+        <slot />
+    </section>
+{/key}
 
 <style>
-    .root {
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
+.root {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
 </style>

@@ -1,10 +1,11 @@
 <script>
-    import Bio from './bio.svelte';
-    import Award from './awards/awards.svelte';
-    import Publications from './publications/publications.svelte';
-    import Projects from '../projects/projects.svelte';
-	import MediaQuery from '$lib/MediaQuery.svelte';
-	import Footer from '$lib/footer.svelte';
+    import Bio from '$lib/components/bio.svelte';
+    import Award from '$lib/components/awards.svelte';
+    import Publications from '$lib/components/publications.svelte';
+    import Projects from '$lib/components/projects.svelte';
+    
+	import MediaQuery from '$lib/layout/MediaQuery.svelte';
+	import Footer from '$lib/layout/footer.svelte';
 </script>
 
 <div id="about">

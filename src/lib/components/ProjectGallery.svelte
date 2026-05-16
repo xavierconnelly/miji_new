@@ -12,7 +12,7 @@
                   Used on [slug] pages, not on the homepage.
 -->
 <script>
-    import MediaQuery from './MediaQuery.svelte';
+    import MediaQuery from '$lib/layout/MediaQuery.svelte';
 
     export let project;
     export let prevSlug;
@@ -30,9 +30,15 @@
                 class="display"
             >
                 {#each project.images as i}
-                    <img src="/images/{project.slug}/{i}_800.webp"
+                    <!-- <img src="/images/{project.slug}/{i}_800.webp"
                          alt={project.title}
-                         loading="lazy" />
+                         loading="lazy" /> -->
+                    <img 
+                    src="/images/{project.slug}/{i}_800.webp"
+                    srcset="/images/{project.slug}/{i}_400.webp 400w, /images/{project.slug}/{i}_800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px"
+                    alt={project.title}
+                    />                    
                 {/each}
                 {#each project.plans as i}
                     <img class="plan"
@@ -140,12 +146,19 @@
     /* Project-colour cursors — for both project images and the white backdrop.
        (.white element has both `.white` and the colour class, so `.green.white`
        targets the green-coloured backdrop.) */
-    .green     img, .green.white     { cursor: url(/close/green.svg), crosshair; }
-    .yellow    img, .yellow.white    { cursor: url(/close/yellow.svg), crosshair; }
-    .pink      img, .pink.white      { cursor: url(/close/pink.svg), crosshair; }
-    .red       img, .red.white       { cursor: url(/close/red.svg), crosshair; }
-    .grey      img, .grey.white      { cursor: url(/close/grey.svg), crosshair; }
-    .pistachio img, .pistachio.white { cursor: url(/close/pistachio.svg), crosshair; }
+    :is(.green, .yellow, .pink, .red, .grey, .pistachio) img,
+    .white { cursor: var(--close), crosshair; }
+    
+    /* .green     { --close: url(/close/green.svg); }
+    .yellow    { --close: url(/close/yellow.svg); }
+    .pink      { --close: url(/close/pink.svg); }
+    .red       { --close: url(/close/red.svg); }
+    .grey      { --close: url(/close/grey.svg); }
+    .pistachio { --close: url(/close/pistachio.svg); }
+
+    .green img, .yellow img, .pink img,
+    .red img, .grey img, .pistachio img,
+    .white { cursor: var(--close), crosshair; } */
 
     .arrow {
         z-index: 60;

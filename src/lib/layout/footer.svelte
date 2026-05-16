@@ -1,10 +1,10 @@
 <script>
-    import Radio from '../lib/radio.svelte';
-	import MediaQuery from '$lib/MediaQuery.svelte';
+    import Radio from '$lib/layout/radio.svelte';
+	import MediaQuery from '$lib/layout/MediaQuery.svelte';
 
     export let radioValue;
 
-    import { store } from '../lib/store.js';
+    import { store } from '$lib/utils/store.js';
 
     const options = [{
         value: 'blueprints',

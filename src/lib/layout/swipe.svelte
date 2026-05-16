@@ -5,8 +5,8 @@
 <script>
     import { onMount, onDestroy } from 'svelte';
     import { page } from '$app/stores';
-    import { store } from './store.js';
-    import { projects, desktopOrder } from '../routes/projects/projects.js';
+    import { store } from '$lib/utils/store.js';
+    import { projects, desktopOrder } from '$lib/data/projects.js';
 
     const ordered = desktopOrder
         .map(slug => projects.find(p => p.slug === slug))

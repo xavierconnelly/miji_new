@@ -1,7 +1,7 @@
 <script>
     //not entirely neccessary, just used to enter 'Office Mi-Ji' into the text
     //could maybe be used for other things though, another way of moving data around
-    import * as config from '$lib/config'; 
+    import * as config from '$lib/utils/config'; 
 </script>
 
 <div class="about">

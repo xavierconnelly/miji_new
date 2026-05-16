@@ -1,9 +1,9 @@
 <script>
 
-import { store } from '../lib/store.js';
+import { store } from '$lib/utils/store.js';
 
   export let options;
-  export let userSelected = options[0].value;
+  export const userSelected = options[0].value;
 	
   const slugify = (str = "") =>
     str.toLowerCase().replace(/ /g, "-").replace(/\./g, "");

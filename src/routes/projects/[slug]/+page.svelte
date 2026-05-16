@@ -1,5 +1,5 @@
 <script>
-    import ProjectGallery from '$lib/ProjectGallery.svelte';
+    import ProjectGallery from '$lib/components/ProjectGallery.svelte';
 
     export let data;
 </script>

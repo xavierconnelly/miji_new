@@ -1,5 +1,5 @@
 <script>
-	import { projects } from './projects.js'
+	import { projects } from '$lib/data/projects.js'
 </script>
 
 <div id="projects">

@@ -1,7 +1,8 @@
 <script>
-    import { projects } from './projects/projects.js';
-    import ProjectGallery from '$lib/ProjectGallery.svelte';
-    import MediaQuery from '$lib/MediaQuery.svelte';
+    import ProjectGallery from '$lib/components/ProjectGallery.svelte';
+    import MediaQuery from '$lib/layout/MediaQuery.svelte';
+    import { projects } from '$lib/data/projects.js';
+
 
     // "Newest" = first item in projects.js (assumes you keep the array
     // ordered newest → oldest, which you said is the mobile order).

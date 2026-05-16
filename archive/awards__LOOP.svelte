@@ -41,12 +41,6 @@
 
 <style>
 
-/* 
-* {
-	outline: 1px solid;
-}
-*/
-
 
 
 #awards {

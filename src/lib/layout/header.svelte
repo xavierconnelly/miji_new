@@ -1,5 +1,5 @@
 <script>
-    import * as config from '$lib/config';
+    import * as config from '$lib/utils/config';
 </script>
 
 <header>
@@ -7,7 +7,7 @@
         <h1>Office MI—JI</h1> is an architectural office
     </a>
     <a href="/about" data-sveltekit-noscroll class="logo">
-        <img src="/miji.svg" alt="Mi-Ji logo">
+        <img src="/miji.svg" alt="Mi-Ji logo" width="60" height="18" />
     </a>
 </header>
 
