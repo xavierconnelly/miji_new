@@ -54,7 +54,7 @@
         bottom: 0;
         width: 100%;
         min-height: 80px;
-        z-index: 40;
+        z-index: 0;
         /* background: white; */
         transition: 2s;
     }

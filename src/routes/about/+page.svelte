@@ -31,7 +31,7 @@
         position: fixed;
         top: 0;
         padding: 40px 0px 100px 0px;
-        z-index: 40;
+        z-index: 20;
         overflow: scroll;
         width: 100%;
         height: calc(100dvh - 80px);

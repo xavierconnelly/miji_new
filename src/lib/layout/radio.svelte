@@ -61,16 +61,16 @@ import { store } from '$lib/utils/store.js';
     text-align: left;
   }
 
-  input[type="radio"] + label::before {
-      content: "";
-      position: relative;
-      display: inline-block;
-      margin-right: 0.5em;
-      width: 1em;
-      height: 1em;
-      border: 1px solid white;
-      top: 0.2em;
-  }
+input[type="radio"] + label::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 1em;
+  height: 1em;
+  border: 1px solid white;
+  top: 0.2em;
+}
 
   input[type="radio"] + label::after {
     content: "";
