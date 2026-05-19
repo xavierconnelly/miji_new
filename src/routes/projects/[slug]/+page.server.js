@@ -2,15 +2,15 @@ import { error } from '@sveltejs/kit';
 import { client } from '$lib/server/microcms';
 
 export async function load({ params, parent }) {
-    const { projects } = await parent();
-    const index = projects.findIndex(p => p.id === params.slug);
+    const { sortedProjects } = await parent();
+    const index = sortedProjects.findIndex(p => p.id === params.slug);
 
     if (index === -1) throw error(404, 'Project not found');
 
     return {
-        project: projects[index],
-        prevSlug: projects[(index - 1 + projects.length) % projects.length].id,
-        nextSlug: projects[(index + 1) % projects.length].id
+        project: sortedProjects[index],
+        prevSlug: sortedProjects[(index - 1 + sortedProjects.length) % sortedProjects.length].id,
+        nextSlug: sortedProjects[(index + 1) % sortedProjects.length].id
     };
 }
 

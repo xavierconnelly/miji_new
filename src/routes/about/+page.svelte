@@ -74,7 +74,7 @@
     line-height: 65px;
     border-top: 1px solid;
     text-align: center;
-    /* background-color: white; */
+    background-color: white;
     z-index: 90;
 }
 

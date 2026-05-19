@@ -3,22 +3,27 @@
     import MediaQuery from '$lib/layout/mediaQuery.svelte';
 
     export let data;
-    const newest = data.projects[0];
-    const prevSlug = data.projects[data.projects.length - 1].id;
-    const nextSlug = data.projects[1]?.id ?? data.projects[0].id;
+    const newest = data.sortedProjects[0];
+    const prevSlug = data.sortedProjects[data.sortedProjects.length - 1].id;
+    const nextSlug = data.sortedProjects[1]?.id ?? data.sortedProjects[0].id;
 
     const photos = newest.photos ?? [];
 </script>
 
 <svelte:head>
     {#if photos[0]}
-        <link rel="preload" as="image" href={photos[0].url} fetchpriority="high">
-    {/if}
-    {#if photos[1]}
-        <link rel="preload" as="image" href={photos[1].url}>
-    {/if}
-    {#if photos.length > 2}
-        <link rel="preload" as="image" href={photos[photos.length - 1].url}>
+        <link
+            rel="preload"
+            as="image"
+            href="{photos[0].url}?w=800&fm=webp&q=80"
+            imagesrcset="
+                {photos[0].url}?w=400&fm=webp&q=80 400w,
+                {photos[0].url}?w=800&fm=webp&q=80 800w,
+                {photos[0].url}?w=1200&fm=webp&q=80 1200w
+            "
+            imagesizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 40vw"
+            fetchpriority="high"
+        >
     {/if}
 </svelte:head>
 

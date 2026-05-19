@@ -11,5 +11,10 @@ export async function load() {
         colour: Array.isArray(p.colour) ? p.colour[0] : p.colour
     }));
 
-    return { projects };
+    // Newest first. year is a Text Field, so coerce to number for sorting.
+    const sortedProjects = [...projects].sort((a, b) =>
+        (Number(b.year) || 0) - (Number(a.year) || 0)
+    );
+
+    return { projects, sortedProjects };
 }
