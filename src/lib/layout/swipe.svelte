@@ -55,7 +55,12 @@
                     {#if project.blur}
                         <img
                             class="blur {$store}"
-                            src="{project.blur.url}?w=600&fm=webp&q=90"
+                            src="{project.blur.url}?w=401&fm=webp&q=90"
+                            srcset="
+                                {project.blur.url}?w=401&fm=webp&q=90 400w,
+                                {project.blur.url}?w=301&fm=webp&q=80 800w
+                            "
+                            sizes="(max-width: 401px) 100vw, (max-width: 301px) 50vw"
                             width={project.blur.width}
                             height={project.blur.height}
                             alt="blurred hero of {project.title}"
