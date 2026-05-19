@@ -63,6 +63,7 @@
                             sizes="(min-width: 801px) and (min-height: 801px) 401px, 301px"
                             width={project.blur.width}
                             height={project.blur.height}
+                            fetchpriority="high" 
                             alt="blurred hero of {project.title}"
                         />
                     {/if}
