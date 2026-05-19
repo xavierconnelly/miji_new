@@ -41,7 +41,7 @@
     z-index: 20;
     overflow: scroll;
     width: 100%;
-    height: calc(100dvh - 80px);
+    height: calc(100dvh - 60px);
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
