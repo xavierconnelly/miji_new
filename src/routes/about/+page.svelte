@@ -41,7 +41,7 @@
     z-index: 20;
     overflow: scroll;
     width: 100%;
-    height: calc(100dvh - 60px);
+    height: calc(100dvh - 65px);
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -66,16 +66,16 @@
 }
 
 #close {
-    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+    width: 100%;
     height: 65px;
     line-height: 65px;
     border-top: 1px solid;
     text-align: center;
-    background-color: white;
-    z-index: 50;
+    /* background-color: white; */
+    z-index: 90;
 }
 
 @media only screen and (max-width: 800px) {

@@ -37,4 +37,7 @@
 .bio p + p {
     margin-top: 1.2em;
 }
+.contact {
+    padding-top: 1em;
+}
 </style>
