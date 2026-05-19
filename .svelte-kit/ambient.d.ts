@@ -26,6 +26,8 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const MICROCMS_SERVICE_DOMAIN: string;
+	export const MICROCMS_API_KEY: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
@@ -111,6 +113,8 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		MICROCMS_SERVICE_DOMAIN: string;
+		MICROCMS_API_KEY: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;

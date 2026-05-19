@@ -1,18 +1,18 @@
 <!--
-    ProjectGallery — renders a single project's images, plans, prev/next
-    buttons and caption. Used by both the homepage (mobile, showing newest
-    project) and [slug]/+page.svelte (any project URL).
+    ProjectGallery — renders a single project's photos, plans, prev/next
+    buttons and caption.
 
     Props:
-      project   — the project object from projects.js
-      prevSlug  — slug to navigate to for "previous"
-      nextSlug  — slug to navigate to for "next"
-      closeable — when true, desktop images become a link to "/" and a
-                  white backdrop appears (click-outside-to-close pattern).
-                  Used on [slug] pages, not on the homepage.
+      project   — project object from microCMS
+                  (photos[], plans[], context, colour, title, location, year)
+      prevSlug  — slug for "previous"
+      nextSlug  — slug for "next"
+      closeable — when true, images link to "/" on desktop and a white backdrop
+                  appears. Mobile ignores closeable (no "home" UX on mobile).
+                  Used on [slug] pages.
 -->
 <script>
-    import MediaQuery from '$lib/layout/MediaQuery.svelte';
+    import MediaQuery from '$lib/layout/mediaQuery.svelte';
 
     export let project;
     export let prevSlug;
@@ -22,72 +22,64 @@
 
 <article class={project.colour}>
     <MediaQuery query="(min-width: 800px)" let:matches>
+        <svelte:element
+            this={closeable && matches ? 'a' : 'div'}
+            href={closeable && matches ? '/' : undefined}
+            data-sveltekit-noscroll
+            class="display"
+        >
+            {#each project.photos as photo, i}
+                <img
+                    src="{photo.url}?w=800&fm=webp&q=80"
+                    srcset="
+                        {photo.url}?w=400&fm=webp&q=80 400w,
+                        {photo.url}?w=800&fm=webp&q=80 800w,
+                        {photo.url}?w=1200&fm=webp&q=80 1200w
+                    "
+                    sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 40vw"
+                    width={photo.width}
+                    height={photo.height}
+                    alt={photo.alt ?? project.title}
+                    loading={i < 3 ? 'eager' : 'lazy'}
+                    fetchpriority={i === 0 ? 'high' : 'auto'}
+                />
+            {/each}
+            {#each project.plans as plan}
+                <img
+                    class="plan"
+                    src={plan.url}
+                    width={plan.width}
+                    height={plan.height}
+                    alt={plan.alt ?? `${project.title} plan`}
+                    loading="lazy"
+                />
+            {/each}
+        </svelte:element>
+    </MediaQuery>
+
+    <MediaQuery query="(max-width: 800px)" let:matches>
         {#if matches}
-            <svelte:element
-                this={closeable ? 'a' : 'div'}
-                href={closeable ? '/' : undefined}
-                data-sveltekit-noscroll
-                class="display"
-            >
-                {#each project.images as i}
-                    <!-- <img src="/images/{project.slug}/{i}_800.webp"
-                         alt={project.title}
-                         loading="lazy" /> -->
-                    <img 
-                    src="/images/{project.slug}/{i}_800.webp"
-                    srcset="/images/{project.slug}/{i}_400.webp 400w, /images/{project.slug}/{i}_800.webp 800w"
-                    sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px"
-                    alt={project.title}
-                    />                    
-                {/each}
-                {#each project.plans as i}
-                    <img class="plan"
-                         src="/images/{project.slug}/Plan_{i}_800.svg"
-                         loading="lazy"
-                         alt={project.title}>
-                {/each}
-            </svelte:element>
-        {:else}
-            <span class="display">
-                {#each project.images as i}
-                    <img src="/images/{project.slug}/{i}_400.webp"
-                         loading="lazy"
-                         alt={project.title}
-                         width="800"
-                         height="1200">
-                {/each}
-                {#each project.plans as i}
-                    <img class="plan"
-                         src="/images/{project.slug}/Plan_{i}_800.svg"
-                         loading="lazy"
-                         alt={project.title}>
-                {/each}
-            </span>
+            <div class="buttons">
+                <a href="/projects/{prevSlug}" data-sveltekit-scroll>
+                    <img id="prev" class="arrow" src="/prev/{project.colour}.svg" alt="previous project">
+                </a>
+                <a href="/projects/{nextSlug}" data-sveltekit-scroll>
+                    <img id="next" class="arrow" src="/next/{project.colour}.svg" alt="next project">
+                </a>
+            </div>
         {/if}
     </MediaQuery>
 
-    <div class="buttons">
-        <a href="/projects/{prevSlug}" data-sveltekit-scroll>
-            <img id="prev" class="arrow" src="/prev/{project.colour}.svg" alt="previous project">
-        </a>
-        <a href="/projects/{nextSlug}" data-sveltekit-scroll>
-            <img id="next" class="arrow" src="/next/{project.colour}.svg" alt="next project">
-        </a>
-    </div>
-
     <div id="sun" class={project.colour}>
         <h2>{project.title}</h2> &nbsp;-&nbsp;
-        <p>{@html project.content}</p>
+        <p>{project.location}, {project.year} {#if project.context}{project.context}{/if}</p>
     </div>
 </article>
 
 {#if closeable}
-    <MediaQuery query="(min-width: 800px)" let:matches>
-        {#if matches}
-            <a data-sveltekit-noscroll class="white {project.colour}" href="/" aria-label="Close project"></a>
-        {/if}
-    </MediaQuery>
+    <a data-sveltekit-noscroll class="white {project.colour}" href="/" aria-label="Close project"></a>
 {/if}
+
 
 <style>
     article {
@@ -110,6 +102,7 @@
 
     img {
         width: 100%;
+        height: auto;
         display: block;
     }
 
@@ -143,22 +136,27 @@
         left: 0;
     }
 
-    /* Project-colour cursors — for both project images and the white backdrop.
-       (.white element has both `.white` and the colour class, so `.green.white`
-       targets the green-coloured backdrop.) */
+    @media (max-width: 799px) {
+        .white { display: none; }
+    }
+
+    /* Project-colour cursors — for both project images and the white backdrop. */
+    .green     { --close: url(/close/green.svg);}
+    .yellow    { --close: url(/close/yellow.svg);}
+    .pink      { --close: url(/close/pink.svg);}
+    .red       { --close: url(/close/red.svg);}
+    .grey      { --close: url(/close/grey.svg);}
+    .pistachio { --close: url(/close/pistachio.svg);}
+
     :is(.green, .yellow, .pink, .red, .grey, .pistachio) img,
     .white { cursor: var(--close), crosshair; }
-    
-    /* .green     { --close: url(/close/green.svg); }
-    .yellow    { --close: url(/close/yellow.svg); }
-    .pink      { --close: url(/close/pink.svg); }
-    .red       { --close: url(/close/red.svg); }
-    .grey      { --close: url(/close/grey.svg); }
-    .pistachio { --close: url(/close/pistachio.svg); }
 
-    .green img, .yellow img, .pink img,
-    .red img, .grey img, .pistachio img,
-    .white { cursor: var(--close), crosshair; } */
+    .green #sun     {background: var(--green)}
+    .yellow #sun    {background: var(--yellow)}
+    .pink #sun      {background: var(--pink)}
+    .red #sun       {background: var(--red)}
+    .grey #sun      {background: var(--grey)}
+    .pistachio #sun {background: var(--pistachio)}
 
     .arrow {
         z-index: 60;
@@ -176,28 +174,17 @@
     #prev { left: 0; }
 
     @media only screen and (max-width: 800px) {
-        img { width: unset; height: 100%; }
         #sun { width: 100%; }
         article {
             width: 50%;
             height: 100%;
+            /* height: calc(100% - 140px); */
         }
-    }
-
-    @media only screen and (max-height: 800px) {
         .arrow { display: block; }
-        img { width: unset; height: 100%; }
-        article {
-            width: 100%;
-            height: calc(100% - 140px);
-            top: 30px;
-            flex-direction: row;
-        }
+        /* img { width: unset; height: 100%; } */
     }
 
     @media only screen and (max-width: 600px) {
-        .arrow { display: block; }
-        img { width: 100%; height: unset; }
         article {
             width: 100%;
             height: 100%;

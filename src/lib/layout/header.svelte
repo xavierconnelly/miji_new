@@ -3,10 +3,10 @@
 </script>
 
 <header>
-    <a href="/" data-sveltekit-noscroll class="text">
+    <a href="/about" data-sveltekit-noscroll class="text">
         <h1>Office MI—JI</h1> is an architectural office
     </a>
-    <a href="/about" data-sveltekit-noscroll class="logo">
+    <a href="/" data-sveltekit-noscroll class="logo">
         <img src="/miji.svg" alt="Mi-Ji logo" width="60" height="18" />
     </a>
 </header>

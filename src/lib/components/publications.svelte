@@ -1,7 +1,6 @@
 <script>
-    import { projects } from '$lib/data/projects.js';
-    import { publications } from '$lib/data/publications.js';
-    import ProjectLinkRow from '$lib/components/ProjectLinkRow.svelte';
+    import ProjectLinkRow from '$lib/components/projectLinkRow.svelte';
+    export let publications = [];
 </script>
 
 <div id="publications">
@@ -14,17 +13,15 @@
     </div>
 
     {#each publications as p}
-        {@const project = projects.find(pr => pr.slug === p.project)}
-
         <ProjectLinkRow
-            {project}
+            project={p.project}
             label={p.label}
-            href={p.url ?? null}
+            href={p.url || null}
         >
             <div class="year">{p.year}</div>
             <div class="publisher">{p.publisher}</div>
-            <div class="issue">{p.issue ?? ''}</div>
-            <div class="project">{p.label ?? project?.title ?? p.project}</div>
+            <div class="issue">{p.issue || ''}</div>
+            <div class="project">{p.label || p.project?.title}</div>
         </ProjectLinkRow>
     {/each}
 </div>

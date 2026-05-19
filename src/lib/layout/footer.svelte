@@ -1,10 +1,9 @@
 <script>
     import Radio from '$lib/layout/radio.svelte';
-	import MediaQuery from '$lib/layout/MediaQuery.svelte';
-
-    export let radioValue;
-
+	import MediaQuery from '$lib/layout/mediaQuery.svelte';
     import { store } from '$lib/utils/store.js';
+
+    // export const radioValue;
 
     const options = [{
         value: 'blueprints',
@@ -35,7 +34,8 @@
     <MediaQuery query="(min-width: 800px)" let:matches>
         {#if matches}
             <span id="abrv">
-                <Radio {options} bind:userSelected={$store}/>
+                <!-- <Radio {options} bind:userSelected={$store}/> -->
+                <Radio {options} />
             </span>
         {/if}
     </MediaQuery>

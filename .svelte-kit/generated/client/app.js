@@ -9,11 +9,11 @@ export const nodes = [
 	() => import('./nodes/5')
 ];
 
-export const server_loads = [];
+export const server_loads = [0,2];
 
 export const dictionary = {
 		"/": [3],
-		"/about": [4],
+		"/about": [~4],
 		"/projects/[slug]": [~5,[2]]
 	};
 

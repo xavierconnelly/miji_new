@@ -4,7 +4,7 @@
     import Header from '$lib/layout/header.svelte';
     import Swiper from '$lib/layout/swipe.svelte';
     import Footer from '$lib/layout/footer.svelte';
-    import MediaQuery from '$lib/layout/MediaQuery.svelte';
+    import MediaQuery from '$lib/layout/mediaQuery.svelte';
 
     import { fade } from 'svelte/transition';
 
@@ -17,7 +17,7 @@
 <MediaQuery query="(min-width: 800px)" let:matches>
     {#if matches}
         <main class="root tablet">
-            <Swiper />
+            <Swiper projects={data.projects} />
         </main>
         <Footer />
     {/if}

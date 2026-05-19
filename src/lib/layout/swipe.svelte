@@ -6,28 +6,18 @@
     import { onMount, onDestroy } from 'svelte';
     import { page } from '$app/stores';
     import { store } from '$lib/utils/store.js';
-    import { projects, desktopOrder } from '$lib/data/projects.js';
 
-    const ordered = desktopOrder
-        .map(slug => projects.find(p => p.slug === slug))
-        .filter(Boolean); // safety: drop any slug that doesn't match
+    export let projects;
 
-    // const faces = [...projects, ...projects, ...projects, ...projects];
-
-    // Aim for ~36 total faces to preserve the dense cylinder look.
-    // Adapts as projects are added/removed
-    // Update to 39 or 40 if looking too sparse
     const targetFaces = 36;
-    const repeats = Math.max(1, Math.round(targetFaces / ordered.length));   // ← ordered, not projects
-    const faces = Array.from({ length: repeats }, () => ordered).flat();     // ← ordered, not projects
+    const repeats = Math.max(1, Math.round(targetFaces / projects.length));
+    const faces = Array.from({ length: repeats }, () => projects).flat();
     const angleStep = 360 / faces.length;
     const radiusFactor = 0.5 / Math.tan(Math.PI / faces.length);
 
     let rotation = cachedRotation;
     let observer;
 
-    // Cube only responds to input on the home route.
-    // On project pages, Observer is disabled so the page can scroll normally.
     $: isHome = $page.url.pathname === '/';
     $: if (observer) isHome ? observer.enable() : observer.disable();
 
@@ -57,18 +47,40 @@
 <div class="scene">
     <div class="cube" style:transform="translateZ(-400px) rotateY({rotation}deg)">
         {#each faces as project, i}
-            <!-- <div
-                class="{project.colour} {project.slug} face"
-                style:transform="rotateY({i * 10}deg) translateZ(var(--cylinder-radius))"
-            > -->
-            <div class="face {project.colour} {project.slug}" style:transform="rotateY({i * angleStep}deg) translateZ(calc(var(--face-width) * {radiusFactor}))">
-
-                <a class="images" data-sveltekit-noscroll href="../projects/{project.slug}">
-                    <img class="blur {$store}"  src="../images/{project.slug}/{project.images[0]}_800_blur.webp" width="auto" height="auto" alt="hero shot of {project.title}">
-                    <img class="clear {$store}" src="../images/{project.slug}/{project.images[0]}_800.webp"      width="auto" height="auto" alt="blurred hero shot of {project.title}">
-                    <img class="plan"           src="../images/{project.slug}/Plan_{project.plans[0]}_800.svg"   width="auto" height="auto" alt="a plan drawing of {project.title}">
+            <div
+                class="face {project.colour} {project.id}"
+                style:transform="rotateY({i * angleStep}deg) translateZ(calc(var(--face-width) * {radiusFactor}))"
+            >
+                <a class="images" data-sveltekit-noscroll href="/projects/{project.id}">
+                    {#if project.blur}
+                        <img
+                            class="blur {$store}"
+                            src="{project.blur.url}?w=600&fm=webp&q=90"
+                            width={project.blur.width}
+                            height={project.blur.height}
+                            alt="blurred hero of {project.title}"
+                        />
+                    {/if}
+                    {#if project.photos?.length}
+                        <img
+                            class="clear {$store}"
+                            src="{project.photos[0].url}?w=600&fm=webp&q=90"
+                            width={project.photos[0].width}
+                            height={project.photos[0].height}
+                            alt="hero shot of {project.title}"
+                        />
+                    {/if}
+                    {#if project.plans?.length}
+                        <img
+                            class="plan"
+                            src={project.plans[0].url}
+                            width={project.plans[0].width}
+                            height={project.plans[0].height}
+                            alt="plan drawing of {project.title}"
+                        />
+                    {/if}
                 </a>
-                <caption>{project.title} - {project.content}</caption>
+                <caption>{project.title} - {project.location}, {project.year} {#if project.context}{project.context}{/if}</caption>
             </div>
         {/each}
     </div>
@@ -101,7 +113,7 @@
         backface-visibility: hidden;
     }
 
-    .face img { width: 100%; }
+    .face img { width: 100%; height: auto;}
 
     .green img:hover     { cursor: url(/view/green.svg), crosshair; }
     .yellow img:hover    { cursor: url(/view/yellow.svg), crosshair; }

@@ -13,9 +13,8 @@
     export let label = null;      // optional override for preview title
     export let href = null;       // optional explicit URL (e.g. external)
 
-    $: resolvedHref = href ?? (project ? `/projects/${project.slug}` : null);
+    $: resolvedHref = href ?? (project ? `/projects/${project.id}` : null);
     $: isExternal = !!resolvedHref && /^https?:\/\//.test(resolvedHref);
-    $: slug = project?.slug ?? null;
 </script>
 
 <svelte:element
@@ -24,15 +23,22 @@
     target={isExternal ? '_blank' : undefined}
     rel={isExternal ? 'noopener noreferrer' : undefined}
     data-sveltekit-noscroll
-    class="row dot {slug ?? ''}"
+    class="row dot"
+    style={project ? `--hover: var(--${project.colour});` : ''}
 >
     <slot />
 </svelte:element>
 
 {#if project}
-    <span class="preview {project.slug}">
+    <span class="preview">
         <h5>{label ?? project.title}</h5>
-        <img src="../images/{project.slug}/{project.images[0]}_800.webp" alt={project.title}>
+        {#if project.photos?.length}
+            <img
+                src="{project.photos[0].url}?w=600&fm=webp&q=80"
+                alt={project.title}
+                loading="lazy"
+            />
+        {/if}
     </span>
 {/if}
 
@@ -44,20 +50,9 @@
         line-height: 130%;
     }
 
-    /* Hover text colour: default green, anchor rows only
-       (div rows for Office Award / Office Profile don't change colour) */
-    a.row:hover :global(*) { color: var(--green) }
-
-    /* Per-project hover text colour */
-    a.row.ABHouse:hover             :global(*) { color: var(--pistachio) }
-    a.row.ALightAddition:hover      :global(*) { color: var(--red) }
-    a.row.ACourtyardHouse:hover     :global(*) { color: var(--pink) }
-    a.row.APavilion:hover           :global(*) { color: var(--yellow) }
-    a.row.ARenovationForThree:hover :global(*) { color: var(--green) }
-    a.row.ACertainKindofLife:hover  :global(*) { color: var(--pink) }
-    a.row.AHouseForOne:hover        :global(*) { color: var(--green) }
-    a.row.FourVisitsTo52Posts:hover :global(*) { color: var(--grey) }
-    a.row.TokyoTina:hover           :global(*) { color: var(--red) }
+    /* Per-project hover colour */
+    a.row:hover :global(*) { color: var(--hover, var(--green)); }
+    .dot:hover::before { background: var(--hover, var(--green)); }
 
     /* ---------- Dot ---------- */
     .dot::before {
@@ -74,30 +69,19 @@
         margin-left: -24px;
     }
 
-    .dot:hover::before { background: var(--green) }
-    .ABHouse:hover::before             { background: var(--pistachio) }
-    .ALightAddition:hover::before      { background: var(--red) }
-    .ACourtyardHouse:hover::before     { background: var(--pink) }
-    .APavilion:hover::before           { background: var(--yellow) }
-    .ARenovationForThree:hover::before { background: var(--green) }
-    .ACertainKindofLife:hover::before  { background: var(--pink) }
-    .AHouseForOne:hover::before        { background: var(--green) }
-    .FourVisitsTo52Posts:hover::before { background: var(--grey) }
-    .TokyoTina:hover::before           { background: var(--red) }
-
     /* ---------- Preview pane ---------- */
     .preview {
-        width: calc(25% - 40px);
+        width: calc(25% - 0px);
         position: fixed;
         left: 0;
         top: 30px;
-        padding: 20px 0 10px 10px;
-        margin-right: 50px;
+        padding: 20px 10px 50px 10px;
+        /* margin-right: 50px; */
         opacity: 0;
         transition: 3s;             /* slow fade out when un-hovering */
-        background: white;
+        /* background: rgba(255, 255, 255, 0.90); */
         z-index: -99;
-        height: 100%;
+        height: fit-content;
     }
 
     .preview img {
