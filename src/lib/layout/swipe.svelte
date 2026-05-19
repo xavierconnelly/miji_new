@@ -57,10 +57,10 @@
                             class="blur {$store}"
                             src="{project.blur.url}?w=401&fm=webp&q=90"
                             srcset="
-                                {project.blur.url}?w=401&fm=webp&q=90 400w,
-                                {project.blur.url}?w=301&fm=webp&q=80 800w
+                                {project.blur.url}?w=301&fm=webp&q=90 301w,
+                                {project.blur.url}?w=401&fm=webp&q=90 401w
                             "
-                            sizes="(max-width: 401px) 100vw, (max-width: 301px) 50vw"
+                            sizes="(min-width: 801px) and (min-height: 801px) 401px, 301px"
                             width={project.blur.width}
                             height={project.blur.height}
                             alt="blurred hero of {project.title}"
@@ -69,7 +69,7 @@
                     {#if project.photos?.length}
                         <img
                             class="clear {$store}"
-                            src="{project.photos[0].url}?w=600&fm=webp&q=90"
+                            src="{project.photos[0].url}?w=401&fm=webp&q=90"
                             width={project.photos[0].width}
                             height={project.photos[0].height}
                             alt="hero shot of {project.title}"
