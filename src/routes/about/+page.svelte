@@ -24,8 +24,8 @@
         <Awards awards={data.awards} />
         <Publications publications={data.publications} />
     </span>
-    <a id="close" href="/">Back</a>
 </div>
+<a id="close" href="/">Back</a>
 
 <style>
 
