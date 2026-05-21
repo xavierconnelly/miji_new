@@ -75,6 +75,7 @@
     border-top: 1px solid;
     text-align: center;
     background-color: white;
+    color: black;
     z-index: 90;
 }
 
