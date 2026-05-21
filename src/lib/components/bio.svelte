@@ -27,7 +27,7 @@
 
 <style>
 
-:global(#about:has(a.row:hover)) {
+:global(#about:has(a.row:hover + .preview)) {
     --bio-opacity: 0;
 }
 .bio p {
