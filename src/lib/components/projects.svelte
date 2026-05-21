@@ -1,11 +1,12 @@
 <script>
-	import { projects } from '$lib/data/projects.js'
+	import { page } from '$app/stores';
+	$: projects = $page.data.projects;
 </script>
 
 <div id="projects">
 	<h5>Projects</h5>
-	{#each projects as { title, slug}}
-        <a href="/projects/{slug}" data-sveltekit-noscroll class="{slug} row">
+	{#each projects as { title, id }}
+        <a href="/projects/{id}" data-sveltekit-noscroll class="{id} row">
             {title}
         </a>
 	{/each}

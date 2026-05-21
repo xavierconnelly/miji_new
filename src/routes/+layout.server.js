@@ -11,10 +11,10 @@ export async function load() {
         colour: Array.isArray(p.colour) ? p.colour[0] : p.colour
     }));
 
-    // Newest first. year is a Text Field, so coerce to number for sorting.
-    const sortedProjects = [...projects].sort((a, b) =>
-        (Number(b.year) || 0) - (Number(a.year) || 0)
+    // Desktop horizontal order — 1 = left, 100 = right
+    const desktopProjects = [...projects].sort((a, b) =>
+        (Number(a.desktopOrder) || 999) - (Number(b.desktopOrder) || 999)
     );
 
-    return { projects, sortedProjects };
+    return { projects, desktopProjects };
 }

@@ -3,9 +3,9 @@
     import MediaQuery from '$lib/layout/mediaQuery.svelte';
 
     export let data;
-    const newest = data.sortedProjects[0];
-    const prevSlug = data.sortedProjects[data.sortedProjects.length - 1].id;
-    const nextSlug = data.sortedProjects[1]?.id ?? data.sortedProjects[0].id;
+    const newest = data.projects[0];
+    const prevSlug = data.projects[data.projects.length - 1].id;
+    const nextSlug = data.projects[1]?.id ?? data.projects[0].id;
 
     const photos = newest.photos ?? [];
 </script>
