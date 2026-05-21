@@ -17,7 +17,7 @@
 <MediaQuery query="(min-width: 800px)" let:matches>
     {#if matches}
         <main class="root tablet">
-            <Swiper projects={data.projects} />
+            <Swiper projects={data.desktopProjects} />
         </main>
         <Footer />
     {/if}
