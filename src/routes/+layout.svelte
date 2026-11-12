@@ -9,11 +9,21 @@
     import { fade } from 'svelte/transition';
 
     export let data;
+
+    import { page } from '$app/stores';
+    $: project = $page.data.project;
 </script>
 
 <svelte:head>
     <link rel="canonical" href="https://mi-ji.com.au{data.url === '/' ? '/' : data.url.toLowerCase()}">
+
+    <title>{project ? `${project.title} — Office MI—JI` : 'Office MI—JI'}</title>
+    <meta name="description" content={project
+    ? `${project.title}, ${project.location}, ${project.year}. A project by Office MI—JI.`
+    : 'Office MI—JI is an architectural office.'}>
 </svelte:head>
+
+
 
 <Header />
 
