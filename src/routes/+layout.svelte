@@ -11,6 +11,10 @@
     export let data;
 </script>
 
+<svelte:head>
+    <link rel="canonical" href="https://mi-ji.com.au{data.url === '/' ? '/' : data.url.toLowerCase()}">
+</svelte:head>
+
 <Header />
 
 <!-- The Swiper shows above 800px -->
